@@ -6824,3 +6824,185 @@
 [2022-07-01 10:48:27,066] {logging_mixin.py:104} INFO - [2022-07-01 10:48:27,064] {dag.py:1818} INFO - Sync 1 DAGs
 [2022-07-01 10:48:27,082] {logging_mixin.py:104} INFO - [2022-07-01 10:48:27,082] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to 2022-07-01 00:00:00+00:00
 [2022-07-01 10:48:27,092] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting.py took 0.934 seconds
+[2022-07-01 10:48:37,194] {scheduler_job.py:182} INFO - Started process (PID=16076) to work on /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:48:37,196] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting.py for tasks to queue
+[2022-07-01 10:48:37,198] {logging_mixin.py:104} INFO - [2022-07-01 10:48:37,198] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:48:38,075] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:48:38,095] {logging_mixin.py:104} INFO - [2022-07-01 10:48:38,094] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-07-01 10:48:38,112] {logging_mixin.py:104} INFO - [2022-07-01 10:48:38,112] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to 2022-07-01 00:00:00+00:00
+[2022-07-01 10:48:38,122] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting.py took 0.934 seconds
+[2022-07-01 10:48:48,225] {scheduler_job.py:182} INFO - Started process (PID=16092) to work on /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:48:48,228] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting.py for tasks to queue
+[2022-07-01 10:48:48,229] {logging_mixin.py:104} INFO - [2022-07-01 10:48:48,229] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:48:49,036] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:48:49,055] {logging_mixin.py:104} INFO - [2022-07-01 10:48:49,054] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-07-01 10:48:49,071] {logging_mixin.py:104} INFO - [2022-07-01 10:48:49,071] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to 2022-07-01 00:00:00+00:00
+[2022-07-01 10:48:49,082] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting.py took 0.861 seconds
+[2022-07-01 10:48:59,153] {scheduler_job.py:182} INFO - Started process (PID=16108) to work on /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:48:59,157] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting.py for tasks to queue
+[2022-07-01 10:48:59,159] {logging_mixin.py:104} INFO - [2022-07-01 10:48:59,159] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:49:00,063] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:49:00,081] {logging_mixin.py:104} INFO - [2022-07-01 10:49:00,080] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-07-01 10:49:00,095] {logging_mixin.py:104} INFO - [2022-07-01 10:49:00,095] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to 2022-07-01 00:00:00+00:00
+[2022-07-01 10:49:00,104] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting.py took 0.956 seconds
+[2022-07-01 10:49:10,196] {scheduler_job.py:182} INFO - Started process (PID=16124) to work on /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:49:10,198] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting.py for tasks to queue
+[2022-07-01 10:49:10,200] {logging_mixin.py:104} INFO - [2022-07-01 10:49:10,200] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:49:11,326] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:49:11,354] {logging_mixin.py:104} INFO - [2022-07-01 10:49:11,352] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-07-01 10:49:11,377] {logging_mixin.py:104} INFO - [2022-07-01 10:49:11,377] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to 2022-07-01 00:00:00+00:00
+[2022-07-01 10:49:11,393] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting.py took 1.201 seconds
+[2022-07-01 10:49:21,463] {scheduler_job.py:182} INFO - Started process (PID=16140) to work on /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:49:21,465] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting.py for tasks to queue
+[2022-07-01 10:49:21,467] {logging_mixin.py:104} INFO - [2022-07-01 10:49:21,467] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:49:22,648] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:49:22,677] {logging_mixin.py:104} INFO - [2022-07-01 10:49:22,676] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-07-01 10:49:22,701] {logging_mixin.py:104} INFO - [2022-07-01 10:49:22,701] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to 2022-07-01 00:00:00+00:00
+[2022-07-01 10:49:22,719] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting.py took 1.260 seconds
+[2022-07-01 10:49:32,769] {scheduler_job.py:182} INFO - Started process (PID=16156) to work on /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:49:32,771] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting.py for tasks to queue
+[2022-07-01 10:49:32,773] {logging_mixin.py:104} INFO - [2022-07-01 10:49:32,773] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:49:33,649] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:49:33,671] {logging_mixin.py:104} INFO - [2022-07-01 10:49:33,670] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-07-01 10:49:33,687] {logging_mixin.py:104} INFO - [2022-07-01 10:49:33,687] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to 2022-07-01 00:00:00+00:00
+[2022-07-01 10:49:33,695] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting.py took 0.929 seconds
+[2022-07-01 10:49:43,764] {scheduler_job.py:182} INFO - Started process (PID=16172) to work on /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:49:43,766] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting.py for tasks to queue
+[2022-07-01 10:49:43,767] {logging_mixin.py:104} INFO - [2022-07-01 10:49:43,767] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:49:44,863] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:49:44,886] {logging_mixin.py:104} INFO - [2022-07-01 10:49:44,885] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-07-01 10:49:44,901] {logging_mixin.py:104} INFO - [2022-07-01 10:49:44,901] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to 2022-07-01 00:00:00+00:00
+[2022-07-01 10:49:44,910] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting.py took 1.151 seconds
+[2022-07-01 10:49:54,982] {scheduler_job.py:182} INFO - Started process (PID=16188) to work on /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:49:54,984] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting.py for tasks to queue
+[2022-07-01 10:49:54,985] {logging_mixin.py:104} INFO - [2022-07-01 10:49:54,985] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:49:55,845] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:49:55,868] {logging_mixin.py:104} INFO - [2022-07-01 10:49:55,866] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-07-01 10:49:55,884] {logging_mixin.py:104} INFO - [2022-07-01 10:49:55,883] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to 2022-07-01 00:00:00+00:00
+[2022-07-01 10:49:55,893] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting.py took 0.914 seconds
+[2022-07-01 10:50:05,945] {scheduler_job.py:182} INFO - Started process (PID=16204) to work on /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:50:05,947] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting.py for tasks to queue
+[2022-07-01 10:50:05,949] {logging_mixin.py:104} INFO - [2022-07-01 10:50:05,949] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:50:06,794] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:50:06,813] {logging_mixin.py:104} INFO - [2022-07-01 10:50:06,812] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-07-01 10:50:06,828] {logging_mixin.py:104} INFO - [2022-07-01 10:50:06,828] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to 2022-07-01 00:00:00+00:00
+[2022-07-01 10:50:06,837] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting.py took 0.896 seconds
+[2022-07-01 10:50:16,919] {scheduler_job.py:182} INFO - Started process (PID=16220) to work on /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:50:16,921] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting.py for tasks to queue
+[2022-07-01 10:50:16,923] {logging_mixin.py:104} INFO - [2022-07-01 10:50:16,922] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:50:17,859] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:50:17,886] {logging_mixin.py:104} INFO - [2022-07-01 10:50:17,884] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-07-01 10:50:17,904] {logging_mixin.py:104} INFO - [2022-07-01 10:50:17,904] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to 2022-07-01 00:00:00+00:00
+[2022-07-01 10:50:17,917] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting.py took 1.002 seconds
+[2022-07-01 10:50:27,978] {scheduler_job.py:182} INFO - Started process (PID=16236) to work on /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:50:27,981] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting.py for tasks to queue
+[2022-07-01 10:50:27,982] {logging_mixin.py:104} INFO - [2022-07-01 10:50:27,982] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:50:28,824] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:50:28,844] {logging_mixin.py:104} INFO - [2022-07-01 10:50:28,843] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-07-01 10:50:28,858] {logging_mixin.py:104} INFO - [2022-07-01 10:50:28,858] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to 2022-07-01 00:00:00+00:00
+[2022-07-01 10:50:28,866] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting.py took 0.894 seconds
+[2022-07-01 10:50:38,937] {scheduler_job.py:182} INFO - Started process (PID=16252) to work on /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:50:38,940] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting.py for tasks to queue
+[2022-07-01 10:50:38,941] {logging_mixin.py:104} INFO - [2022-07-01 10:50:38,941] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:50:39,812] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:50:39,831] {logging_mixin.py:104} INFO - [2022-07-01 10:50:39,830] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-07-01 10:50:39,848] {logging_mixin.py:104} INFO - [2022-07-01 10:50:39,848] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to 2022-07-01 00:00:00+00:00
+[2022-07-01 10:50:39,859] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting.py took 0.927 seconds
+[2022-07-01 10:50:49,940] {scheduler_job.py:182} INFO - Started process (PID=16268) to work on /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:50:49,944] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting.py for tasks to queue
+[2022-07-01 10:50:49,945] {logging_mixin.py:104} INFO - [2022-07-01 10:50:49,945] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:50:50,932] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:50:50,956] {logging_mixin.py:104} INFO - [2022-07-01 10:50:50,955] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-07-01 10:50:50,973] {logging_mixin.py:104} INFO - [2022-07-01 10:50:50,973] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to 2022-07-01 00:00:00+00:00
+[2022-07-01 10:50:50,984] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting.py took 1.047 seconds
+[2022-07-01 10:51:01,974] {scheduler_job.py:182} INFO - Started process (PID=16284) to work on /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:51:01,976] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting.py for tasks to queue
+[2022-07-01 10:51:01,977] {logging_mixin.py:104} INFO - [2022-07-01 10:51:01,977] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:51:02,780] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:51:02,796] {logging_mixin.py:104} INFO - [2022-07-01 10:51:02,795] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-07-01 10:51:02,813] {logging_mixin.py:104} INFO - [2022-07-01 10:51:02,813] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to 2022-07-01 00:00:00+00:00
+[2022-07-01 10:51:02,821] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting.py took 0.851 seconds
+[2022-07-01 10:51:13,040] {scheduler_job.py:182} INFO - Started process (PID=16300) to work on /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:51:13,042] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting.py for tasks to queue
+[2022-07-01 10:51:13,044] {logging_mixin.py:104} INFO - [2022-07-01 10:51:13,044] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:51:13,917] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:51:13,941] {logging_mixin.py:104} INFO - [2022-07-01 10:51:13,939] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-07-01 10:51:13,958] {logging_mixin.py:104} INFO - [2022-07-01 10:51:13,958] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to 2022-07-01 00:00:00+00:00
+[2022-07-01 10:51:13,967] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting.py took 0.934 seconds
+[2022-07-01 10:51:24,854] {scheduler_job.py:182} INFO - Started process (PID=16316) to work on /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:51:24,856] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting.py for tasks to queue
+[2022-07-01 10:51:24,857] {logging_mixin.py:104} INFO - [2022-07-01 10:51:24,857] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:51:25,737] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:51:25,755] {logging_mixin.py:104} INFO - [2022-07-01 10:51:25,754] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-07-01 10:51:25,769] {logging_mixin.py:104} INFO - [2022-07-01 10:51:25,769] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to 2022-07-01 00:00:00+00:00
+[2022-07-01 10:51:25,777] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting.py took 0.927 seconds
+[2022-07-01 10:51:35,834] {scheduler_job.py:182} INFO - Started process (PID=16332) to work on /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:51:35,836] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting.py for tasks to queue
+[2022-07-01 10:51:35,839] {logging_mixin.py:104} INFO - [2022-07-01 10:51:35,838] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:51:36,827] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:51:36,846] {logging_mixin.py:104} INFO - [2022-07-01 10:51:36,845] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-07-01 10:51:36,863] {logging_mixin.py:104} INFO - [2022-07-01 10:51:36,863] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to 2022-07-01 00:00:00+00:00
+[2022-07-01 10:51:36,875] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting.py took 1.047 seconds
+[2022-07-01 10:51:46,952] {scheduler_job.py:182} INFO - Started process (PID=16348) to work on /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:51:46,955] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting.py for tasks to queue
+[2022-07-01 10:51:46,956] {logging_mixin.py:104} INFO - [2022-07-01 10:51:46,956] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:51:47,887] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:51:47,909] {logging_mixin.py:104} INFO - [2022-07-01 10:51:47,908] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-07-01 10:51:47,928] {logging_mixin.py:104} INFO - [2022-07-01 10:51:47,928] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to 2022-07-01 00:00:00+00:00
+[2022-07-01 10:51:47,937] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting.py took 0.989 seconds
+[2022-07-01 10:51:58,020] {scheduler_job.py:182} INFO - Started process (PID=16366) to work on /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:51:58,023] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting.py for tasks to queue
+[2022-07-01 10:51:58,025] {logging_mixin.py:104} INFO - [2022-07-01 10:51:58,025] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:51:58,935] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:51:58,953] {logging_mixin.py:104} INFO - [2022-07-01 10:51:58,952] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-07-01 10:51:58,969] {logging_mixin.py:104} INFO - [2022-07-01 10:51:58,969] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to 2022-07-01 00:00:00+00:00
+[2022-07-01 10:51:58,980] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting.py took 0.966 seconds
+[2022-07-01 10:52:09,073] {scheduler_job.py:182} INFO - Started process (PID=16382) to work on /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:52:09,076] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting.py for tasks to queue
+[2022-07-01 10:52:09,077] {logging_mixin.py:104} INFO - [2022-07-01 10:52:09,077] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:52:09,940] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:52:09,958] {logging_mixin.py:104} INFO - [2022-07-01 10:52:09,957] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-07-01 10:52:09,972] {logging_mixin.py:104} INFO - [2022-07-01 10:52:09,972] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to 2022-07-01 00:00:00+00:00
+[2022-07-01 10:52:09,982] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting.py took 0.914 seconds
+[2022-07-01 10:52:20,058] {scheduler_job.py:182} INFO - Started process (PID=16396) to work on /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:52:20,060] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting.py for tasks to queue
+[2022-07-01 10:52:20,062] {logging_mixin.py:104} INFO - [2022-07-01 10:52:20,061] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:52:21,037] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:52:21,057] {logging_mixin.py:104} INFO - [2022-07-01 10:52:21,056] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-07-01 10:52:21,077] {logging_mixin.py:104} INFO - [2022-07-01 10:52:21,076] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to 2022-07-01 00:00:00+00:00
+[2022-07-01 10:52:21,085] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting.py took 1.034 seconds
+[2022-07-01 10:52:31,153] {scheduler_job.py:182} INFO - Started process (PID=16412) to work on /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:52:31,155] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting.py for tasks to queue
+[2022-07-01 10:52:31,156] {logging_mixin.py:104} INFO - [2022-07-01 10:52:31,156] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:52:32,012] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:52:32,030] {logging_mixin.py:104} INFO - [2022-07-01 10:52:32,029] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-07-01 10:52:32,044] {logging_mixin.py:104} INFO - [2022-07-01 10:52:32,044] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to 2022-07-01 00:00:00+00:00
+[2022-07-01 10:52:32,054] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting.py took 0.907 seconds
+[2022-07-01 10:52:42,148] {scheduler_job.py:182} INFO - Started process (PID=16430) to work on /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:52:42,150] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting.py for tasks to queue
+[2022-07-01 10:52:42,151] {logging_mixin.py:104} INFO - [2022-07-01 10:52:42,151] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:52:43,067] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:52:43,090] {logging_mixin.py:104} INFO - [2022-07-01 10:52:43,089] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-07-01 10:52:43,105] {logging_mixin.py:104} INFO - [2022-07-01 10:52:43,105] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to 2022-07-01 00:00:00+00:00
+[2022-07-01 10:52:43,114] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting.py took 0.970 seconds
+[2022-07-01 10:52:53,211] {scheduler_job.py:182} INFO - Started process (PID=16446) to work on /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:52:53,217] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting.py for tasks to queue
+[2022-07-01 10:52:53,219] {logging_mixin.py:104} INFO - [2022-07-01 10:52:53,218] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:52:54,223] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:52:54,241] {logging_mixin.py:104} INFO - [2022-07-01 10:52:54,240] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-07-01 10:52:54,256] {logging_mixin.py:104} INFO - [2022-07-01 10:52:54,256] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to 2022-07-01 00:00:00+00:00
+[2022-07-01 10:52:54,266] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting.py took 1.061 seconds
+[2022-07-01 10:53:04,318] {scheduler_job.py:182} INFO - Started process (PID=16462) to work on /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:53:04,320] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting.py for tasks to queue
+[2022-07-01 10:53:04,321] {logging_mixin.py:104} INFO - [2022-07-01 10:53:04,321] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:53:05,111] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:53:05,128] {logging_mixin.py:104} INFO - [2022-07-01 10:53:05,127] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-07-01 10:53:05,144] {logging_mixin.py:104} INFO - [2022-07-01 10:53:05,144] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to 2022-07-01 00:00:00+00:00
+[2022-07-01 10:53:05,153] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting.py took 0.838 seconds
+[2022-07-01 10:53:15,237] {scheduler_job.py:182} INFO - Started process (PID=16478) to work on /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:53:15,239] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting.py for tasks to queue
+[2022-07-01 10:53:15,241] {logging_mixin.py:104} INFO - [2022-07-01 10:53:15,240] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:53:16,088] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting.py
+[2022-07-01 10:53:16,106] {logging_mixin.py:104} INFO - [2022-07-01 10:53:16,105] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-07-01 10:53:16,122] {logging_mixin.py:104} INFO - [2022-07-01 10:53:16,121] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to 2022-07-01 00:00:00+00:00
+[2022-07-01 10:53:16,133] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting.py took 0.902 seconds
