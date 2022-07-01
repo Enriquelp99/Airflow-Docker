@@ -1,0 +1,48 @@
+[2022-06-25 21:02:51,759] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: SDG_Enrique_V0.preprocessing_data 2022-06-25T21:02:13.684039+00:00 [queued]>
+[2022-06-25 21:02:51,776] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: SDG_Enrique_V0.preprocessing_data 2022-06-25T21:02:13.684039+00:00 [queued]>
+[2022-06-25 21:02:51,777] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-25 21:02:51,778] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2022-06-25 21:02:51,778] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-25 21:02:51,787] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): preprocessing_data> on 2022-06-25T21:02:13.684039+00:00
+[2022-06-25 21:02:51,794] {standard_task_runner.py:52} INFO - Started process 4625 to run task
+[2022-06-25 21:02:51,798] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'SDG_Enrique_V0', 'preprocessing_data', '2022-06-25T21:02:13.684039+00:00', '--job-id', '149', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/company_forecasting.py', '--cfg-path', '/tmp/tmpcp2w9jnq', '--error-file', '/tmp/tmp2u1hwol3']
+[2022-06-25 21:02:51,801] {standard_task_runner.py:77} INFO - Job 149: Subtask preprocessing_data
+[2022-06-25 21:02:51,842] {logging_mixin.py:104} INFO - Running <TaskInstance: SDG_Enrique_V0.preprocessing_data 2022-06-25T21:02:13.684039+00:00 [running]> on host 5e8dc4b25004
+[2022-06-25 21:02:51,879] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=enrique-liebana@outlook.com
+AIRFLOW_CTX_DAG_OWNER=Enrique
+AIRFLOW_CTX_DAG_ID=SDG_Enrique_V0
+AIRFLOW_CTX_TASK_ID=preprocessing_data
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-25T21:02:13.684039+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-25T21:02:13.684039+00:00
+[2022-06-25 21:02:51,882] {taskinstance.py:1455} ERROR - [Errno 2] No such file or directory: '/processed/company_A01.csv'
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/company_forecasting.py", line 224, in preprocessing
+    data_company = pd.read_csv('/processed/company_A01.csv',delimiter=',',header=0)
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/io/parsers.py", line 688, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/io/parsers.py", line 454, in _read
+    parser = TextFileReader(fp_or_buf, **kwds)
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/io/parsers.py", line 948, in __init__
+    self._make_engine(self.engine)
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/io/parsers.py", line 1180, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/io/parsers.py", line 2010, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas/_libs/parsers.pyx", line 382, in pandas._libs.parsers.TextReader.__cinit__
+  File "pandas/_libs/parsers.pyx", line 674, in pandas._libs.parsers.TextReader._setup_parser_source
+FileNotFoundError: [Errno 2] No such file or directory: '/processed/company_A01.csv'
+[2022-06-25 21:02:51,888] {taskinstance.py:1503} INFO - Marking task as FAILED. dag_id=SDG_Enrique_V0, task_id=preprocessing_data, execution_date=20220625T210213, start_date=20220625T210251, end_date=20220625T210251
+[2022-06-25 21:02:51,934] {local_task_job.py:146} INFO - Task exited with return code 1

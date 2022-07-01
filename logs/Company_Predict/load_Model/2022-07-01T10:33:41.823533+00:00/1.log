@@ -1,0 +1,36 @@
+[2022-07-01 10:33:43,128] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: Company_Predict.load_Model 2022-07-01T10:33:41.823533+00:00 [queued]>
+[2022-07-01 10:33:43,143] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: Company_Predict.load_Model 2022-07-01T10:33:41.823533+00:00 [queued]>
+[2022-07-01 10:33:43,144] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-01 10:33:43,145] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2022-07-01 10:33:43,146] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-01 10:33:43,155] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): load_Model> on 2022-07-01T10:33:41.823533+00:00
+[2022-07-01 10:33:43,161] {standard_task_runner.py:52} INFO - Started process 14741 to run task
+[2022-07-01 10:33:43,165] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'Company_Predict', 'load_Model', '2022-07-01T10:33:41.823533+00:00', '--job-id', '1555', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/company_predict.py', '--cfg-path', '/tmp/tmpbav1rbgt', '--error-file', '/tmp/tmp0hsjcxgm']
+[2022-07-01 10:33:43,167] {standard_task_runner.py:77} INFO - Job 1555: Subtask load_Model
+[2022-07-01 10:33:43,207] {logging_mixin.py:104} INFO - Running <TaskInstance: Company_Predict.load_Model 2022-07-01T10:33:41.823533+00:00 [running]> on host 14dddcffc0ea
+[2022-07-01 10:33:43,246] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=enrique-liebana@outlook.com
+AIRFLOW_CTX_DAG_OWNER=Enrique Liebana Peña
+AIRFLOW_CTX_DAG_ID=Company_Predict
+AIRFLOW_CTX_TASK_ID=load_Model
+AIRFLOW_CTX_EXECUTION_DATE=2022-07-01T10:33:41.823533+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-07-01T10:33:41.823533+00:00
+[2022-07-01 10:33:48,514] {taskinstance.py:1455} ERROR - [Errno 2] No such file or directory: 'models/XGBoost_F.sav'
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/company_predict.py", line 41, in _load_model
+    pickle_m = pickle.load(open('models/XGBoost_F.sav', 'rb'))
+FileNotFoundError: [Errno 2] No such file or directory: 'models/XGBoost_F.sav'
+[2022-07-01 10:33:48,519] {taskinstance.py:1503} INFO - Marking task as FAILED. dag_id=Company_Predict, task_id=load_Model, execution_date=20220701T103341, start_date=20220701T103343, end_date=20220701T103348
+[2022-07-01 10:33:48,580] {local_task_job.py:146} INFO - Task exited with return code 1

@@ -1,0 +1,111 @@
+[2022-06-26 20:35:37,302] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: trigger_dag.gridSearchLR 2022-06-26T20:35:35.568115+00:00 [queued]>
+[2022-06-26 20:35:37,318] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: trigger_dag.gridSearchLR 2022-06-26T20:35:35.568115+00:00 [queued]>
+[2022-06-26 20:35:37,319] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-26 20:35:37,320] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2022-06-26 20:35:37,320] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-26 20:35:37,329] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): gridSearchLR> on 2022-06-26T20:35:35.568115+00:00
+[2022-06-26 20:35:37,336] {standard_task_runner.py:52} INFO - Started process 6385 to run task
+[2022-06-26 20:35:37,341] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'trigger_dag', 'gridSearchLR', '2022-06-26T20:35:35.568115+00:00', '--job-id', '307', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/trigger_dag.py', '--cfg-path', '/tmp/tmp47a79xb3', '--error-file', '/tmp/tmpmpbwss7o']
+[2022-06-26 20:35:37,345] {standard_task_runner.py:77} INFO - Job 307: Subtask gridSearchLR
+[2022-06-26 20:35:37,391] {logging_mixin.py:104} INFO - Running <TaskInstance: trigger_dag.gridSearchLR 2022-06-26T20:35:35.568115+00:00 [running]> on host 6fc8504e86cf
+[2022-06-26 20:35:37,430] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=trigger_dag
+AIRFLOW_CTX_TASK_ID=gridSearchLR
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-26T20:35:35.568115+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-26T20:35:35.568115+00:00
+[2022-06-26 20:35:37,461] {logging_mixin.py:104} INFO - Name: mLflow LR33
+[2022-06-26 20:35:37,462] {logging_mixin.py:104} INFO - Experiment_id: 5
+[2022-06-26 20:35:37,463] {logging_mixin.py:104} INFO - Artifact Location: file:///opt/airflow/mlruns/5
+[2022-06-26 20:35:37,464] {logging_mixin.py:104} INFO - Tags: {}
+[2022-06-26 20:35:37,466] {logging_mixin.py:104} INFO - Lifecycle_stage: active
+[2022-06-26 20:35:37,540] {logging_mixin.py:104} WARNING - 2022/06/26 20:35:37 WARNING mlflow.tracking.context.git_context: Failed to import Git (the Git executable is probably not on your PATH), so Git SHA is not available. Error: Failed to initialize: Bad git executable.
+The git executable must be specified in one of the following ways:
+    - be included in your $PATH
+    - be set via $GIT_PYTHON_GIT_EXECUTABLE
+    - explicitly set via git.refresh()
+
+All git commands will error until this is rectified.
+
+This initial warning can be silenced or aggravated in the future by setting the
+$GIT_PYTHON_REFRESH environment variable. Use one of the following values:
+    - quiet|q|silence|s|none|n|0: for no warning or exception
+    - warn|w|warning|1: for a printed warning
+    - error|e|raise|r|2: for a raised exception
+
+Example:
+    export GIT_PYTHON_REFRESH=quiet
+[2022-06-26 20:35:37,541] {logging_mixin.py:104} WARNING - 
+[2022-06-26 20:35:41,672] {logging_mixin.py:104} INFO - newton-cg 0.0001
+[2022-06-26 20:35:46,202] {logging_mixin.py:104} INFO - newton-cg 0.001
+[2022-06-26 20:35:50,163] {logging_mixin.py:104} INFO - newton-cg 0.01
+[2022-06-26 20:35:54,418] {logging_mixin.py:104} INFO - newton-cg 0.1
+[2022-06-26 20:36:00,422] {logging_mixin.py:104} INFO - newton-cg 1
+[2022-06-26 20:36:06,419] {logging_mixin.py:104} INFO - newton-cg 10
+[2022-06-26 20:36:13,185] {logging_mixin.py:104} INFO - newton-cg 100
+[2022-06-26 20:36:18,370] {logging_mixin.py:104} INFO - newton-cg 1000
+[2022-06-26 20:36:24,127] {logging_mixin.py:104} INFO - newton-cg 10000
+[2022-06-26 20:36:29,839] {logging_mixin.py:104} INFO - lbfgs 0.0001
+[2022-06-26 20:36:32,932] {logging_mixin.py:104} INFO - lbfgs 0.001
+[2022-06-26 20:36:36,785] {logging_mixin.py:104} INFO - lbfgs 0.01
+[2022-06-26 20:36:40,051] {logging_mixin.py:104} INFO - lbfgs 0.1
+[2022-06-26 20:36:43,355] {logging_mixin.py:104} INFO - lbfgs 1
+[2022-06-26 20:36:46,680] {logging_mixin.py:104} INFO - lbfgs 10
+[2022-06-26 20:36:50,009] {logging_mixin.py:104} INFO - lbfgs 100
+[2022-06-26 20:36:53,335] {logging_mixin.py:104} INFO - lbfgs 1000
+[2022-06-26 20:36:56,611] {logging_mixin.py:104} INFO - lbfgs 10000
+[2022-06-26 20:37:00,068] {logging_mixin.py:104} INFO - liblinear 0.0001
+[2022-06-26 20:37:03,979] {logging_mixin.py:104} INFO - liblinear 0.001
+[2022-06-26 20:37:07,707] {logging_mixin.py:104} INFO - liblinear 0.01
+[2022-06-26 20:37:12,748] {logging_mixin.py:104} INFO - liblinear 0.1
+[2022-06-26 20:37:18,219] {logging_mixin.py:104} INFO - liblinear 1
+[2022-06-26 20:37:24,115] {logging_mixin.py:104} INFO - liblinear 10
+[2022-06-26 20:37:30,857] {logging_mixin.py:104} INFO - liblinear 100
+[2022-06-26 20:37:38,123] {logging_mixin.py:104} INFO - liblinear 1000
+[2022-06-26 20:37:45,593] {logging_mixin.py:104} INFO - liblinear 10000
+[2022-06-26 20:37:53,239] {logging_mixin.py:104} INFO - sag 0.0001
+[2022-06-26 20:37:57,374] {logging_mixin.py:104} INFO - sag 0.001
+[2022-06-26 20:38:07,780] {logging_mixin.py:104} INFO - sag 0.01
+[2022-06-26 20:38:28,096] {logging_mixin.py:104} INFO - sag 0.1
+[2022-06-26 20:38:50,974] {logging_mixin.py:104} INFO - sag 1
+[2022-06-26 20:39:14,138] {logging_mixin.py:104} INFO - sag 10
+[2022-06-26 20:39:37,884] {logging_mixin.py:104} INFO - sag 100
+[2022-06-26 20:40:02,112] {logging_mixin.py:104} INFO - sag 1000
+[2022-06-26 20:40:25,598] {logging_mixin.py:104} INFO - sag 10000
+[2022-06-26 20:40:48,865] {logging_mixin.py:104} INFO - saga 0.0001
+[2022-06-26 20:40:54,879] {logging_mixin.py:104} INFO - saga 0.001
+[2022-06-26 20:41:11,005] {logging_mixin.py:104} INFO - saga 0.01
+[2022-06-26 20:41:44,938] {logging_mixin.py:104} INFO - saga 0.1
+[2022-06-26 20:42:25,283] {logging_mixin.py:104} INFO - saga 1
+[2022-06-26 20:43:07,033] {logging_mixin.py:104} INFO - saga 10
+[2022-06-26 20:43:48,425] {logging_mixin.py:104} INFO - saga 100
+[2022-06-26 20:44:30,056] {logging_mixin.py:104} INFO - saga 1000
+[2022-06-26 20:45:11,929] {logging_mixin.py:104} INFO - saga 10000
+[2022-06-26 20:45:53,482] {taskinstance.py:1455} ERROR - [Errno 2] No such file or directory: '/home/airflow/features.txt'
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/trigger_dag.py", line 63, in check_mlflow_setting
+  File "/home/airflow/.local/lib/python3.6/site-packages/mlflow/tracking/fluent.py", line 606, in log_artifact
+    MlflowClient().log_artifact(run_id, local_path, artifact_path)
+  File "/home/airflow/.local/lib/python3.6/site-packages/mlflow/tracking/client.py", line 955, in log_artifact
+    self._tracking_client.log_artifact(run_id, local_path, artifact_path)
+  File "/home/airflow/.local/lib/python3.6/site-packages/mlflow/tracking/_tracking_service/client.py", line 355, in log_artifact
+    artifact_repo.log_artifact(local_path, artifact_path)
+  File "/home/airflow/.local/lib/python3.6/site-packages/mlflow/store/artifact/local_artifact_repo.py", line 38, in log_artifact
+    shutil.copyfile(local_file, os.path.join(artifact_dir, os.path.basename(local_file)))
+  File "/usr/local/lib/python3.6/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/airflow/features.txt'
+[2022-06-26 20:45:53,488] {taskinstance.py:1503} INFO - Marking task as FAILED. dag_id=trigger_dag, task_id=gridSearchLR, execution_date=20220626T203535, start_date=20220626T203537, end_date=20220626T204553
+[2022-06-26 20:45:53,583] {local_task_job.py:146} INFO - Task exited with return code 1

@@ -1,0 +1,174 @@
+[2022-06-25 16:48:05,611] {scheduler_job.py:182} INFO - Started process (PID=172) to work on /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:48:05,614] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_minio_s3.py for tasks to queue
+[2022-06-25 16:48:05,616] {logging_mixin.py:104} INFO - [2022-06-25 16:48:05,616] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:48:06,313] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['dag_with_minio_s3_v02']) retrieved from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:48:06,347] {logging_mixin.py:104} INFO - [2022-06-25 16:48:06,347] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-25 16:48:06,356] {logging_mixin.py:104} INFO - [2022-06-25 16:48:06,356] {dag.py:1837} INFO - Creating ORM DAG for dag_with_minio_s3_v02
+[2022-06-25 16:48:06,366] {logging_mixin.py:104} INFO - [2022-06-25 16:48:06,366] {dag.py:2273} INFO - Setting next_dagrun for dag_with_minio_s3_v02 to 2022-02-12T00:00:00+00:00
+[2022-06-25 16:48:06,381] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_minio_s3.py took 0.783 seconds
+[2022-06-25 16:48:16,524] {scheduler_job.py:182} INFO - Started process (PID=212) to work on /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:48:16,531] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_minio_s3.py for tasks to queue
+[2022-06-25 16:48:16,537] {logging_mixin.py:104} INFO - [2022-06-25 16:48:16,536] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:48:16,817] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['dag_with_minio_s3_v02']) retrieved from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:48:16,839] {logging_mixin.py:104} INFO - [2022-06-25 16:48:16,839] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-25 16:48:16,907] {logging_mixin.py:104} INFO - [2022-06-25 16:48:16,906] {dag.py:2273} INFO - Setting next_dagrun for dag_with_minio_s3_v02 to 2022-02-12T00:00:00+00:00
+[2022-06-25 16:48:16,926] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_minio_s3.py took 0.419 seconds
+[2022-06-25 16:48:28,801] {scheduler_job.py:182} INFO - Started process (PID=282) to work on /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:48:28,808] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_minio_s3.py for tasks to queue
+[2022-06-25 16:48:28,812] {logging_mixin.py:104} INFO - [2022-06-25 16:48:28,812] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:48:29,177] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['dag_with_minio_s3_v02']) retrieved from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:48:29,328] {logging_mixin.py:104} INFO - [2022-06-25 16:48:29,328] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-25 16:48:29,395] {logging_mixin.py:104} INFO - [2022-06-25 16:48:29,394] {dag.py:2273} INFO - Setting next_dagrun for dag_with_minio_s3_v02 to 2022-02-12T00:00:00+00:00
+[2022-06-25 16:48:29,413] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_minio_s3.py took 0.621 seconds
+[2022-06-25 16:48:39,747] {scheduler_job.py:182} INFO - Started process (PID=332) to work on /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:48:39,749] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_minio_s3.py for tasks to queue
+[2022-06-25 16:48:39,750] {logging_mixin.py:104} INFO - [2022-06-25 16:48:39,750] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:48:39,938] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['dag_with_minio_s3_v02']) retrieved from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:48:39,959] {logging_mixin.py:104} INFO - [2022-06-25 16:48:39,959] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-25 16:48:39,986] {logging_mixin.py:104} INFO - [2022-06-25 16:48:39,986] {dag.py:2273} INFO - Setting next_dagrun for dag_with_minio_s3_v02 to 2022-02-12T00:00:00+00:00
+[2022-06-25 16:48:39,997] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_minio_s3.py took 0.256 seconds
+[2022-06-25 16:48:50,200] {scheduler_job.py:182} INFO - Started process (PID=366) to work on /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:48:50,202] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_minio_s3.py for tasks to queue
+[2022-06-25 16:48:50,204] {logging_mixin.py:104} INFO - [2022-06-25 16:48:50,204] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:48:50,297] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['dag_with_minio_s3_v02']) retrieved from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:48:50,323] {logging_mixin.py:104} INFO - [2022-06-25 16:48:50,323] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-25 16:48:50,371] {logging_mixin.py:104} INFO - [2022-06-25 16:48:50,371] {dag.py:2273} INFO - Setting next_dagrun for dag_with_minio_s3_v02 to 2022-02-12T00:00:00+00:00
+[2022-06-25 16:48:50,380] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_minio_s3.py took 0.183 seconds
+[2022-06-25 16:49:00,762] {scheduler_job.py:182} INFO - Started process (PID=412) to work on /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:49:00,764] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_minio_s3.py for tasks to queue
+[2022-06-25 16:49:00,767] {logging_mixin.py:104} INFO - [2022-06-25 16:49:00,767] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:49:00,891] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['dag_with_minio_s3_v02']) retrieved from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:49:00,919] {logging_mixin.py:104} INFO - [2022-06-25 16:49:00,919] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-25 16:49:00,946] {logging_mixin.py:104} INFO - [2022-06-25 16:49:00,946] {dag.py:2273} INFO - Setting next_dagrun for dag_with_minio_s3_v02 to 2022-02-12T00:00:00+00:00
+[2022-06-25 16:49:00,956] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_minio_s3.py took 0.198 seconds
+[2022-06-25 16:49:11,351] {scheduler_job.py:182} INFO - Started process (PID=457) to work on /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:49:11,366] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_minio_s3.py for tasks to queue
+[2022-06-25 16:49:11,368] {logging_mixin.py:104} INFO - [2022-06-25 16:49:11,367] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:49:11,460] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['dag_with_minio_s3_v02']) retrieved from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:49:11,483] {logging_mixin.py:104} INFO - [2022-06-25 16:49:11,483] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-25 16:49:11,528] {logging_mixin.py:104} INFO - [2022-06-25 16:49:11,528] {dag.py:2273} INFO - Setting next_dagrun for dag_with_minio_s3_v02 to 2022-02-12T00:00:00+00:00
+[2022-06-25 16:49:11,557] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_minio_s3.py took 0.210 seconds
+[2022-06-25 16:49:21,823] {scheduler_job.py:182} INFO - Started process (PID=500) to work on /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:49:21,835] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_minio_s3.py for tasks to queue
+[2022-06-25 16:49:21,838] {logging_mixin.py:104} INFO - [2022-06-25 16:49:21,837] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:49:22,068] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['dag_with_minio_s3_v02']) retrieved from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:49:22,105] {logging_mixin.py:104} INFO - [2022-06-25 16:49:22,105] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-25 16:49:22,162] {logging_mixin.py:104} INFO - [2022-06-25 16:49:22,161] {dag.py:2273} INFO - Setting next_dagrun for dag_with_minio_s3_v02 to 2022-02-12T00:00:00+00:00
+[2022-06-25 16:49:22,178] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_minio_s3.py took 0.361 seconds
+[2022-06-25 16:49:32,616] {scheduler_job.py:182} INFO - Started process (PID=547) to work on /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:49:32,619] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_minio_s3.py for tasks to queue
+[2022-06-25 16:49:32,621] {logging_mixin.py:104} INFO - [2022-06-25 16:49:32,621] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:49:32,740] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['dag_with_minio_s3_v02']) retrieved from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:49:32,793] {logging_mixin.py:104} INFO - [2022-06-25 16:49:32,793] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-25 16:49:32,812] {logging_mixin.py:104} INFO - [2022-06-25 16:49:32,812] {dag.py:2273} INFO - Setting next_dagrun for dag_with_minio_s3_v02 to 2022-02-12T00:00:00+00:00
+[2022-06-25 16:49:32,820] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_minio_s3.py took 0.208 seconds
+[2022-06-25 16:49:43,249] {scheduler_job.py:182} INFO - Started process (PID=617) to work on /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:49:43,262] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_minio_s3.py for tasks to queue
+[2022-06-25 16:49:43,274] {logging_mixin.py:104} INFO - [2022-06-25 16:49:43,273] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:49:43,745] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['dag_with_minio_s3_v02']) retrieved from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:49:43,816] {logging_mixin.py:104} INFO - [2022-06-25 16:49:43,816] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-25 16:49:43,903] {logging_mixin.py:104} INFO - [2022-06-25 16:49:43,903] {dag.py:2273} INFO - Setting next_dagrun for dag_with_minio_s3_v02 to 2022-02-12T00:00:00+00:00
+[2022-06-25 16:49:43,926] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_minio_s3.py took 0.702 seconds
+[2022-06-25 16:49:54,612] {scheduler_job.py:182} INFO - Started process (PID=671) to work on /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:49:54,616] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_minio_s3.py for tasks to queue
+[2022-06-25 16:49:54,620] {logging_mixin.py:104} INFO - [2022-06-25 16:49:54,619] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:49:54,722] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['dag_with_minio_s3_v02']) retrieved from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:49:54,757] {logging_mixin.py:104} INFO - [2022-06-25 16:49:54,756] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-25 16:49:54,798] {logging_mixin.py:104} INFO - [2022-06-25 16:49:54,798] {dag.py:2273} INFO - Setting next_dagrun for dag_with_minio_s3_v02 to 2022-02-12T00:00:00+00:00
+[2022-06-25 16:49:54,813] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_minio_s3.py took 0.208 seconds
+[2022-06-25 16:50:05,262] {scheduler_job.py:182} INFO - Started process (PID=716) to work on /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:50:05,264] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_minio_s3.py for tasks to queue
+[2022-06-25 16:50:05,266] {logging_mixin.py:104} INFO - [2022-06-25 16:50:05,265] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:50:05,354] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['dag_with_minio_s3_v02']) retrieved from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:50:05,380] {logging_mixin.py:104} INFO - [2022-06-25 16:50:05,380] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-25 16:50:05,409] {logging_mixin.py:104} INFO - [2022-06-25 16:50:05,409] {dag.py:2273} INFO - Setting next_dagrun for dag_with_minio_s3_v02 to 2022-02-12T00:00:00+00:00
+[2022-06-25 16:50:05,423] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_minio_s3.py took 0.165 seconds
+[2022-06-25 16:50:15,996] {scheduler_job.py:182} INFO - Started process (PID=761) to work on /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:50:15,999] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_minio_s3.py for tasks to queue
+[2022-06-25 16:50:16,001] {logging_mixin.py:104} INFO - [2022-06-25 16:50:16,001] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:50:16,125] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['dag_with_minio_s3_v02']) retrieved from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:50:16,152] {logging_mixin.py:104} INFO - [2022-06-25 16:50:16,152] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-25 16:50:16,171] {logging_mixin.py:104} INFO - [2022-06-25 16:50:16,171] {dag.py:2273} INFO - Setting next_dagrun for dag_with_minio_s3_v02 to 2022-02-12T00:00:00+00:00
+[2022-06-25 16:50:16,178] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_minio_s3.py took 0.185 seconds
+[2022-06-25 16:50:26,482] {scheduler_job.py:182} INFO - Started process (PID=806) to work on /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:50:26,486] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_minio_s3.py for tasks to queue
+[2022-06-25 16:50:26,488] {logging_mixin.py:104} INFO - [2022-06-25 16:50:26,488] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:50:26,589] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['dag_with_minio_s3_v02']) retrieved from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:50:26,615] {logging_mixin.py:104} INFO - [2022-06-25 16:50:26,614] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-25 16:50:26,650] {logging_mixin.py:104} INFO - [2022-06-25 16:50:26,650] {dag.py:2273} INFO - Setting next_dagrun for dag_with_minio_s3_v02 to 2022-02-12T00:00:00+00:00
+[2022-06-25 16:50:26,669] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_minio_s3.py took 0.189 seconds
+[2022-06-25 16:50:36,850] {scheduler_job.py:182} INFO - Started process (PID=851) to work on /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:50:36,854] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_minio_s3.py for tasks to queue
+[2022-06-25 16:50:36,856] {logging_mixin.py:104} INFO - [2022-06-25 16:50:36,855] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:50:36,857] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:50:36,859] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_minio_s3.py took 0.011 seconds
+[2022-06-25 16:50:47,130] {scheduler_job.py:182} INFO - Started process (PID=896) to work on /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:50:47,133] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_minio_s3.py for tasks to queue
+[2022-06-25 16:50:47,135] {logging_mixin.py:104} INFO - [2022-06-25 16:50:47,135] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:50:47,137] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:50:47,137] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_minio_s3.py took 0.011 seconds
+[2022-06-25 16:50:57,318] {scheduler_job.py:182} INFO - Started process (PID=941) to work on /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:50:57,321] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_minio_s3.py for tasks to queue
+[2022-06-25 16:50:57,324] {logging_mixin.py:104} INFO - [2022-06-25 16:50:57,324] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:50:57,327] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:50:57,328] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_minio_s3.py took 0.016 seconds
+[2022-06-25 16:51:07,499] {scheduler_job.py:182} INFO - Started process (PID=986) to work on /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:51:07,502] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_minio_s3.py for tasks to queue
+[2022-06-25 16:51:07,503] {logging_mixin.py:104} INFO - [2022-06-25 16:51:07,503] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:51:07,505] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:51:07,506] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_minio_s3.py took 0.011 seconds
+[2022-06-25 16:51:17,697] {scheduler_job.py:182} INFO - Started process (PID=1031) to work on /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:51:17,699] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_minio_s3.py for tasks to queue
+[2022-06-25 16:51:17,701] {logging_mixin.py:104} INFO - [2022-06-25 16:51:17,700] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:51:17,702] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:51:17,703] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_minio_s3.py took 0.010 seconds
+[2022-06-25 16:51:27,929] {scheduler_job.py:182} INFO - Started process (PID=1076) to work on /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:51:27,934] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_minio_s3.py for tasks to queue
+[2022-06-25 16:51:27,935] {logging_mixin.py:104} INFO - [2022-06-25 16:51:27,935] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:51:27,937] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:51:27,939] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_minio_s3.py took 0.017 seconds
+[2022-06-25 16:51:38,108] {scheduler_job.py:182} INFO - Started process (PID=1121) to work on /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:51:38,109] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_minio_s3.py for tasks to queue
+[2022-06-25 16:51:38,111] {logging_mixin.py:104} INFO - [2022-06-25 16:51:38,110] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:51:38,112] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:51:38,113] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_minio_s3.py took 0.009 seconds
+[2022-06-25 16:51:48,396] {scheduler_job.py:182} INFO - Started process (PID=1166) to work on /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:51:48,399] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_minio_s3.py for tasks to queue
+[2022-06-25 16:51:48,408] {logging_mixin.py:104} INFO - [2022-06-25 16:51:48,408] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:51:48,415] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:51:48,419] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_minio_s3.py took 0.054 seconds
+[2022-06-25 16:51:58,609] {scheduler_job.py:182} INFO - Started process (PID=1211) to work on /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:51:58,611] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_minio_s3.py for tasks to queue
+[2022-06-25 16:51:58,613] {logging_mixin.py:104} INFO - [2022-06-25 16:51:58,612] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:51:58,615] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:51:58,616] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_minio_s3.py took 0.012 seconds
+[2022-06-25 16:52:08,827] {scheduler_job.py:182} INFO - Started process (PID=1256) to work on /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:52:08,832] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_minio_s3.py for tasks to queue
+[2022-06-25 16:52:08,834] {logging_mixin.py:104} INFO - [2022-06-25 16:52:08,834] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:52:08,837] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:52:08,838] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_minio_s3.py took 0.017 seconds
+[2022-06-25 16:52:19,054] {scheduler_job.py:182} INFO - Started process (PID=1301) to work on /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:52:19,057] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_minio_s3.py for tasks to queue
+[2022-06-25 16:52:19,058] {logging_mixin.py:104} INFO - [2022-06-25 16:52:19,058] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:52:19,060] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:52:19,061] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_minio_s3.py took 0.011 seconds
+[2022-06-25 16:52:29,315] {scheduler_job.py:182} INFO - Started process (PID=1346) to work on /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:52:29,318] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_minio_s3.py for tasks to queue
+[2022-06-25 16:52:29,320] {logging_mixin.py:104} INFO - [2022-06-25 16:52:29,320] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:52:29,322] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:52:29,323] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_minio_s3.py took 0.012 seconds
+[2022-06-25 16:52:39,532] {scheduler_job.py:182} INFO - Started process (PID=1391) to work on /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:52:39,534] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_minio_s3.py for tasks to queue
+[2022-06-25 16:52:39,536] {logging_mixin.py:104} INFO - [2022-06-25 16:52:39,536] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:52:39,538] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:52:39,540] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_minio_s3.py took 0.011 seconds
+[2022-06-25 16:52:49,848] {scheduler_job.py:182} INFO - Started process (PID=1436) to work on /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:52:49,851] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_minio_s3.py for tasks to queue
+[2022-06-25 16:52:49,852] {logging_mixin.py:104} INFO - [2022-06-25 16:52:49,852] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:52:49,855] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:52:49,856] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_minio_s3.py took 0.012 seconds
+[2022-06-25 16:53:00,095] {scheduler_job.py:182} INFO - Started process (PID=1481) to work on /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:53:00,097] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_minio_s3.py for tasks to queue
+[2022-06-25 16:53:00,098] {logging_mixin.py:104} INFO - [2022-06-25 16:53:00,098] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:53:00,100] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_with_minio_s3.py
+[2022-06-25 16:53:00,101] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_minio_s3.py took 0.010 seconds

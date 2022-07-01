@@ -1,0 +1,41 @@
+[2022-06-27 10:32:51,396] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: trigger_dag.gridSearchLR 2022-06-27T10:32:48.909726+00:00 [queued]>
+[2022-06-27 10:32:51,407] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: trigger_dag.gridSearchLR 2022-06-27T10:32:48.909726+00:00 [queued]>
+[2022-06-27 10:32:51,408] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-27 10:32:51,408] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2022-06-27 10:32:51,409] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-27 10:32:51,422] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): gridSearchLR> on 2022-06-27T10:32:48.909726+00:00
+[2022-06-27 10:32:51,429] {standard_task_runner.py:52} INFO - Started process 1947 to run task
+[2022-06-27 10:32:51,434] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'trigger_dag', 'gridSearchLR', '2022-06-27T10:32:48.909726+00:00', '--job-id', '582', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/trigger_dag.py', '--cfg-path', '/tmp/tmpfbcqb8ar', '--error-file', '/tmp/tmplpgk0vi1']
+[2022-06-27 10:32:51,436] {standard_task_runner.py:77} INFO - Job 582: Subtask gridSearchLR
+[2022-06-27 10:32:51,482] {logging_mixin.py:104} INFO - Running <TaskInstance: trigger_dag.gridSearchLR 2022-06-27T10:32:48.909726+00:00 [running]> on host 61d9f46d7859
+[2022-06-27 10:32:51,520] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=trigger_dag
+AIRFLOW_CTX_TASK_ID=gridSearchLR
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-27T10:32:48.909726+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-27T10:32:48.909726+00:00
+[2022-06-27 10:32:51,594] {logging_mixin.py:104} WARNING - 2022/06/27 10:32:51 WARNING mlflow.tracking.context.git_context: Failed to import Git (the Git executable is probably not on your PATH), so Git SHA is not available. Error: Failed to initialize: Bad git executable.
+The git executable must be specified in one of the following ways:
+    - be included in your $PATH
+    - be set via $GIT_PYTHON_GIT_EXECUTABLE
+    - explicitly set via git.refresh()
+
+All git commands will error until this is rectified.
+
+This initial warning can be silenced or aggravated in the future by setting the
+$GIT_PYTHON_REFRESH environment variable. Use one of the following values:
+    - quiet|q|silence|s|none|n|0: for no warning or exception
+    - warn|w|warning|1: for a printed warning
+    - error|e|raise|r|2: for a raised exception
+
+Example:
+    export GIT_PYTHON_REFRESH=quiet
+[2022-06-27 10:32:51,595] {logging_mixin.py:104} WARNING - 
+[2022-06-27 10:32:51,606] {logging_mixin.py:104} INFO - <RunInfo: artifact_uri='file:///opt/airflow/mlruns/0/2a37aeefa2cc4f7c8724fd1e2e4058c9/artifacts', end_time=None, experiment_id='0', lifecycle_stage='active', run_id='2a37aeefa2cc4f7c8724fd1e2e4058c9', run_uuid='2a37aeefa2cc4f7c8724fd1e2e4058c9', start_time=1656325971599, status='RUNNING', user_id='airflow'>
+[2022-06-27 10:32:51,619] {logging_mixin.py:104} INFO - Running mlflow_tracking.py
+[2022-06-27 10:32:51,628] {python.py:118} INFO - Done. Returned value was: None
+[2022-06-27 10:32:51,639] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=trigger_dag, task_id=gridSearchLR, execution_date=20220627T103248, start_date=20220627T103251, end_date=20220627T103251
+[2022-06-27 10:32:51,661] {taskinstance.py:1220} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-27 10:32:51,689] {local_task_job.py:146} INFO - Task exited with return code 0

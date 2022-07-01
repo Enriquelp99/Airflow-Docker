@@ -1,0 +1,67 @@
+[2022-06-29 21:17:43,356] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: SDG_Enrique_V0.readCSV_convertColumns 2022-06-29T21:17:09.558978+00:00 [queued]>
+[2022-06-29 21:17:43,390] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: SDG_Enrique_V0.readCSV_convertColumns 2022-06-29T21:17:09.558978+00:00 [queued]>
+[2022-06-29 21:17:43,391] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-29 21:17:43,392] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2022-06-29 21:17:43,392] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-29 21:17:43,408] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): readCSV_convertColumns> on 2022-06-29T21:17:09.558978+00:00
+[2022-06-29 21:17:43,417] {standard_task_runner.py:52} INFO - Started process 274 to run task
+[2022-06-29 21:17:43,426] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'SDG_Enrique_V0', 'readCSV_convertColumns', '2022-06-29T21:17:09.558978+00:00', '--job-id', '1443', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/company_forecasting.py', '--cfg-path', '/tmp/tmpw4ddoeds', '--error-file', '/tmp/tmp_dbcg_dc']
+[2022-06-29 21:17:43,431] {standard_task_runner.py:77} INFO - Job 1443: Subtask readCSV_convertColumns
+[2022-06-29 21:17:43,507] {logging_mixin.py:104} INFO - Running <TaskInstance: SDG_Enrique_V0.readCSV_convertColumns 2022-06-29T21:17:09.558978+00:00 [running]> on host 3cf820b1df4c
+[2022-06-29 21:17:43,587] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=enrique-liebana@outlook.com
+AIRFLOW_CTX_DAG_OWNER=Enrique Liebana Peña
+AIRFLOW_CTX_DAG_ID=SDG_Enrique_V0
+AIRFLOW_CTX_TASK_ID=readCSV_convertColumns
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-29T21:17:09.558978+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-29T21:17:09.558978+00:00
+[2022-06-29 21:17:51,421] {logging_mixin.py:104} WARNING - /home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py:1315 DtypeWarning: Columns (46,56,59) have mixed types.Specify dtype option on import or set low_memory=False.
+[2022-06-29 21:17:52,130] {logging_mixin.py:104} INFO -   rev_mean mou_mean totmrc_mean  ... creditcd eqpdays customer_id
+0  23,9975   219,25        22,5  ...        Y   361.0     1000001
+1  57,4925   482,75      37,425  ...        Y   240.0     1000002
+2    16,99    10,25       16,99  ...        Y  1504.0     1000003
+3       38      7,5          38  ...        Y  1812.0     1000004
+4    55,23    570,5       71,98  ...        Y   434.0     1000005
+
+[5 rows x 100 columns]
+[2022-06-29 21:17:52,133] {logging_mixin.py:104} INFO - rev_mean        object
+mou_mean        object
+totmrc_mean     object
+da_mean         object
+ovrmou_mean     object
+                ...   
+kid11_15        object
+kid16_17        object
+creditcd        object
+eqpdays        float64
+customer_id      int64
+Length: 100, dtype: object
+[2022-06-29 21:17:52,134] {logging_mixin.py:104} INFO - **************** FLOAT COLUmNS *********************
+[2022-06-29 21:18:03,591] {logging_mixin.py:104} INFO -    rev_mean  mou_mean  totmrc_mean  da_mean  ...  avgrev  avgmou  avgqty  hnd_price
+0   23.9975    219.25       22.500   0.2475  ...   29.66   83.37   32.69  149.98999
+1   57.4925    482.75       37.425   0.2475  ...   51.53  479.40  265.89        NaN
+2   16.9900     10.25       16.990   0.0000  ...   34.54  433.98  140.86   29.98999
+3   38.0000      7.50       38.000   0.0000  ...   40.45   63.23   30.81   29.98999
+4   55.2300    570.50       71.980   0.0000  ...   38.69  249.38   79.50  149.98999
+
+[5 rows x 56 columns]
+[2022-06-29 21:18:03,596] {logging_mixin.py:104} INFO - **************** OBJECT COLUmNS *********************
+[2022-06-29 21:18:04,395] {logging_mixin.py:104} INFO - ************+***********RESULTS*****************************
+[2022-06-29 21:18:04,425] {logging_mixin.py:104} INFO - FLOAT64 (100000, 69)
+[2022-06-29 21:18:04,435] {logging_mixin.py:104} INFO - INT64 (100000, 10)
+[2022-06-29 21:18:04,443] {logging_mixin.py:104} INFO - STRING (100000, 21)
+[2022-06-29 21:18:04,663] {logging_mixin.py:104} INFO -    rev_mean  mou_mean  totmrc_mean  ...  creditcd  eqpdays  customer_id
+0   23.9975    219.25       22.500  ...         Y    361.0      1000001
+1   57.4925    482.75       37.425  ...         Y    240.0      1000002
+2   16.9900     10.25       16.990  ...         Y   1504.0      1000003
+3   38.0000      7.50       38.000  ...         Y   1812.0      1000004
+4   55.2300    570.50       71.980  ...         Y    434.0      1000005
+
+[5 rows x 100 columns]
+[2022-06-29 21:18:32,991] {base.py:74} INFO - Using connection to: id: postgres_conection. Host: host.docker.internal, Port: 5432, Schema: data_company, Login: airflow, Password: XXXXXXXX, extra: None
+[2022-06-29 21:18:37,956] {python.py:118} INFO - Done. Returned value was: None
+[2022-06-29 21:18:37,977] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=SDG_Enrique_V0, task_id=readCSV_convertColumns, execution_date=20220629T211709, start_date=20220629T211743, end_date=20220629T211837
+[2022-06-29 21:18:38,040] {taskinstance.py:1220} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-29 21:18:38,121] {local_task_job.py:146} INFO - Task exited with return code 0

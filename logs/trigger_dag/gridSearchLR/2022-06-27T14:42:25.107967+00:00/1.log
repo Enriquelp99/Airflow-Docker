@@ -1,0 +1,69 @@
+[2022-06-27 14:42:27,580] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: trigger_dag.gridSearchLR 2022-06-27T14:42:25.107967+00:00 [queued]>
+[2022-06-27 14:42:27,597] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: trigger_dag.gridSearchLR 2022-06-27T14:42:25.107967+00:00 [queued]>
+[2022-06-27 14:42:27,598] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-27 14:42:27,598] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2022-06-27 14:42:27,599] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-27 14:42:27,608] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): gridSearchLR> on 2022-06-27T14:42:25.107967+00:00
+[2022-06-27 14:42:27,618] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'trigger_dag', 'gridSearchLR', '2022-06-27T14:42:25.107967+00:00', '--job-id', '1183', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/trigger_dag.py', '--cfg-path', '/tmp/tmpamz2y_sm', '--error-file', '/tmp/tmp1d8j4bl6']
+[2022-06-27 14:42:27,614] {standard_task_runner.py:52} INFO - Started process 731 to run task
+[2022-06-27 14:42:27,621] {standard_task_runner.py:77} INFO - Job 1183: Subtask gridSearchLR
+[2022-06-27 14:42:27,663] {logging_mixin.py:104} INFO - Running <TaskInstance: trigger_dag.gridSearchLR 2022-06-27T14:42:25.107967+00:00 [running]> on host d45254a3a0e0
+[2022-06-27 14:42:27,699] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=trigger_dag
+AIRFLOW_CTX_TASK_ID=gridSearchLR
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-27T14:42:25.107967+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-27T14:42:25.107967+00:00
+[2022-06-27 14:42:28,088] {logging_mixin.py:104} WARNING - 2022/06/27 14:42:28 INFO mlflow.store.db.utils: Creating initial MLflow database tables...
+[2022-06-27 14:42:28,111] {logging_mixin.py:104} WARNING - 2022/06/27 14:42:28 INFO mlflow.store.db.utils: Updating database tables
+[2022-06-27 14:42:28,123] {logging_mixin.py:104} WARNING - INFO  [alembic.runtime.migration] Context impl SQLiteImpl.
+[2022-06-27 14:42:28,125] {logging_mixin.py:104} WARNING - INFO  [alembic.runtime.migration] Will assume non-transactional DDL.
+[2022-06-27 14:42:28,158] {logging_mixin.py:104} WARNING - INFO  [alembic.runtime.migration] Running upgrade  -> 451aebb31d03, add metric step
+[2022-06-27 14:42:28,185] {logging_mixin.py:104} WARNING - INFO  [alembic.runtime.migration] Running upgrade 451aebb31d03 -> 90e64c465722, migrate user column to tags
+[2022-06-27 14:42:28,202] {logging_mixin.py:104} WARNING - INFO  [alembic.runtime.migration] Running upgrade 90e64c465722 -> 181f10493468, allow nulls for metric values
+[2022-06-27 14:42:28,218] {logging_mixin.py:104} WARNING - INFO  [alembic.runtime.migration] Running upgrade 181f10493468 -> df50e92ffc5e, Add Experiment Tags Table
+[2022-06-27 14:42:28,221] {logging_mixin.py:104} WARNING - INFO  [alembic.runtime.migration] Running upgrade df50e92ffc5e -> 7ac759974ad8, Update run tags with larger limit
+[2022-06-27 14:42:28,238] {logging_mixin.py:104} WARNING - INFO  [alembic.runtime.migration] Running upgrade 7ac759974ad8 -> 89d4b8295536, create latest metrics table
+[2022-06-27 14:42:28,250] {logging_mixin.py:104} WARNING - INFO  [89d4b8295536_create_latest_metrics_table_py] Migration complete!
+[2022-06-27 14:42:28,252] {logging_mixin.py:104} WARNING - INFO  [alembic.runtime.migration] Running upgrade 89d4b8295536 -> 2b4d017a5e9b, add model registry tables to db
+[2022-06-27 14:42:28,253] {logging_mixin.py:104} WARNING - INFO  [2b4d017a5e9b_add_model_registry_tables_to_db_py] Adding registered_models and model_versions tables to database.
+[2022-06-27 14:42:28,260] {logging_mixin.py:104} WARNING - INFO  [2b4d017a5e9b_add_model_registry_tables_to_db_py] Migration complete!
+[2022-06-27 14:42:28,262] {logging_mixin.py:104} WARNING - INFO  [alembic.runtime.migration] Running upgrade 2b4d017a5e9b -> cfd24bdc0731, Update run status constraint with killed
+[2022-06-27 14:42:28,282] {logging_mixin.py:104} WARNING - INFO  [alembic.runtime.migration] Running upgrade cfd24bdc0731 -> 0a8213491aaa, drop_duplicate_killed_constraint
+[2022-06-27 14:42:28,284] {logging_mixin.py:104} WARNING - INFO  [alembic.runtime.migration] Running upgrade 0a8213491aaa -> 728d730b5ebd, add registered model tags table
+[2022-06-27 14:42:28,287] {logging_mixin.py:104} WARNING - INFO  [alembic.runtime.migration] Running upgrade 728d730b5ebd -> 27a6a02d2cf1, add model version tags table
+[2022-06-27 14:42:28,290] {logging_mixin.py:104} WARNING - INFO  [alembic.runtime.migration] Running upgrade 27a6a02d2cf1 -> 84291f40a231, add run_link to model_version
+[2022-06-27 14:42:28,292] {logging_mixin.py:104} WARNING - INFO  [alembic.runtime.migration] Running upgrade 84291f40a231 -> a8c4a736bde6, allow nulls for run_id
+[2022-06-27 14:42:28,301] {logging_mixin.py:104} WARNING - INFO  [alembic.runtime.migration] Running upgrade a8c4a736bde6 -> 39d1c3be5f05, add_is_nan_constraint_for_metrics_tables_if_necessary
+[2022-06-27 14:42:28,322] {logging_mixin.py:104} WARNING - INFO  [alembic.runtime.migration] Running upgrade 39d1c3be5f05 -> c48cb773bb87, reset_default_value_for_is_nan_in_metrics_table_for_mysql
+[2022-06-27 14:42:28,338] {logging_mixin.py:104} WARNING - INFO  [alembic.runtime.migration] Context impl SQLiteImpl.
+[2022-06-27 14:42:28,339] {logging_mixin.py:104} WARNING - INFO  [alembic.runtime.migration] Will assume non-transactional DDL.
+[2022-06-27 14:42:28,428] {logging_mixin.py:104} WARNING - 2022/06/27 14:42:28 WARNING mlflow.tracking.context.git_context: Failed to import Git (the Git executable is probably not on your PATH), so Git SHA is not available. Error: Failed to initialize: Bad git executable.
+The git executable must be specified in one of the following ways:
+    - be included in your $PATH
+    - be set via $GIT_PYTHON_GIT_EXECUTABLE
+    - explicitly set via git.refresh()
+
+All git commands will error until this is rectified.
+
+This initial warning can be silenced or aggravated in the future by setting the
+$GIT_PYTHON_REFRESH environment variable. Use one of the following values:
+    - quiet|q|silence|s|none|n|0: for no warning or exception
+    - warn|w|warning|1: for a printed warning
+    - error|e|raise|r|2: for a raised exception
+
+Example:
+    export GIT_PYTHON_REFRESH=quiet
+[2022-06-27 14:42:28,430] {logging_mixin.py:104} WARNING - 
+[2022-06-27 14:42:31,948] {logging_mixin.py:104} WARNING - 2022/06/27 14:42:31 INFO mlflow.tracking._model_registry.client: Waiting up to 300 seconds for model version to finish creation.                     Model name: RandomForestRegression, version 1
+[2022-06-27 14:42:31,949] {logging_mixin.py:104} INFO - Name: RandomForestRegression
+[2022-06-27 14:42:31,950] {logging_mixin.py:104} INFO - Version: 1
+[2022-06-27 14:42:31,951] {logging_mixin.py:104} INFO - Description: A new version of the model
+[2022-06-27 14:42:31,951] {logging_mixin.py:104} INFO - Status: READY
+[2022-06-27 14:42:31,952] {logging_mixin.py:104} INFO - Stage: None
+[2022-06-27 14:42:31,953] {python.py:118} INFO - Done. Returned value was: None
+[2022-06-27 14:42:31,963] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=trigger_dag, task_id=gridSearchLR, execution_date=20220627T144225, start_date=20220627T144227, end_date=20220627T144231
+[2022-06-27 14:42:31,985] {taskinstance.py:1220} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-27 14:42:32,010] {local_task_job.py:146} INFO - Task exited with return code 0

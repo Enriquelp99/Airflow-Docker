@@ -1,0 +1,44 @@
+[2022-06-25 21:05:25,090] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: SDG_Enrique_V0.preprocessing_data 2022-06-25T21:04:49.303473+00:00 [queued]>
+[2022-06-25 21:05:25,105] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: SDG_Enrique_V0.preprocessing_data 2022-06-25T21:04:49.303473+00:00 [queued]>
+[2022-06-25 21:05:25,106] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-25 21:05:25,106] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2022-06-25 21:05:25,107] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-25 21:05:25,125] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): preprocessing_data> on 2022-06-25T21:04:49.303473+00:00
+[2022-06-25 21:05:25,133] {standard_task_runner.py:52} INFO - Started process 4752 to run task
+[2022-06-25 21:05:25,137] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'SDG_Enrique_V0', 'preprocessing_data', '2022-06-25T21:04:49.303473+00:00', '--job-id', '152', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/company_forecasting.py', '--cfg-path', '/tmp/tmp75il95ps', '--error-file', '/tmp/tmpbhiqfmd1']
+[2022-06-25 21:05:25,139] {standard_task_runner.py:77} INFO - Job 152: Subtask preprocessing_data
+[2022-06-25 21:05:25,188] {logging_mixin.py:104} INFO - Running <TaskInstance: SDG_Enrique_V0.preprocessing_data 2022-06-25T21:04:49.303473+00:00 [running]> on host 5e8dc4b25004
+[2022-06-25 21:05:25,259] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=enrique-liebana@outlook.com
+AIRFLOW_CTX_DAG_OWNER=Enrique
+AIRFLOW_CTX_DAG_ID=SDG_Enrique_V0
+AIRFLOW_CTX_TASK_ID=preprocessing_data
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-25T21:04:49.303473+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-25T21:04:49.303473+00:00
+[2022-06-25 21:05:26,454] {taskinstance.py:1455} ERROR - "['Customer_ID'] not found in axis"
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/company_forecasting.py", line 225, in preprocessing
+    data_company = data_company.drop(['Customer_ID'], axis=1)
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/core/frame.py", line 4174, in drop
+    errors=errors,
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/core/generic.py", line 3889, in drop
+    obj = obj._drop_axis(labels, axis, level=level, errors=errors)
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/core/generic.py", line 3923, in _drop_axis
+    new_axis = axis.drop(labels, errors=errors)
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/core/indexes/base.py", line 5287, in drop
+    raise KeyError(f"{labels[mask]} not found in axis")
+KeyError: "['Customer_ID'] not found in axis"
+[2022-06-25 21:05:26,468] {taskinstance.py:1503} INFO - Marking task as FAILED. dag_id=SDG_Enrique_V0, task_id=preprocessing_data, execution_date=20220625T210449, start_date=20220625T210525, end_date=20220625T210526
+[2022-06-25 21:05:26,540] {local_task_job.py:146} INFO - Task exited with return code 1

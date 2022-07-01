@@ -1,0 +1,38 @@
+[2022-06-29 20:54:04,377] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: Company_Predict.trigger_target 2022-01-18T00:00:00+00:00 [queued]>
+[2022-06-29 20:54:04,475] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: Company_Predict.trigger_target 2022-01-18T00:00:00+00:00 [queued]>
+[2022-06-29 20:54:04,477] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-29 20:54:04,480] {taskinstance.py:1043} INFO - Starting attempt 1 of 2
+[2022-06-29 20:54:04,481] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-29 20:54:04,569] {taskinstance.py:1063} INFO - Executing <Task(TriggerDagRunOperator): trigger_target> on 2022-01-18T00:00:00+00:00
+[2022-06-29 20:54:04,658] {standard_task_runner.py:52} INFO - Started process 1369 to run task
+[2022-06-29 20:54:04,726] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'Company_Predict', 'trigger_target', '2022-01-18T00:00:00+00:00', '--job-id', '1345', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/company_predict.py', '--cfg-path', '/tmp/tmpt540qoex', '--error-file', '/tmp/tmpwik9eel9']
+[2022-06-29 20:54:04,746] {standard_task_runner.py:77} INFO - Job 1345: Subtask trigger_target
+[2022-06-29 20:54:06,041] {logging_mixin.py:104} INFO - Running <TaskInstance: Company_Predict.trigger_target 2022-01-18T00:00:00+00:00 [running]> on host 1ff8f57a8cbf
+[2022-06-29 20:54:06,290] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=enrique-liebana@outlook.com
+AIRFLOW_CTX_DAG_OWNER=Enrique Liebana Peña
+AIRFLOW_CTX_DAG_ID=Company_Predict
+AIRFLOW_CTX_TASK_ID=trigger_target
+AIRFLOW_CTX_EXECUTION_DATE=2022-01-18T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-01-18T00:00:00+00:00
+[2022-06-29 20:54:06,878] {trigger_dagrun.py:165} INFO - Waiting for SDG_Enrique_V0 on 2022-01-18T00:00:00+00:00 to become allowed state ['success'] ...
+[2022-06-29 20:54:54,358] {local_task_job.py:188} WARNING - State of this instance has been externally set to None. Terminating instance.
+[2022-06-29 20:54:54,675] {process_utils.py:100} INFO - Sending Signals.SIGTERM to GPID 1369
+[2022-06-29 20:54:54,684] {taskinstance.py:1239} ERROR - Received SIGTERM. Terminating subprocesses.
+[2022-06-29 20:54:54,835] {taskinstance.py:1455} ERROR - Task received SIGTERM signal
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/trigger_dagrun.py", line 167, in execute
+    time.sleep(self.poke_interval)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1241, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2022-06-29 20:54:54,864] {taskinstance.py:1503} INFO - Marking task as FAILED. dag_id=Company_Predict, task_id=trigger_target, execution_date=20220118T000000, start_date=20220629T205404, end_date=20220629T205454
+[2022-06-29 20:54:55,463] {process_utils.py:66} INFO - Process psutil.Process(pid=1369, status='terminated', exitcode=1, started='20:54:04') (1369) terminated with exit code 1

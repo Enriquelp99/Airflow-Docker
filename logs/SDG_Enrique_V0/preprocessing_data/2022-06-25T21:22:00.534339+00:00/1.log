@@ -1,0 +1,42 @@
+[2022-06-25 21:22:41,441] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: SDG_Enrique_V0.preprocessing_data 2022-06-25T21:22:00.534339+00:00 [queued]>
+[2022-06-25 21:22:41,459] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: SDG_Enrique_V0.preprocessing_data 2022-06-25T21:22:00.534339+00:00 [queued]>
+[2022-06-25 21:22:41,461] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-25 21:22:41,463] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2022-06-25 21:22:41,464] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-25 21:22:41,476] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): preprocessing_data> on 2022-06-25T21:22:00.534339+00:00
+[2022-06-25 21:22:41,488] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'SDG_Enrique_V0', 'preprocessing_data', '2022-06-25T21:22:00.534339+00:00', '--job-id', '161', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/company_forecasting.py', '--cfg-path', '/tmp/tmpzjam14h0', '--error-file', '/tmp/tmpaxtwii_d']
+[2022-06-25 21:22:41,483] {standard_task_runner.py:52} INFO - Started process 5536 to run task
+[2022-06-25 21:22:41,492] {standard_task_runner.py:77} INFO - Job 161: Subtask preprocessing_data
+[2022-06-25 21:22:41,553] {logging_mixin.py:104} INFO - Running <TaskInstance: SDG_Enrique_V0.preprocessing_data 2022-06-25T21:22:00.534339+00:00 [running]> on host 5e8dc4b25004
+[2022-06-25 21:22:41,605] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=enrique-liebana@outlook.com
+AIRFLOW_CTX_DAG_OWNER=Enrique
+AIRFLOW_CTX_DAG_ID=SDG_Enrique_V0
+AIRFLOW_CTX_TASK_ID=preprocessing_data
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-25T21:22:00.534339+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-25T21:22:00.534339+00:00
+[2022-06-25 21:22:42,933] {logging_mixin.py:104} INFO - Index(['Unnamed: 0', 'rev_mean', 'mou_mean', 'totmrc_mean', 'da_mean',
+       'ovrmou_mean', 'ovrrev_mean', 'vceovr_mean', 'datovr_mean', 'roam_mean',
+       ...
+       'forgntvl', 'ethnic', 'kid0_2', 'kid3_5', 'kid6_10', 'kid11_15',
+       'kid16_17', 'creditcd', 'eqpdays', 'customer_id'],
+      dtype='object', length=101)
+[2022-06-25 21:22:42,997] {taskinstance.py:1455} ERROR - local variable 'col_categorical' referenced before assignment
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/company_forecasting.py", line 230, in preprocessing
+    a = data_company[col_categorical].isnull().sum()
+UnboundLocalError: local variable 'col_categorical' referenced before assignment
+[2022-06-25 21:22:43,000] {taskinstance.py:1503} INFO - Marking task as FAILED. dag_id=SDG_Enrique_V0, task_id=preprocessing_data, execution_date=20220625T212200, start_date=20220625T212241, end_date=20220625T212243
+[2022-06-25 21:22:43,057] {local_task_job.py:146} INFO - Task exited with return code 1

@@ -1,0 +1,33 @@
+[2022-06-26 19:26:53,336] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: trigger_dag.trigger_target 2022-06-26T19:26:51.220922+00:00 [queued]>
+[2022-06-26 19:26:53,356] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: trigger_dag.trigger_target 2022-06-26T19:26:51.220922+00:00 [queued]>
+[2022-06-26 19:26:53,357] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-26 19:26:53,360] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2022-06-26 19:26:53,361] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-26 19:26:53,370] {taskinstance.py:1063} INFO - Executing <Task(TriggerDagRunOperator): trigger_target> on 2022-06-26T19:26:51.220922+00:00
+[2022-06-26 19:26:53,378] {standard_task_runner.py:52} INFO - Started process 642 to run task
+[2022-06-26 19:26:53,389] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'trigger_dag', 'trigger_target', '2022-06-26T19:26:51.220922+00:00', '--job-id', '291', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/trigger_dag.py', '--cfg-path', '/tmp/tmpz4m7xn1v', '--error-file', '/tmp/tmp4vvi7jn8']
+[2022-06-26 19:26:53,391] {standard_task_runner.py:77} INFO - Job 291: Subtask trigger_target
+[2022-06-26 19:26:53,444] {logging_mixin.py:104} INFO - Running <TaskInstance: trigger_dag.trigger_target 2022-06-26T19:26:51.220922+00:00 [running]> on host 6fc8504e86cf
+[2022-06-26 19:26:53,491] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=trigger_dag
+AIRFLOW_CTX_TASK_ID=trigger_target
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-26T19:26:51.220922+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-26T19:26:51.220922+00:00
+[2022-06-26 19:26:53,532] {trigger_dagrun.py:140} INFO - Clearing SDG_Enrique_V0 on 2022-06-26T00:00:00+00:00
+[2022-06-26 19:26:53,644] {trigger_dagrun.py:165} INFO - Waiting for SDG_Enrique_V0 on 2022-06-26 00:00:00+00:00 to become allowed state ['success'] ...
+[2022-06-26 19:27:53,685] {taskinstance.py:1455} ERROR - SDG_Enrique_V0 failed with failed states failed
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/trigger_dagrun.py", line 172, in execute
+    raise AirflowException(f"{self.trigger_dag_id} failed with failed states {state}")
+airflow.exceptions.AirflowException: SDG_Enrique_V0 failed with failed states failed
+[2022-06-26 19:27:53,688] {taskinstance.py:1503} INFO - Marking task as FAILED. dag_id=trigger_dag, task_id=trigger_target, execution_date=20220626T192651, start_date=20220626T192653, end_date=20220626T192753
+[2022-06-26 19:27:53,748] {local_task_job.py:146} INFO - Task exited with return code 1

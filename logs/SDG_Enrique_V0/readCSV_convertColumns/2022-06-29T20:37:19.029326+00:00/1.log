@@ -1,0 +1,49 @@
+[2022-06-29 20:37:21,860] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: SDG_Enrique_V0.readCSV_convertColumns 2022-06-29T20:37:19.029326+00:00 [queued]>
+[2022-06-29 20:37:21,894] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: SDG_Enrique_V0.readCSV_convertColumns 2022-06-29T20:37:19.029326+00:00 [queued]>
+[2022-06-29 20:37:21,896] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-29 20:37:21,898] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2022-06-29 20:37:21,899] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-29 20:37:21,927] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): readCSV_convertColumns> on 2022-06-29T20:37:19.029326+00:00
+[2022-06-29 20:37:21,934] {standard_task_runner.py:52} INFO - Started process 199 to run task
+[2022-06-29 20:37:21,949] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'SDG_Enrique_V0', 'readCSV_convertColumns', '2022-06-29T20:37:19.029326+00:00', '--job-id', '1312', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/company_forecasting.py', '--cfg-path', '/tmp/tmp08pg98xg', '--error-file', '/tmp/tmpymbnbt6j']
+[2022-06-29 20:37:21,954] {standard_task_runner.py:77} INFO - Job 1312: Subtask readCSV_convertColumns
+[2022-06-29 20:37:22,033] {logging_mixin.py:104} INFO - Running <TaskInstance: SDG_Enrique_V0.readCSV_convertColumns 2022-06-29T20:37:19.029326+00:00 [running]> on host 1ff8f57a8cbf
+[2022-06-29 20:37:22,175] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=enrique-liebana@outlook.com
+AIRFLOW_CTX_DAG_OWNER=Enrique
+AIRFLOW_CTX_DAG_ID=SDG_Enrique_V0
+AIRFLOW_CTX_TASK_ID=readCSV_convertColumns
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-29T20:37:19.029326+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-29T20:37:19.029326+00:00
+[2022-06-29 20:37:27,968] {taskinstance.py:1455} ERROR - Error tokenizing data. C error: EOF inside string starting at row 24853
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/company_forecasting.py", line 59, in read_and_convertColumns
+    data_company = pd.read_csv('/raw_data/company.csv',delimiter=',',header=0)
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/io/parsers.py", line 688, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/io/parsers.py", line 460, in _read
+    data = parser.read(nrows)
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/io/parsers.py", line 1198, in read
+    ret = self._engine.read(nrows)
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/io/parsers.py", line 2157, in read
+    data = self._reader.read(nrows)
+  File "pandas/_libs/parsers.pyx", line 847, in pandas._libs.parsers.TextReader.read
+  File "pandas/_libs/parsers.pyx", line 862, in pandas._libs.parsers.TextReader._read_low_memory
+  File "pandas/_libs/parsers.pyx", line 918, in pandas._libs.parsers.TextReader._read_rows
+  File "pandas/_libs/parsers.pyx", line 905, in pandas._libs.parsers.TextReader._tokenize_rows
+  File "pandas/_libs/parsers.pyx", line 2042, in pandas._libs.parsers.raise_parser_error
+pandas.errors.ParserError: Error tokenizing data. C error: EOF inside string starting at row 24853
+[2022-06-29 20:37:27,987] {taskinstance.py:1503} INFO - Marking task as FAILED. dag_id=SDG_Enrique_V0, task_id=readCSV_convertColumns, execution_date=20220629T203719, start_date=20220629T203721, end_date=20220629T203727
+[2022-06-29 20:37:28,135] {local_task_job.py:146} INFO - Task exited with return code 1

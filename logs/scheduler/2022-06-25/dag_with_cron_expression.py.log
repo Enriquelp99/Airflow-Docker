@@ -1,0 +1,174 @@
+[2022-06-25 16:48:05,249] {scheduler_job.py:182} INFO - Started process (PID=161) to work on /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:48:05,256] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_cron_expression.py for tasks to queue
+[2022-06-25 16:48:05,269] {logging_mixin.py:104} INFO - [2022-06-25 16:48:05,264] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:48:05,363] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['dag_with_cron_expression_v04']) retrieved from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:48:05,424] {logging_mixin.py:104} INFO - [2022-06-25 16:48:05,423] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-25 16:48:05,450] {logging_mixin.py:104} INFO - [2022-06-25 16:48:05,450] {dag.py:1837} INFO - Creating ORM DAG for dag_with_cron_expression_v04
+[2022-06-25 16:48:05,470] {logging_mixin.py:104} INFO - [2022-06-25 16:48:05,469] {dag.py:2273} INFO - Setting next_dagrun for dag_with_cron_expression_v04 to 2021-11-02 03:00:00+00:00
+[2022-06-25 16:48:05,505] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_cron_expression.py took 0.301 seconds
+[2022-06-25 16:48:16,214] {scheduler_job.py:182} INFO - Started process (PID=206) to work on /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:48:16,226] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_cron_expression.py for tasks to queue
+[2022-06-25 16:48:16,228] {logging_mixin.py:104} INFO - [2022-06-25 16:48:16,227] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:48:16,311] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['dag_with_cron_expression_v04']) retrieved from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:48:16,333] {logging_mixin.py:104} INFO - [2022-06-25 16:48:16,332] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-25 16:48:16,363] {logging_mixin.py:104} INFO - [2022-06-25 16:48:16,363] {dag.py:2273} INFO - Setting next_dagrun for dag_with_cron_expression_v04 to 2021-11-02 03:00:00+00:00
+[2022-06-25 16:48:16,392] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_cron_expression.py took 0.192 seconds
+[2022-06-25 16:48:26,715] {scheduler_job.py:182} INFO - Started process (PID=252) to work on /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:48:26,718] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_cron_expression.py for tasks to queue
+[2022-06-25 16:48:26,721] {logging_mixin.py:104} INFO - [2022-06-25 16:48:26,720] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:48:26,748] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['dag_with_cron_expression_v04']) retrieved from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:48:26,779] {logging_mixin.py:104} INFO - [2022-06-25 16:48:26,779] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-25 16:48:26,810] {logging_mixin.py:104} INFO - [2022-06-25 16:48:26,810] {dag.py:2273} INFO - Setting next_dagrun for dag_with_cron_expression_v04 to 2021-11-02 03:00:00+00:00
+[2022-06-25 16:48:26,826] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_cron_expression.py took 0.117 seconds
+[2022-06-25 16:48:37,085] {scheduler_job.py:182} INFO - Started process (PID=297) to work on /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:48:37,087] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_cron_expression.py for tasks to queue
+[2022-06-25 16:48:37,089] {logging_mixin.py:104} INFO - [2022-06-25 16:48:37,088] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:48:37,106] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['dag_with_cron_expression_v04']) retrieved from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:48:37,127] {logging_mixin.py:104} INFO - [2022-06-25 16:48:37,127] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-25 16:48:37,147] {logging_mixin.py:104} INFO - [2022-06-25 16:48:37,147] {dag.py:2273} INFO - Setting next_dagrun for dag_with_cron_expression_v04 to 2021-11-02 03:00:00+00:00
+[2022-06-25 16:48:37,157] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_cron_expression.py took 0.078 seconds
+[2022-06-25 16:48:47,955] {scheduler_job.py:182} INFO - Started process (PID=341) to work on /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:48:47,957] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_cron_expression.py for tasks to queue
+[2022-06-25 16:48:47,959] {logging_mixin.py:104} INFO - [2022-06-25 16:48:47,959] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:48:47,975] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['dag_with_cron_expression_v04']) retrieved from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:48:47,998] {logging_mixin.py:104} INFO - [2022-06-25 16:48:47,998] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-25 16:48:48,021] {logging_mixin.py:104} INFO - [2022-06-25 16:48:48,021] {dag.py:2273} INFO - Setting next_dagrun for dag_with_cron_expression_v04 to 2021-11-02 03:00:00+00:00
+[2022-06-25 16:48:48,029] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_cron_expression.py took 0.080 seconds
+[2022-06-25 16:48:58,506] {scheduler_job.py:182} INFO - Started process (PID=385) to work on /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:48:58,509] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_cron_expression.py for tasks to queue
+[2022-06-25 16:48:58,511] {logging_mixin.py:104} INFO - [2022-06-25 16:48:58,510] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:48:58,533] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['dag_with_cron_expression_v04']) retrieved from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:48:58,557] {logging_mixin.py:104} INFO - [2022-06-25 16:48:58,557] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-25 16:48:58,580] {logging_mixin.py:104} INFO - [2022-06-25 16:48:58,580] {dag.py:2273} INFO - Setting next_dagrun for dag_with_cron_expression_v04 to 2021-11-02 03:00:00+00:00
+[2022-06-25 16:48:58,589] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_cron_expression.py took 0.086 seconds
+[2022-06-25 16:49:09,060] {scheduler_job.py:182} INFO - Started process (PID=432) to work on /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:49:09,062] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_cron_expression.py for tasks to queue
+[2022-06-25 16:49:09,064] {logging_mixin.py:104} INFO - [2022-06-25 16:49:09,064] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:49:09,088] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['dag_with_cron_expression_v04']) retrieved from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:49:09,107] {logging_mixin.py:104} INFO - [2022-06-25 16:49:09,107] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-25 16:49:09,128] {logging_mixin.py:104} INFO - [2022-06-25 16:49:09,128] {dag.py:2273} INFO - Setting next_dagrun for dag_with_cron_expression_v04 to 2021-11-02 03:00:00+00:00
+[2022-06-25 16:49:09,138] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_cron_expression.py took 0.082 seconds
+[2022-06-25 16:49:19,689] {scheduler_job.py:182} INFO - Started process (PID=477) to work on /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:49:19,690] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_cron_expression.py for tasks to queue
+[2022-06-25 16:49:19,692] {logging_mixin.py:104} INFO - [2022-06-25 16:49:19,692] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:49:19,714] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['dag_with_cron_expression_v04']) retrieved from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:49:19,739] {logging_mixin.py:104} INFO - [2022-06-25 16:49:19,738] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-25 16:49:19,761] {logging_mixin.py:104} INFO - [2022-06-25 16:49:19,761] {dag.py:2273} INFO - Setting next_dagrun for dag_with_cron_expression_v04 to 2021-11-02 03:00:00+00:00
+[2022-06-25 16:49:19,770] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_cron_expression.py took 0.086 seconds
+[2022-06-25 16:49:30,316] {scheduler_job.py:182} INFO - Started process (PID=521) to work on /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:49:30,318] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_cron_expression.py for tasks to queue
+[2022-06-25 16:49:30,320] {logging_mixin.py:104} INFO - [2022-06-25 16:49:30,320] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:49:30,343] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['dag_with_cron_expression_v04']) retrieved from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:49:30,368] {logging_mixin.py:104} INFO - [2022-06-25 16:49:30,368] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-25 16:49:30,397] {logging_mixin.py:104} INFO - [2022-06-25 16:49:30,396] {dag.py:2273} INFO - Setting next_dagrun for dag_with_cron_expression_v04 to 2021-11-02 03:00:00+00:00
+[2022-06-25 16:49:30,405] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_cron_expression.py took 0.097 seconds
+[2022-06-25 16:49:41,165] {scheduler_job.py:182} INFO - Started process (PID=586) to work on /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:49:41,175] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_cron_expression.py for tasks to queue
+[2022-06-25 16:49:41,182] {logging_mixin.py:104} INFO - [2022-06-25 16:49:41,182] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:49:41,395] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['dag_with_cron_expression_v04']) retrieved from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:49:41,555] {logging_mixin.py:104} INFO - [2022-06-25 16:49:41,544] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-25 16:49:41,696] {logging_mixin.py:104} INFO - [2022-06-25 16:49:41,696] {dag.py:2273} INFO - Setting next_dagrun for dag_with_cron_expression_v04 to 2021-11-02 03:00:00+00:00
+[2022-06-25 16:49:41,752] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_cron_expression.py took 0.593 seconds
+[2022-06-25 16:49:52,237] {scheduler_job.py:182} INFO - Started process (PID=642) to work on /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:49:52,239] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_cron_expression.py for tasks to queue
+[2022-06-25 16:49:52,243] {logging_mixin.py:104} INFO - [2022-06-25 16:49:52,242] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:49:52,273] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['dag_with_cron_expression_v04']) retrieved from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:49:52,306] {logging_mixin.py:104} INFO - [2022-06-25 16:49:52,306] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-25 16:49:52,351] {logging_mixin.py:104} INFO - [2022-06-25 16:49:52,351] {dag.py:2273} INFO - Setting next_dagrun for dag_with_cron_expression_v04 to 2021-11-02 03:00:00+00:00
+[2022-06-25 16:49:52,363] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_cron_expression.py took 0.130 seconds
+[2022-06-25 16:50:02,997] {scheduler_job.py:182} INFO - Started process (PID=694) to work on /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:50:02,999] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_cron_expression.py for tasks to queue
+[2022-06-25 16:50:03,000] {logging_mixin.py:104} INFO - [2022-06-25 16:50:03,000] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:50:03,015] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['dag_with_cron_expression_v04']) retrieved from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:50:03,034] {logging_mixin.py:104} INFO - [2022-06-25 16:50:03,034] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-25 16:50:03,053] {logging_mixin.py:104} INFO - [2022-06-25 16:50:03,053] {dag.py:2273} INFO - Setting next_dagrun for dag_with_cron_expression_v04 to 2021-11-02 03:00:00+00:00
+[2022-06-25 16:50:03,062] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_cron_expression.py took 0.068 seconds
+[2022-06-25 16:50:13,841] {scheduler_job.py:182} INFO - Started process (PID=740) to work on /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:50:13,843] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_cron_expression.py for tasks to queue
+[2022-06-25 16:50:13,845] {logging_mixin.py:104} INFO - [2022-06-25 16:50:13,844] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:50:13,871] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['dag_with_cron_expression_v04']) retrieved from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:50:13,901] {logging_mixin.py:104} INFO - [2022-06-25 16:50:13,901] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-25 16:50:13,929] {logging_mixin.py:104} INFO - [2022-06-25 16:50:13,928] {dag.py:2273} INFO - Setting next_dagrun for dag_with_cron_expression_v04 to 2021-11-02 03:00:00+00:00
+[2022-06-25 16:50:13,939] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_cron_expression.py took 0.103 seconds
+[2022-06-25 16:50:24,354] {scheduler_job.py:182} INFO - Started process (PID=786) to work on /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:50:24,356] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_cron_expression.py for tasks to queue
+[2022-06-25 16:50:24,357] {logging_mixin.py:104} INFO - [2022-06-25 16:50:24,357] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:50:24,372] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['dag_with_cron_expression_v04']) retrieved from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:50:24,392] {logging_mixin.py:104} INFO - [2022-06-25 16:50:24,392] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-25 16:50:24,416] {logging_mixin.py:104} INFO - [2022-06-25 16:50:24,416] {dag.py:2273} INFO - Setting next_dagrun for dag_with_cron_expression_v04 to 2021-11-02 03:00:00+00:00
+[2022-06-25 16:50:24,425] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_cron_expression.py took 0.074 seconds
+[2022-06-25 16:50:34,797] {scheduler_job.py:182} INFO - Started process (PID=831) to work on /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:50:34,799] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_cron_expression.py for tasks to queue
+[2022-06-25 16:50:34,800] {logging_mixin.py:104} INFO - [2022-06-25 16:50:34,800] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:50:34,801] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:50:34,804] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_cron_expression.py took 0.010 seconds
+[2022-06-25 16:50:45,037] {scheduler_job.py:182} INFO - Started process (PID=874) to work on /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:50:45,040] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_cron_expression.py for tasks to queue
+[2022-06-25 16:50:45,045] {logging_mixin.py:104} INFO - [2022-06-25 16:50:45,045] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:50:45,049] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:50:45,050] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_cron_expression.py took 0.016 seconds
+[2022-06-25 16:50:55,249] {scheduler_job.py:182} INFO - Started process (PID=919) to work on /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:50:55,253] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_cron_expression.py for tasks to queue
+[2022-06-25 16:50:55,254] {logging_mixin.py:104} INFO - [2022-06-25 16:50:55,254] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:50:55,257] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:50:55,258] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_cron_expression.py took 0.014 seconds
+[2022-06-25 16:51:05,443] {scheduler_job.py:182} INFO - Started process (PID=966) to work on /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:51:05,445] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_cron_expression.py for tasks to queue
+[2022-06-25 16:51:05,446] {logging_mixin.py:104} INFO - [2022-06-25 16:51:05,446] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:51:05,449] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:51:05,450] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_cron_expression.py took 0.011 seconds
+[2022-06-25 16:51:15,628] {scheduler_job.py:182} INFO - Started process (PID=1011) to work on /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:51:15,630] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_cron_expression.py for tasks to queue
+[2022-06-25 16:51:15,632] {logging_mixin.py:104} INFO - [2022-06-25 16:51:15,632] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:51:15,634] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:51:15,635] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_cron_expression.py took 0.011 seconds
+[2022-06-25 16:51:25,798] {scheduler_job.py:182} INFO - Started process (PID=1054) to work on /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:51:25,800] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_cron_expression.py for tasks to queue
+[2022-06-25 16:51:25,802] {logging_mixin.py:104} INFO - [2022-06-25 16:51:25,801] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:51:25,809] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:51:25,811] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_cron_expression.py took 0.019 seconds
+[2022-06-25 16:51:36,039] {scheduler_job.py:182} INFO - Started process (PID=1101) to work on /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:51:36,041] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_cron_expression.py for tasks to queue
+[2022-06-25 16:51:36,042] {logging_mixin.py:104} INFO - [2022-06-25 16:51:36,042] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:51:36,043] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:51:36,044] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_cron_expression.py took 0.009 seconds
+[2022-06-25 16:51:46,214] {scheduler_job.py:182} INFO - Started process (PID=1146) to work on /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:51:46,216] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_cron_expression.py for tasks to queue
+[2022-06-25 16:51:46,219] {logging_mixin.py:104} INFO - [2022-06-25 16:51:46,219] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:51:46,222] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:51:46,224] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_cron_expression.py took 0.014 seconds
+[2022-06-25 16:51:56,541] {scheduler_job.py:182} INFO - Started process (PID=1190) to work on /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:51:56,543] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_cron_expression.py for tasks to queue
+[2022-06-25 16:51:56,544] {logging_mixin.py:104} INFO - [2022-06-25 16:51:56,544] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:51:56,546] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:51:56,546] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_cron_expression.py took 0.009 seconds
+[2022-06-25 16:52:06,742] {scheduler_job.py:182} INFO - Started process (PID=1236) to work on /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:52:06,744] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_cron_expression.py for tasks to queue
+[2022-06-25 16:52:06,745] {logging_mixin.py:104} INFO - [2022-06-25 16:52:06,745] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:52:06,746] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:52:06,747] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_cron_expression.py took 0.008 seconds
+[2022-06-25 16:52:16,945] {scheduler_job.py:182} INFO - Started process (PID=1279) to work on /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:52:16,947] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_cron_expression.py for tasks to queue
+[2022-06-25 16:52:16,948] {logging_mixin.py:104} INFO - [2022-06-25 16:52:16,948] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:52:16,950] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:52:16,951] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_cron_expression.py took 0.009 seconds
+[2022-06-25 16:52:27,205] {scheduler_job.py:182} INFO - Started process (PID=1326) to work on /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:52:27,207] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_cron_expression.py for tasks to queue
+[2022-06-25 16:52:27,208] {logging_mixin.py:104} INFO - [2022-06-25 16:52:27,208] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:52:27,211] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:52:27,212] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_cron_expression.py took 0.011 seconds
+[2022-06-25 16:52:37,443] {scheduler_job.py:182} INFO - Started process (PID=1369) to work on /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:52:37,446] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_cron_expression.py for tasks to queue
+[2022-06-25 16:52:37,448] {logging_mixin.py:104} INFO - [2022-06-25 16:52:37,448] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:52:37,451] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:52:37,453] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_cron_expression.py took 0.018 seconds
+[2022-06-25 16:52:47,723] {scheduler_job.py:182} INFO - Started process (PID=1414) to work on /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:52:47,726] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_cron_expression.py for tasks to queue
+[2022-06-25 16:52:47,727] {logging_mixin.py:104} INFO - [2022-06-25 16:52:47,727] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:52:47,731] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:52:47,732] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_cron_expression.py took 0.031 seconds
+[2022-06-25 16:52:57,964] {scheduler_job.py:182} INFO - Started process (PID=1460) to work on /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:52:57,966] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_with_cron_expression.py for tasks to queue
+[2022-06-25 16:52:57,968] {logging_mixin.py:104} INFO - [2022-06-25 16:52:57,968] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:52:57,971] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_with_cron_expression.py
+[2022-06-25 16:52:57,972] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_with_cron_expression.py took 0.015 seconds

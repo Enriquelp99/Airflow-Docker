@@ -1,0 +1,24 @@
+[2022-06-29 21:44:24,207] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: SDG_Enrique_V0.postgreSQL_getTable 2022-06-29T21:44:22.874536+00:00 [queued]>
+[2022-06-29 21:44:24,222] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: SDG_Enrique_V0.postgreSQL_getTable 2022-06-29T21:44:22.874536+00:00 [queued]>
+[2022-06-29 21:44:24,223] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-29 21:44:24,224] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2022-06-29 21:44:24,225] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-29 21:44:24,232] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): postgreSQL_getTable> on 2022-06-29T21:44:22.874536+00:00
+[2022-06-29 21:44:24,237] {standard_task_runner.py:52} INFO - Started process 2558 to run task
+[2022-06-29 21:44:24,242] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'SDG_Enrique_V0', 'postgreSQL_getTable', '2022-06-29T21:44:22.874536+00:00', '--job-id', '1455', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/company_forecasting.py', '--cfg-path', '/tmp/tmpkcflxvqm', '--error-file', '/tmp/tmpb6he11_g']
+[2022-06-29 21:44:24,245] {standard_task_runner.py:77} INFO - Job 1455: Subtask postgreSQL_getTable
+[2022-06-29 21:44:24,293] {logging_mixin.py:104} INFO - Running <TaskInstance: SDG_Enrique_V0.postgreSQL_getTable 2022-06-29T21:44:22.874536+00:00 [running]> on host 3cf820b1df4c
+[2022-06-29 21:44:24,335] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=enrique-liebana@outlook.com
+AIRFLOW_CTX_DAG_OWNER=Enrique Liebana Peña
+AIRFLOW_CTX_DAG_ID=SDG_Enrique_V0
+AIRFLOW_CTX_TASK_ID=postgreSQL_getTable
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-29T21:44:22.874536+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-29T21:44:22.874536+00:00
+[2022-06-29 21:44:24,347] {base.py:74} INFO - Using connection to: id: postgres_conection. Host: host.docker.internal, Port: 5432, Schema: data_company, Login: airflow, Password: XXXXXXXX, extra: None
+[2022-06-29 21:46:10,365] {local_task_job.py:188} WARNING - State of this instance has been externally set to None. Terminating instance.
+[2022-06-29 21:46:10,376] {process_utils.py:100} INFO - Sending Signals.SIGTERM to GPID 2558
+[2022-06-29 21:47:10,369] {process_utils.py:113} WARNING - process psutil.Process(pid=2558, name='airflow task ru', status='sleeping', started='21:44:23') did not respond to SIGTERM. Trying SIGKILL
+[2022-06-29 21:47:10,477] {process_utils.py:66} INFO - Process psutil.Process(pid=2558, name='airflow task ru', status='terminated', exitcode=<Negsignal.SIGKILL: -9>, started='21:44:23') (2558) terminated with exit code Negsignal.SIGKILL

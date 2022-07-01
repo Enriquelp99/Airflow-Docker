@@ -1,0 +1,52 @@
+[2022-06-25 21:10:11,868] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: SDG_Enrique_V0.preprocessing_data 2022-06-25T21:09:32.744405+00:00 [queued]>
+[2022-06-25 21:10:11,886] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: SDG_Enrique_V0.preprocessing_data 2022-06-25T21:09:32.744405+00:00 [queued]>
+[2022-06-25 21:10:11,887] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-25 21:10:11,888] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2022-06-25 21:10:11,888] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-25 21:10:11,913] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): preprocessing_data> on 2022-06-25T21:09:32.744405+00:00
+[2022-06-25 21:10:11,928] {standard_task_runner.py:52} INFO - Started process 4973 to run task
+[2022-06-25 21:10:11,939] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'SDG_Enrique_V0', 'preprocessing_data', '2022-06-25T21:09:32.744405+00:00', '--job-id', '155', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/company_forecasting.py', '--cfg-path', '/tmp/tmprwdja_gs', '--error-file', '/tmp/tmp6x9k0es5']
+[2022-06-25 21:10:11,946] {standard_task_runner.py:77} INFO - Job 155: Subtask preprocessing_data
+[2022-06-25 21:10:12,003] {logging_mixin.py:104} INFO - Running <TaskInstance: SDG_Enrique_V0.preprocessing_data 2022-06-25T21:09:32.744405+00:00 [running]> on host 5e8dc4b25004
+[2022-06-25 21:10:12,133] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=enrique-liebana@outlook.com
+AIRFLOW_CTX_DAG_OWNER=Enrique
+AIRFLOW_CTX_DAG_ID=SDG_Enrique_V0
+AIRFLOW_CTX_TASK_ID=preprocessing_data
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-25T21:09:32.744405+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-25T21:09:32.744405+00:00
+[2022-06-25 21:10:14,138] {logging_mixin.py:104} INFO -        Unnamed: 0  rev_mean  mou_mean  ...  creditcd  eqpdays  customer_id
+0               0       NaN       NaN  ...         Y    361.0      1000001
+1               1       NaN       NaN  ...         Y    240.0      1000002
+2               2       NaN       NaN  ...         Y   1504.0      1000003
+3               3      38.0       NaN  ...         Y   1812.0      1000004
+4               4       NaN       NaN  ...         Y    434.0      1000005
+...           ...       ...       ...  ...       ...      ...          ...
+99995       99995       NaN       NaN  ...         Y     32.0      1099993
+99996       99996       NaN    1745.0  ...         Y    464.0      1099994
+99997       99997       NaN       NaN  ...         Y    378.0      1099995
+99998       99998       NaN       NaN  ...         N     75.0      1099999
+99999       99999       NaN       NaN  ...         N      5.0      1100000
+
+[100000 rows x 101 columns]
+[2022-06-25 21:10:14,139] {taskinstance.py:1455} ERROR - 'DataFrame' object has no attribute 'columsn'
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/company_forecasting.py", line 226, in preprocessing
+    print(data_company.columsn)
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/core/generic.py", line 5141, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'columsn'
+[2022-06-25 21:10:14,145] {taskinstance.py:1503} INFO - Marking task as FAILED. dag_id=SDG_Enrique_V0, task_id=preprocessing_data, execution_date=20220625T210932, start_date=20220625T211011, end_date=20220625T211014
+[2022-06-25 21:10:14,184] {local_task_job.py:146} INFO - Task exited with return code 1

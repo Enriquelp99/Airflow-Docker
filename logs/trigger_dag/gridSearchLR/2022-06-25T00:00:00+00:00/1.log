@@ -1,0 +1,89 @@
+[2022-06-26 19:16:03,171] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: trigger_dag.gridSearchLR 2022-06-25T00:00:00+00:00 [queued]>
+[2022-06-26 19:16:03,222] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: trigger_dag.gridSearchLR 2022-06-25T00:00:00+00:00 [queued]>
+[2022-06-26 19:16:03,224] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-26 19:16:03,225] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2022-06-26 19:16:03,225] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-26 19:16:03,249] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): gridSearchLR> on 2022-06-25T00:00:00+00:00
+[2022-06-26 19:16:03,263] {standard_task_runner.py:52} INFO - Started process 453 to run task
+[2022-06-26 19:16:03,285] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'trigger_dag', 'gridSearchLR', '2022-06-25T00:00:00+00:00', '--job-id', '246', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/trigger_dag.py', '--cfg-path', '/tmp/tmpkfb0_njq', '--error-file', '/tmp/tmpum7h1m2b']
+[2022-06-26 19:16:03,291] {standard_task_runner.py:77} INFO - Job 246: Subtask gridSearchLR
+[2022-06-26 19:16:03,454] {logging_mixin.py:104} INFO - Running <TaskInstance: trigger_dag.gridSearchLR 2022-06-25T00:00:00+00:00 [running]> on host 6fc8504e86cf
+[2022-06-26 19:16:03,686] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=trigger_dag
+AIRFLOW_CTX_TASK_ID=gridSearchLR
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-25T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-25T00:00:00+00:00
+[2022-06-26 19:16:03,690] {python.py:118} INFO - Done. Returned value was: None
+[2022-06-26 19:16:03,732] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=trigger_dag, task_id=gridSearchLR, execution_date=20220625T000000, start_date=20220626T191603, end_date=20220626T191603
+[2022-06-26 19:16:03,846] {taskinstance.py:1220} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-26 19:16:03,889] {local_task_job.py:146} INFO - Task exited with return code 0
+[2022-06-26 19:21:04,588] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: trigger_dag.gridSearchLR 2022-06-25T00:00:00+00:00 [queued]>
+[2022-06-26 19:21:04,618] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: trigger_dag.gridSearchLR 2022-06-25T00:00:00+00:00 [queued]>
+[2022-06-26 19:21:04,619] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-26 19:21:04,621] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2022-06-26 19:21:04,622] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-26 19:21:04,645] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): gridSearchLR> on 2022-06-25T00:00:00+00:00
+[2022-06-26 19:21:04,652] {standard_task_runner.py:52} INFO - Started process 914 to run task
+[2022-06-26 19:21:04,674] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'trigger_dag', 'gridSearchLR', '2022-06-25T00:00:00+00:00', '--job-id', '255', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/trigger_dag.py', '--cfg-path', '/tmp/tmpdltnar_z', '--error-file', '/tmp/tmp6stsw7jv']
+[2022-06-26 19:21:04,717] {standard_task_runner.py:77} INFO - Job 255: Subtask gridSearchLR
+[2022-06-26 19:21:04,835] {logging_mixin.py:104} INFO - Running <TaskInstance: trigger_dag.gridSearchLR 2022-06-25T00:00:00+00:00 [running]> on host 6fc8504e86cf
+[2022-06-26 19:21:04,945] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=trigger_dag
+AIRFLOW_CTX_TASK_ID=gridSearchLR
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-25T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-25T00:00:00+00:00
+[2022-06-26 19:21:04,948] {python.py:118} INFO - Done. Returned value was: None
+[2022-06-26 19:21:04,961] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=trigger_dag, task_id=gridSearchLR, execution_date=20220625T000000, start_date=20220626T192104, end_date=20220626T192104
+[2022-06-26 19:21:05,001] {taskinstance.py:1220} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-26 19:21:05,035] {local_task_job.py:146} INFO - Task exited with return code 0
+[2022-06-26 20:32:52,579] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: trigger_dag.gridSearchLR 2022-06-25T00:00:00+00:00 [queued]>
+[2022-06-26 20:32:52,607] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: trigger_dag.gridSearchLR 2022-06-25T00:00:00+00:00 [queued]>
+[2022-06-26 20:32:52,608] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-26 20:32:52,609] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2022-06-26 20:32:52,610] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-26 20:32:52,624] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): gridSearchLR> on 2022-06-25T00:00:00+00:00
+[2022-06-26 20:32:52,634] {standard_task_runner.py:52} INFO - Started process 6147 to run task
+[2022-06-26 20:32:52,641] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'trigger_dag', 'gridSearchLR', '2022-06-25T00:00:00+00:00', '--job-id', '305', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/trigger_dag.py', '--cfg-path', '/tmp/tmp5dvlv93g', '--error-file', '/tmp/tmpcbaz6zas']
+[2022-06-26 20:32:52,644] {standard_task_runner.py:77} INFO - Job 305: Subtask gridSearchLR
+[2022-06-26 20:32:52,711] {logging_mixin.py:104} INFO - Running <TaskInstance: trigger_dag.gridSearchLR 2022-06-25T00:00:00+00:00 [running]> on host 6fc8504e86cf
+[2022-06-26 20:32:52,761] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=trigger_dag
+AIRFLOW_CTX_TASK_ID=gridSearchLR
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-25T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-25T00:00:00+00:00
+[2022-06-26 20:32:52,792] {taskinstance.py:1455} ERROR - Experiment 'mLflow LR' already exists.
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/trigger_dag.py", line 27, in check_mlflow_setting
+    experiment_id = mlflow.create_experiment("mLflow LR")
+  File "/home/airflow/.local/lib/python3.6/site-packages/mlflow/tracking/fluent.py", line 936, in create_experiment
+    return MlflowClient().create_experiment(name, artifact_location, tags)
+  File "/home/airflow/.local/lib/python3.6/site-packages/mlflow/tracking/client.py", line 507, in create_experiment
+    return self._tracking_client.create_experiment(name, artifact_location, tags)
+  File "/home/airflow/.local/lib/python3.6/site-packages/mlflow/tracking/_tracking_service/client.py", line 185, in create_experiment
+    tags=[ExperimentTag(key, value) for (key, value) in tags.items()] if tags else [],
+  File "/home/airflow/.local/lib/python3.6/site-packages/mlflow/store/tracking/file_store.py", line 321, in create_experiment
+    self._validate_experiment_name(name)
+  File "/home/airflow/.local/lib/python3.6/site-packages/mlflow/store/tracking/file_store.py", line 316, in _validate_experiment_name
+    databricks_pb2.RESOURCE_ALREADY_EXISTS,
+mlflow.exceptions.MlflowException: Experiment 'mLflow LR' already exists.
+[2022-06-26 20:32:52,798] {taskinstance.py:1503} INFO - Marking task as FAILED. dag_id=trigger_dag, task_id=gridSearchLR, execution_date=20220625T000000, start_date=20220626T203252, end_date=20220626T203252
+[2022-06-26 20:32:52,899] {local_task_job.py:146} INFO - Task exited with return code 1

@@ -1,0 +1,161 @@
+[2022-06-26 09:06:48,984] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: SDG_Enrique_V0.preprocessing_data 2022-06-26T09:05:36.671513+00:00 [queued]>
+[2022-06-26 09:06:49,013] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: SDG_Enrique_V0.preprocessing_data 2022-06-26T09:05:36.671513+00:00 [queued]>
+[2022-06-26 09:06:49,014] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-26 09:06:49,015] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2022-06-26 09:06:49,016] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-26 09:06:49,032] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): preprocessing_data> on 2022-06-26T09:05:36.671513+00:00
+[2022-06-26 09:06:49,044] {standard_task_runner.py:52} INFO - Started process 10557 to run task
+[2022-06-26 09:06:49,052] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'SDG_Enrique_V0', 'preprocessing_data', '2022-06-26T09:05:36.671513+00:00', '--job-id', '192', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/company_forecasting.py', '--cfg-path', '/tmp/tmprsemekfs', '--error-file', '/tmp/tmp35xxjvxl']
+[2022-06-26 09:06:49,056] {standard_task_runner.py:77} INFO - Job 192: Subtask preprocessing_data
+[2022-06-26 09:06:49,126] {logging_mixin.py:104} INFO - Running <TaskInstance: SDG_Enrique_V0.preprocessing_data 2022-06-26T09:05:36.671513+00:00 [running]> on host 5e8dc4b25004
+[2022-06-26 09:06:49,189] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=enrique-liebana@outlook.com
+AIRFLOW_CTX_DAG_OWNER=Enrique
+AIRFLOW_CTX_DAG_ID=SDG_Enrique_V0
+AIRFLOW_CTX_TASK_ID=preprocessing_data
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-26T09:05:36.671513+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-26T09:05:36.671513+00:00
+[2022-06-26 09:07:02,433] {logging_mixin.py:104} INFO - **************** OBJECT COLUmNS *********************
+[2022-06-26 09:07:03,298] {logging_mixin.py:104} INFO - Index(['Unnamed: 0', 'rev_mean', 'mou_mean', 'totmrc_mean', 'da_mean',
+       'ovrmou_mean', 'ovrrev_mean', 'vceovr_mean', 'datovr_mean', 'roam_mean',
+       ...
+       'forgntvl', 'ethnic', 'kid0_2', 'kid3_5', 'kid6_10', 'kid11_15',
+       'kid16_17', 'creditcd', 'eqpdays', 'customer_id'],
+      dtype='object', length=101)
+[2022-06-26 09:07:03,621] {logging_mixin.py:104} INFO - (98227, 92)
+[2022-06-26 09:07:04,332] {logging_mixin.py:104} INFO - <bound method NDFrame.describe of        crclscod  asl_flag  area  ...  kid11_15  kid16_17  creditcd
+0             0         0    13  ...         0         0         1
+1            21         0     3  ...         0         0         1
+2             7         0     6  ...         0         0         1
+3             4         0     3  ...         0         0         1
+4             0         0    10  ...         0         0         1
+...         ...       ...   ...  ...       ...       ...       ...
+99995         4         0     8  ...         0         0         1
+99996         4         0     8  ...         0         1         1
+99997        17         0     8  ...         0         0         1
+99998        21         0    17  ...         0         0         0
+99999         4         0     8  ...         0         0         0
+
+[98227 rows x 11 columns]>
+[2022-06-26 09:07:04,335] {logging_mixin.py:104} INFO - Index(['new_cell', 'dualband', 'marital'], dtype='object')
+[2022-06-26 09:07:07,598] {logging_mixin.py:104} INFO - ['rev_mean', 'mou_mean', 'totmrc_mean', 'da_mean', 'ovrmou_mean', 'datovr_mean', 'roam_mean', 'change_mou', 'change_rev', 'drop_vce_mean', 'drop_dat_mean', 'blck_vce_mean', 'blck_dat_mean', 'unan_vce_mean', 'unan_dat_mean', 'plcd_vce_mean', 'plcd_dat_mean', 'recv_vce_mean', 'recv_sms_mean', 'custcare_mean', 'ccrndmou_mean', 'threeway_mean', 'mou_cvce_mean', 'mou_cdat_mean', 'mou_rvce_mean', 'owylis_vce_mean', 'mouowylisv_mean', 'iwylis_vce_mean', 'mouiwylisv_mean', 'mou_peav_mean', 'mou_pead_mean', 'opk_vce_mean', 'mou_opkv_mean', 'drop_blk_mean', 'callfwdv_mean', 'callwait_mean', 'churn', 'months', 'uniqsubs', 'actvsubs', 'crclscod', 'asl_flag', 'totcalls', 'totrev', 'avgrev', 'avgmou', 'avgqty', 'area', 'refurb_new', 'hnd_price', 'phones', 'models', 'truck', 'rv', 'forgntvl', 'ethnic', 'kid0_2', 'kid3_5', 'kid6_10', 'kid11_15', 'kid16_17', 'creditcd', 'eqpdays', 'new_cell_N', 'new_cell_U', 'new_cell_Y', 'dualband_N', 'dualband_T', 'dualband_U', 'dualband_Y', 'marital_A', 'marital_B', 'marital_M', 'marital_S', 'marital_U']
+[2022-06-26 09:07:07,600] {logging_mixin.py:104} INFO - ['ovrrev_mean', 'vceovr_mean', 'comp_vce_mean', 'comp_dat_mean', 'cc_mou_mean', 'inonemin_mean', 'peak_vce_mean', 'peak_dat_mean', 'opk_dat_mean', 'mou_opkd_mean', 'attempt_mean', 'complete_mean', 'totmou', 'adjrev', 'adjmou', 'adjqty', 'avg3mou', 'avg3qty', 'avg3rev', 'avg6mou', 'avg6qty', 'avg6rev']
+[2022-06-26 09:07:07,621] {logging_mixin.py:104} INFO - Index(['rev_mean', 'mou_mean', 'totmrc_mean', 'da_mean', 'ovrmou_mean',
+       'datovr_mean', 'roam_mean', 'change_mou', 'change_rev', 'drop_vce_mean',
+       'drop_dat_mean', 'blck_vce_mean', 'blck_dat_mean', 'unan_vce_mean',
+       'unan_dat_mean', 'plcd_vce_mean', 'plcd_dat_mean', 'recv_vce_mean',
+       'recv_sms_mean', 'custcare_mean', 'ccrndmou_mean', 'threeway_mean',
+       'mou_cvce_mean', 'mou_cdat_mean', 'mou_rvce_mean', 'owylis_vce_mean',
+       'mouowylisv_mean', 'iwylis_vce_mean', 'mouiwylisv_mean',
+       'mou_peav_mean', 'mou_pead_mean', 'opk_vce_mean', 'mou_opkv_mean',
+       'drop_blk_mean', 'callfwdv_mean', 'callwait_mean', 'churn', 'months',
+       'uniqsubs', 'actvsubs', 'crclscod', 'asl_flag', 'totcalls', 'totrev',
+       'avgrev', 'avgmou', 'avgqty', 'area', 'refurb_new', 'hnd_price',
+       'phones', 'models', 'truck', 'rv', 'forgntvl', 'ethnic', 'kid0_2',
+       'kid3_5', 'kid6_10', 'kid11_15', 'kid16_17', 'creditcd', 'eqpdays',
+       'new_cell_N', 'new_cell_U', 'new_cell_Y', 'dualband_N', 'dualband_T',
+       'dualband_U', 'dualband_Y', 'marital_A', 'marital_B', 'marital_M',
+       'marital_S', 'marital_U'],
+      dtype='object')
+[2022-06-26 09:07:07,666] {logging_mixin.py:104} INFO - (96534, 75)
+[2022-06-26 09:07:27,832] {base.py:74} INFO - Using connection to: id: postgres_conection. Host: host.docker.internal, Port: 5432, Schema: data_company, Login: airflow, Password: XXXXXXXX, extra: None
+[2022-06-26 09:07:27,856] {logging_mixin.py:104} INFO - CREATE TABLE IF NOT EXISTS company_A02(rev_mean float64, 
+mou_mean float64, 
+totmrc_mean float64, 
+da_mean float64, 
+ovrmou_mean float64, 
+datovr_mean float64, 
+roam_mean float64, 
+change_mou float64, 
+change_rev float64, 
+drop_vce_mean float64, 
+drop_dat_mean float64, 
+blck_vce_mean float64, 
+blck_dat_mean float64, 
+unan_vce_mean float64, 
+unan_dat_mean float64, 
+plcd_vce_mean float64, 
+plcd_dat_mean float64, 
+recv_vce_mean float64, 
+recv_sms_mean float64, 
+custcare_mean float64, 
+ccrndmou_mean float64, 
+threeway_mean float64, 
+mou_cvce_mean float64, 
+mou_cdat_mean float64, 
+mou_rvce_mean float64, 
+owylis_vce_mean float64, 
+mouowylisv_mean float64, 
+iwylis_vce_mean float64, 
+mouiwylisv_mean float64, 
+mou_peav_mean float64, 
+mou_pead_mean float64, 
+opk_vce_mean float64, 
+mou_opkv_mean float64, 
+drop_blk_mean float64, 
+callfwdv_mean float64, 
+callwait_mean float64, 
+churn int64, 
+months int64, 
+uniqsubs int64, 
+actvsubs int64, 
+crclscod int64, 
+asl_flag int64, 
+totcalls int64, 
+totrev float64, 
+avgrev float64, 
+avgmou float64, 
+avgqty float64, 
+area int64, 
+refurb_new int64, 
+hnd_price float64, 
+phones float64, 
+models float64, 
+truck float64, 
+rv float64, 
+forgntvl float64, 
+ethnic int64, 
+kid0_2 int64, 
+kid3_5 int64, 
+kid6_10 int64, 
+kid11_15 int64, 
+kid16_17 int64, 
+creditcd int64, 
+eqpdays float64, 
+new_cell_N uint8, 
+new_cell_U uint8, 
+new_cell_Y uint8, 
+dualband_N uint8, 
+dualband_T uint8, 
+dualband_U uint8, 
+dualband_Y uint8, 
+marital_A uint8, 
+marital_B uint8, 
+marital_M uint8, 
+marital_S uint8, 
+marital_U uint8);
+[2022-06-26 09:07:27,857] {logging_mixin.py:104} INFO - 
+[2022-06-26 09:07:27,946] {taskinstance.py:1455} ERROR - type "int64" does not exist
+LINE 37: churn int64, 
+               ^
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/company_forecasting.py", line 290, in preprocessing
+    cursor.execute(company_A02)
+psycopg2.errors.UndefinedObject: type "int64" does not exist
+LINE 37: churn int64, 
+               ^
+
+[2022-06-26 09:07:27,980] {taskinstance.py:1503} INFO - Marking task as FAILED. dag_id=SDG_Enrique_V0, task_id=preprocessing_data, execution_date=20220626T090536, start_date=20220626T090648, end_date=20220626T090727
+[2022-06-26 09:07:28,108] {local_task_job.py:146} INFO - Task exited with return code 1

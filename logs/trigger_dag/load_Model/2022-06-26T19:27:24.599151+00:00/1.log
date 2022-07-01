@@ -1,0 +1,35 @@
+[2022-06-26 19:27:27,407] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: trigger_dag.load_Model 2022-06-26T19:27:24.599151+00:00 [queued]>
+[2022-06-26 19:27:27,443] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: trigger_dag.load_Model 2022-06-26T19:27:24.599151+00:00 [queued]>
+[2022-06-26 19:27:27,451] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-26 19:27:27,455] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2022-06-26 19:27:27,459] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-26 19:27:27,484] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): load_Model> on 2022-06-26T19:27:24.599151+00:00
+[2022-06-26 19:27:27,504] {standard_task_runner.py:52} INFO - Started process 715 to run task
+[2022-06-26 19:27:27,517] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'trigger_dag', 'load_Model', '2022-06-26T19:27:24.599151+00:00', '--job-id', '294', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/trigger_dag.py', '--cfg-path', '/tmp/tmp10m4mqfi', '--error-file', '/tmp/tmpsdo01q1_']
+[2022-06-26 19:27:27,526] {standard_task_runner.py:77} INFO - Job 294: Subtask load_Model
+[2022-06-26 19:27:27,632] {logging_mixin.py:104} INFO - Running <TaskInstance: trigger_dag.load_Model 2022-06-26T19:27:24.599151+00:00 [running]> on host 6fc8504e86cf
+[2022-06-26 19:27:27,706] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=trigger_dag
+AIRFLOW_CTX_TASK_ID=load_Model
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-26T19:27:24.599151+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-26T19:27:24.599151+00:00
+[2022-06-26 19:27:36,709] {taskinstance.py:1455} ERROR - [Errno 2] No such file or directory: 'model.pkl'
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/trigger_dag.py", line 57, in _load_model
+    pickled_model = pickle.load(open('model.pkl', 'rb'))
+FileNotFoundError: [Errno 2] No such file or directory: 'model.pkl'
+[2022-06-26 19:27:36,718] {taskinstance.py:1503} INFO - Marking task as FAILED. dag_id=trigger_dag, task_id=load_Model, execution_date=20220626T192724, start_date=20220626T192727, end_date=20220626T192736
+[2022-06-26 19:27:36,822] {local_task_job.py:146} INFO - Task exited with return code 1

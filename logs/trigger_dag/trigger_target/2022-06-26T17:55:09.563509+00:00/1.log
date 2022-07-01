@@ -1,0 +1,25 @@
+[2022-06-26 17:55:13,180] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: trigger_dag.trigger_target 2022-06-26T17:55:09.563509+00:00 [queued]>
+[2022-06-26 17:55:13,209] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: trigger_dag.trigger_target 2022-06-26T17:55:09.563509+00:00 [queued]>
+[2022-06-26 17:55:13,211] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-26 17:55:13,213] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2022-06-26 17:55:13,214] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-26 17:55:13,228] {taskinstance.py:1063} INFO - Executing <Task(TriggerDagRunOperator): trigger_target> on 2022-06-26T17:55:09.563509+00:00
+[2022-06-26 17:55:13,237] {standard_task_runner.py:52} INFO - Started process 28606 to run task
+[2022-06-26 17:55:13,246] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'trigger_dag', 'trigger_target', '2022-06-26T17:55:09.563509+00:00', '--job-id', '225', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/trigger_dag.py', '--cfg-path', '/tmp/tmp3sk1cm3z', '--error-file', '/tmp/tmptw385_jp']
+[2022-06-26 17:55:13,250] {standard_task_runner.py:77} INFO - Job 225: Subtask trigger_target
+[2022-06-26 17:55:13,333] {logging_mixin.py:104} INFO - Running <TaskInstance: trigger_dag.trigger_target 2022-06-26T17:55:09.563509+00:00 [running]> on host 5e8dc4b25004
+[2022-06-26 17:55:13,407] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=trigger_dag
+AIRFLOW_CTX_TASK_ID=trigger_target
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-26T17:55:09.563509+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-26T17:55:09.563509+00:00
+[2022-06-26 17:55:13,450] {trigger_dagrun.py:140} INFO - Clearing SDG_Enrique_V0 on 2022-06-26T00:00:00+00:00
+[2022-06-26 17:55:13,534] {trigger_dagrun.py:165} INFO - Waiting for SDG_Enrique_V0 on 2022-06-26 00:00:00+00:00 to become allowed state ['success'] ...
+[2022-06-26 17:56:13,570] {trigger_dagrun.py:165} INFO - Waiting for SDG_Enrique_V0 on 2022-06-26 00:00:00+00:00 to become allowed state ['success'] ...
+[2022-06-26 17:57:13,626] {trigger_dagrun.py:174} INFO - SDG_Enrique_V0 finished with allowed state success
+[2022-06-26 17:57:13,650] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=trigger_dag, task_id=trigger_target, execution_date=20220626T175509, start_date=20220626T175513, end_date=20220626T175713
+[2022-06-26 17:57:13,689] {taskinstance.py:1220} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-26 17:57:13,709] {local_task_job.py:146} INFO - Task exited with return code 0

@@ -1,0 +1,77 @@
+[2022-06-26 17:57:15,581] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: trigger_dag.load_Model 2022-06-26T17:55:09.563509+00:00 [queued]>
+[2022-06-26 17:57:15,608] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: trigger_dag.load_Model 2022-06-26T17:55:09.563509+00:00 [queued]>
+[2022-06-26 17:57:15,609] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-26 17:57:15,611] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2022-06-26 17:57:15,612] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-26 17:57:15,621] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): load_Model> on 2022-06-26T17:55:09.563509+00:00
+[2022-06-26 17:57:15,628] {standard_task_runner.py:52} INFO - Started process 28788 to run task
+[2022-06-26 17:57:15,633] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'trigger_dag', 'load_Model', '2022-06-26T17:55:09.563509+00:00', '--job-id', '229', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/trigger_dag.py', '--cfg-path', '/tmp/tmpv_j8l8tm', '--error-file', '/tmp/tmpn2hk3hfq']
+[2022-06-26 17:57:15,636] {standard_task_runner.py:77} INFO - Job 229: Subtask load_Model
+[2022-06-26 17:57:15,685] {logging_mixin.py:104} INFO - Running <TaskInstance: trigger_dag.load_Model 2022-06-26T17:55:09.563509+00:00 [running]> on host 5e8dc4b25004
+[2022-06-26 17:57:15,728] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=trigger_dag
+AIRFLOW_CTX_TASK_ID=load_Model
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-26T17:55:09.563509+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-26T17:55:09.563509+00:00
+[2022-06-26 17:57:15,749] {taskinstance.py:1455} ERROR - (psycopg2.errors.UndefinedTable) relation "company_a02∫" does not exist
+LINE 1: select * from company_A02∫
+                      ^
+
+[SQL: select * from company_A02∫]
+(Background on this error at: http://sqlalche.me/e/13/f405)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1267, in _execute_context
+    cursor, statement, context
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 611, in do_execute_no_params
+    cursor.execute(statement)
+psycopg2.errors.UndefinedTable: relation "company_a02∫" does not exist
+LINE 1: select * from company_A02∫
+                      ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/trigger_dag.py", line 19, in _load_model
+    dataFrame = pd.read_sql("select * from company_A02∫", dbConnection)
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/io/sql.py", line 515, in read_sql
+    chunksize=chunksize,
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/io/sql.py", line 1295, in read_query
+    result = self.execute(*args)
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/io/sql.py", line 1162, in execute
+    *args, **kwargs
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1003, in execute
+    return self._execute_text(object_, multiparams, params)
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1178, in _execute_text
+    parameters,
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1317, in _execute_context
+    e, statement, parameters, cursor, context
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1511, in _handle_dbapi_exception
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1267, in _execute_context
+    cursor, statement, context
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 611, in do_execute_no_params
+    cursor.execute(statement)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedTable) relation "company_a02∫" does not exist
+LINE 1: select * from company_A02∫
+                      ^
+
+[SQL: select * from company_A02∫]
+(Background on this error at: http://sqlalche.me/e/13/f405)
+[2022-06-26 17:57:15,761] {taskinstance.py:1503} INFO - Marking task as FAILED. dag_id=trigger_dag, task_id=load_Model, execution_date=20220626T175509, start_date=20220626T175715, end_date=20220626T175715
+[2022-06-26 17:57:15,808] {local_task_job.py:146} INFO - Task exited with return code 1

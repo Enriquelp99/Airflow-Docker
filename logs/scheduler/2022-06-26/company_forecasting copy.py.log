@@ -1,0 +1,344 @@
+[2022-06-26 09:37:45,423] {scheduler_job.py:182} INFO - Started process (PID=11881) to work on /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:37:45,425] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting copy.py for tasks to queue
+[2022-06-26 09:37:45,426] {logging_mixin.py:104} INFO - [2022-06-26 09:37:45,426] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:37:46,457] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:37:46,478] {logging_mixin.py:104} INFO - [2022-06-26 09:37:46,476] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-26 09:37:46,491] {logging_mixin.py:104} INFO - [2022-06-26 09:37:46,491] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to None
+[2022-06-26 09:37:46,505] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting copy.py took 1.085 seconds
+[2022-06-26 09:37:56,588] {scheduler_job.py:182} INFO - Started process (PID=11897) to work on /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:37:56,590] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting copy.py for tasks to queue
+[2022-06-26 09:37:56,592] {logging_mixin.py:104} INFO - [2022-06-26 09:37:56,592] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:37:57,602] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:37:57,615] {logging_mixin.py:104} INFO - [2022-06-26 09:37:57,614] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-26 09:37:57,628] {logging_mixin.py:104} INFO - [2022-06-26 09:37:57,628] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to None
+[2022-06-26 09:37:57,637] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting copy.py took 1.053 seconds
+[2022-06-26 09:38:07,692] {scheduler_job.py:182} INFO - Started process (PID=11913) to work on /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:38:07,694] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting copy.py for tasks to queue
+[2022-06-26 09:38:07,695] {logging_mixin.py:104} INFO - [2022-06-26 09:38:07,695] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:38:08,665] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:38:08,679] {logging_mixin.py:104} INFO - [2022-06-26 09:38:08,678] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-26 09:38:08,691] {logging_mixin.py:104} INFO - [2022-06-26 09:38:08,691] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to None
+[2022-06-26 09:38:08,700] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting copy.py took 1.012 seconds
+[2022-06-26 09:38:18,769] {scheduler_job.py:182} INFO - Started process (PID=11929) to work on /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:38:18,771] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting copy.py for tasks to queue
+[2022-06-26 09:38:18,772] {logging_mixin.py:104} INFO - [2022-06-26 09:38:18,772] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:38:19,655] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:38:19,672] {logging_mixin.py:104} INFO - [2022-06-26 09:38:19,671] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-26 09:38:19,685] {logging_mixin.py:104} INFO - [2022-06-26 09:38:19,685] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to None
+[2022-06-26 09:38:19,693] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting copy.py took 0.929 seconds
+[2022-06-26 09:38:29,867] {scheduler_job.py:182} INFO - Started process (PID=11945) to work on /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:38:29,869] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting copy.py for tasks to queue
+[2022-06-26 09:38:29,870] {logging_mixin.py:104} INFO - [2022-06-26 09:38:29,870] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:38:30,967] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:38:30,980] {logging_mixin.py:104} INFO - [2022-06-26 09:38:30,979] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-26 09:38:30,994] {logging_mixin.py:104} INFO - [2022-06-26 09:38:30,993] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to None
+[2022-06-26 09:38:31,002] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting copy.py took 1.139 seconds
+[2022-06-26 09:38:41,052] {scheduler_job.py:182} INFO - Started process (PID=11961) to work on /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:38:41,054] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting copy.py for tasks to queue
+[2022-06-26 09:38:41,056] {logging_mixin.py:104} INFO - [2022-06-26 09:38:41,055] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:38:42,091] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:38:42,105] {logging_mixin.py:104} INFO - [2022-06-26 09:38:42,103] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-26 09:38:42,117] {logging_mixin.py:104} INFO - [2022-06-26 09:38:42,117] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to None
+[2022-06-26 09:38:42,127] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting copy.py took 1.078 seconds
+[2022-06-26 09:38:52,215] {scheduler_job.py:182} INFO - Started process (PID=11977) to work on /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:38:52,217] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting copy.py for tasks to queue
+[2022-06-26 09:38:52,219] {logging_mixin.py:104} INFO - [2022-06-26 09:38:52,219] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:38:53,285] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:38:53,299] {logging_mixin.py:104} INFO - [2022-06-26 09:38:53,298] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-26 09:38:53,312] {logging_mixin.py:104} INFO - [2022-06-26 09:38:53,312] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to None
+[2022-06-26 09:38:53,321] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting copy.py took 1.112 seconds
+[2022-06-26 09:39:03,411] {scheduler_job.py:182} INFO - Started process (PID=11993) to work on /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:39:03,415] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting copy.py for tasks to queue
+[2022-06-26 09:39:03,420] {logging_mixin.py:104} INFO - [2022-06-26 09:39:03,419] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:39:04,888] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:39:04,894] {logging_mixin.py:104} INFO - [2022-06-26 09:39:04,893] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-26 09:39:04,913] {logging_mixin.py:104} INFO - [2022-06-26 09:39:04,913] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to None
+[2022-06-26 09:39:04,941] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting copy.py took 1.561 seconds
+[2022-06-26 09:39:15,033] {scheduler_job.py:182} INFO - Started process (PID=12014) to work on /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:39:15,035] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting copy.py for tasks to queue
+[2022-06-26 09:39:15,036] {logging_mixin.py:104} INFO - [2022-06-26 09:39:15,036] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:39:16,567] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:39:16,583] {logging_mixin.py:104} INFO - [2022-06-26 09:39:16,582] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-26 09:39:16,597] {logging_mixin.py:104} INFO - [2022-06-26 09:39:16,597] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to None
+[2022-06-26 09:39:16,607] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting copy.py took 1.578 seconds
+[2022-06-26 09:39:26,689] {scheduler_job.py:182} INFO - Started process (PID=12035) to work on /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:39:26,691] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting copy.py for tasks to queue
+[2022-06-26 09:39:26,692] {logging_mixin.py:104} INFO - [2022-06-26 09:39:26,692] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:39:27,906] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:39:27,927] {logging_mixin.py:104} INFO - [2022-06-26 09:39:27,925] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-26 09:39:27,950] {logging_mixin.py:104} INFO - [2022-06-26 09:39:27,949] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to None
+[2022-06-26 09:39:27,964] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting copy.py took 1.278 seconds
+[2022-06-26 09:39:38,829] {scheduler_job.py:182} INFO - Started process (PID=12051) to work on /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:39:38,831] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting copy.py for tasks to queue
+[2022-06-26 09:39:38,833] {logging_mixin.py:104} INFO - [2022-06-26 09:39:38,833] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:39:39,955] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:39:39,983] {logging_mixin.py:104} INFO - [2022-06-26 09:39:39,982] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-26 09:39:40,001] {logging_mixin.py:104} INFO - [2022-06-26 09:39:40,001] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to None
+[2022-06-26 09:39:40,011] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting copy.py took 1.187 seconds
+[2022-06-26 09:39:50,078] {scheduler_job.py:182} INFO - Started process (PID=12067) to work on /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:39:50,080] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting copy.py for tasks to queue
+[2022-06-26 09:39:50,081] {logging_mixin.py:104} INFO - [2022-06-26 09:39:50,081] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:39:51,151] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:39:51,164] {logging_mixin.py:104} INFO - [2022-06-26 09:39:51,163] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-26 09:39:51,177] {logging_mixin.py:104} INFO - [2022-06-26 09:39:51,177] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to None
+[2022-06-26 09:39:51,188] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting copy.py took 1.115 seconds
+[2022-06-26 09:40:02,153] {scheduler_job.py:182} INFO - Started process (PID=12083) to work on /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:40:02,155] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting copy.py for tasks to queue
+[2022-06-26 09:40:02,156] {logging_mixin.py:104} INFO - [2022-06-26 09:40:02,156] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:40:03,156] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:40:03,175] {logging_mixin.py:104} INFO - [2022-06-26 09:40:03,173] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-26 09:40:03,191] {logging_mixin.py:104} INFO - [2022-06-26 09:40:03,191] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to None
+[2022-06-26 09:40:03,204] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting copy.py took 1.055 seconds
+[2022-06-26 09:40:13,278] {scheduler_job.py:182} INFO - Started process (PID=12099) to work on /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:40:13,279] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting copy.py for tasks to queue
+[2022-06-26 09:40:13,281] {logging_mixin.py:104} INFO - [2022-06-26 09:40:13,281] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:40:14,399] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:40:14,414] {logging_mixin.py:104} INFO - [2022-06-26 09:40:14,413] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-26 09:40:14,427] {logging_mixin.py:104} INFO - [2022-06-26 09:40:14,427] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to None
+[2022-06-26 09:40:14,436] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting copy.py took 1.162 seconds
+[2022-06-26 09:40:25,381] {scheduler_job.py:182} INFO - Started process (PID=12115) to work on /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:40:25,384] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting copy.py for tasks to queue
+[2022-06-26 09:40:25,386] {logging_mixin.py:104} INFO - [2022-06-26 09:40:25,386] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:40:26,424] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:40:26,445] {logging_mixin.py:104} INFO - [2022-06-26 09:40:26,444] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-26 09:40:26,458] {logging_mixin.py:104} INFO - [2022-06-26 09:40:26,458] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to None
+[2022-06-26 09:40:26,469] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting copy.py took 1.097 seconds
+[2022-06-26 09:40:37,447] {scheduler_job.py:182} INFO - Started process (PID=12131) to work on /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:40:37,449] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting copy.py for tasks to queue
+[2022-06-26 09:40:37,450] {logging_mixin.py:104} INFO - [2022-06-26 09:40:37,450] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:40:38,411] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:40:38,426] {logging_mixin.py:104} INFO - [2022-06-26 09:40:38,425] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-26 09:40:38,440] {logging_mixin.py:104} INFO - [2022-06-26 09:40:38,440] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to None
+[2022-06-26 09:40:38,449] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting copy.py took 1.006 seconds
+[2022-06-26 09:40:48,525] {scheduler_job.py:182} INFO - Started process (PID=12147) to work on /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:40:48,527] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting copy.py for tasks to queue
+[2022-06-26 09:40:48,529] {logging_mixin.py:104} INFO - [2022-06-26 09:40:48,529] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:40:49,498] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:40:49,512] {logging_mixin.py:104} INFO - [2022-06-26 09:40:49,511] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-26 09:40:49,525] {logging_mixin.py:104} INFO - [2022-06-26 09:40:49,525] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to None
+[2022-06-26 09:40:49,537] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting copy.py took 1.016 seconds
+[2022-06-26 09:40:59,602] {scheduler_job.py:182} INFO - Started process (PID=12163) to work on /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:40:59,604] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting copy.py for tasks to queue
+[2022-06-26 09:40:59,606] {logging_mixin.py:104} INFO - [2022-06-26 09:40:59,606] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:41:00,650] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:41:00,669] {logging_mixin.py:104} INFO - [2022-06-26 09:41:00,668] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-26 09:41:00,684] {logging_mixin.py:104} INFO - [2022-06-26 09:41:00,684] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to None
+[2022-06-26 09:41:00,695] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting copy.py took 1.096 seconds
+[2022-06-26 09:41:11,719] {scheduler_job.py:182} INFO - Started process (PID=12179) to work on /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:41:11,722] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting copy.py for tasks to queue
+[2022-06-26 09:41:11,723] {logging_mixin.py:104} INFO - [2022-06-26 09:41:11,723] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:41:12,672] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:41:12,685] {logging_mixin.py:104} INFO - [2022-06-26 09:41:12,683] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-26 09:41:12,697] {logging_mixin.py:104} INFO - [2022-06-26 09:41:12,696] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to None
+[2022-06-26 09:41:12,705] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting copy.py took 0.990 seconds
+[2022-06-26 09:41:22,802] {scheduler_job.py:182} INFO - Started process (PID=12195) to work on /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:41:22,804] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting copy.py for tasks to queue
+[2022-06-26 09:41:22,806] {logging_mixin.py:104} INFO - [2022-06-26 09:41:22,805] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:41:23,836] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:41:23,849] {logging_mixin.py:104} INFO - [2022-06-26 09:41:23,848] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-26 09:41:23,860] {logging_mixin.py:104} INFO - [2022-06-26 09:41:23,860] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to None
+[2022-06-26 09:41:23,869] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting copy.py took 1.071 seconds
+[2022-06-26 09:41:33,910] {scheduler_job.py:182} INFO - Started process (PID=12211) to work on /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:41:33,912] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting copy.py for tasks to queue
+[2022-06-26 09:41:33,913] {logging_mixin.py:104} INFO - [2022-06-26 09:41:33,913] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:41:34,951] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:41:34,979] {logging_mixin.py:104} INFO - [2022-06-26 09:41:34,978] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-26 09:41:34,996] {logging_mixin.py:104} INFO - [2022-06-26 09:41:34,996] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to None
+[2022-06-26 09:41:35,013] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting copy.py took 1.128 seconds
+[2022-06-26 09:41:45,147] {scheduler_job.py:182} INFO - Started process (PID=12227) to work on /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:41:45,149] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting copy.py for tasks to queue
+[2022-06-26 09:41:45,150] {logging_mixin.py:104} INFO - [2022-06-26 09:41:45,150] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:41:46,134] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:41:46,149] {logging_mixin.py:104} INFO - [2022-06-26 09:41:46,148] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-26 09:41:46,166] {logging_mixin.py:104} INFO - [2022-06-26 09:41:46,166] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to None
+[2022-06-26 09:41:46,176] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting copy.py took 1.034 seconds
+[2022-06-26 09:41:56,291] {scheduler_job.py:182} INFO - Started process (PID=12243) to work on /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:41:56,293] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting copy.py for tasks to queue
+[2022-06-26 09:41:56,295] {logging_mixin.py:104} INFO - [2022-06-26 09:41:56,295] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:41:57,509] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:41:57,540] {logging_mixin.py:104} INFO - [2022-06-26 09:41:57,538] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-26 09:41:57,561] {logging_mixin.py:104} INFO - [2022-06-26 09:41:57,561] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to None
+[2022-06-26 09:41:57,623] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting copy.py took 1.338 seconds
+[2022-06-26 09:42:08,455] {scheduler_job.py:182} INFO - Started process (PID=12264) to work on /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:42:08,457] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting copy.py for tasks to queue
+[2022-06-26 09:42:08,458] {logging_mixin.py:104} INFO - [2022-06-26 09:42:08,458] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:42:09,648] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:42:09,674] {logging_mixin.py:104} INFO - [2022-06-26 09:42:09,673] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-26 09:42:09,690] {logging_mixin.py:104} INFO - [2022-06-26 09:42:09,690] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to None
+[2022-06-26 09:42:09,703] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting copy.py took 1.256 seconds
+[2022-06-26 09:42:19,770] {scheduler_job.py:182} INFO - Started process (PID=12285) to work on /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:42:19,772] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting copy.py for tasks to queue
+[2022-06-26 09:42:19,773] {logging_mixin.py:104} INFO - [2022-06-26 09:42:19,773] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:42:20,703] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:42:20,721] {logging_mixin.py:104} INFO - [2022-06-26 09:42:20,720] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-26 09:42:20,736] {logging_mixin.py:104} INFO - [2022-06-26 09:42:20,735] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to None
+[2022-06-26 09:42:20,756] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting copy.py took 0.989 seconds
+[2022-06-26 09:42:30,845] {scheduler_job.py:182} INFO - Started process (PID=12301) to work on /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:42:30,850] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting copy.py for tasks to queue
+[2022-06-26 09:42:30,852] {logging_mixin.py:104} INFO - [2022-06-26 09:42:30,851] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:42:32,189] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:42:32,211] {logging_mixin.py:104} INFO - [2022-06-26 09:42:32,210] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-26 09:42:32,228] {logging_mixin.py:104} INFO - [2022-06-26 09:42:32,228] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to None
+[2022-06-26 09:42:32,241] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting copy.py took 1.405 seconds
+[2022-06-26 09:42:42,314] {scheduler_job.py:182} INFO - Started process (PID=12317) to work on /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:42:42,318] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting copy.py for tasks to queue
+[2022-06-26 09:42:42,320] {logging_mixin.py:104} INFO - [2022-06-26 09:42:42,320] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:42:44,604] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:42:44,628] {logging_mixin.py:104} INFO - [2022-06-26 09:42:44,627] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-26 09:42:44,652] {logging_mixin.py:104} INFO - [2022-06-26 09:42:44,652] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to None
+[2022-06-26 09:42:44,665] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting copy.py took 2.355 seconds
+[2022-06-26 09:42:55,383] {scheduler_job.py:182} INFO - Started process (PID=12338) to work on /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:42:55,385] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting copy.py for tasks to queue
+[2022-06-26 09:42:55,386] {logging_mixin.py:104} INFO - [2022-06-26 09:42:55,386] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:42:56,373] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:42:56,390] {logging_mixin.py:104} INFO - [2022-06-26 09:42:56,388] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-26 09:42:56,403] {logging_mixin.py:104} INFO - [2022-06-26 09:42:56,403] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to None
+[2022-06-26 09:42:56,412] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting copy.py took 1.033 seconds
+[2022-06-26 09:43:06,483] {scheduler_job.py:182} INFO - Started process (PID=12354) to work on /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:43:06,485] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting copy.py for tasks to queue
+[2022-06-26 09:43:06,489] {logging_mixin.py:104} INFO - [2022-06-26 09:43:06,488] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:43:08,430] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:43:08,449] {logging_mixin.py:104} INFO - [2022-06-26 09:43:08,448] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-26 09:43:08,462] {logging_mixin.py:104} INFO - [2022-06-26 09:43:08,462] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to None
+[2022-06-26 09:43:08,477] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting copy.py took 1.998 seconds
+[2022-06-26 09:43:18,573] {scheduler_job.py:182} INFO - Started process (PID=12370) to work on /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:43:18,575] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting copy.py for tasks to queue
+[2022-06-26 09:43:18,576] {logging_mixin.py:104} INFO - [2022-06-26 09:43:18,576] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:43:19,506] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:43:19,525] {logging_mixin.py:104} INFO - [2022-06-26 09:43:19,524] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-26 09:43:19,537] {logging_mixin.py:104} INFO - [2022-06-26 09:43:19,537] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to None
+[2022-06-26 09:43:19,545] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting copy.py took 0.976 seconds
+[2022-06-26 09:43:29,651] {scheduler_job.py:182} INFO - Started process (PID=12386) to work on /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:43:29,653] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting copy.py for tasks to queue
+[2022-06-26 09:43:29,655] {logging_mixin.py:104} INFO - [2022-06-26 09:43:29,654] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:43:31,050] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:43:31,068] {logging_mixin.py:104} INFO - [2022-06-26 09:43:31,067] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-26 09:43:31,083] {logging_mixin.py:104} INFO - [2022-06-26 09:43:31,083] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to None
+[2022-06-26 09:43:31,096] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting copy.py took 1.448 seconds
+[2022-06-26 09:43:41,707] {scheduler_job.py:182} INFO - Started process (PID=12402) to work on /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:43:41,708] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting copy.py for tasks to queue
+[2022-06-26 09:43:41,710] {logging_mixin.py:104} INFO - [2022-06-26 09:43:41,709] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:43:42,690] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['SDG_Enrique_V0']) retrieved from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:43:42,704] {logging_mixin.py:104} INFO - [2022-06-26 09:43:42,703] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-26 09:43:42,722] {logging_mixin.py:104} INFO - [2022-06-26 09:43:42,722] {dag.py:2273} INFO - Setting next_dagrun for SDG_Enrique_V0 to None
+[2022-06-26 09:43:42,732] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting copy.py took 1.031 seconds
+[2022-06-26 09:43:52,827] {scheduler_job.py:182} INFO - Started process (PID=12418) to work on /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:43:52,830] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting copy.py for tasks to queue
+[2022-06-26 09:43:52,831] {logging_mixin.py:104} INFO - [2022-06-26 09:43:52,831] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:43:52,833] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:43:52,834] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting copy.py took 0.011 seconds
+[2022-06-26 09:44:02,893] {scheduler_job.py:182} INFO - Started process (PID=12431) to work on /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:44:02,895] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting copy.py for tasks to queue
+[2022-06-26 09:44:02,897] {logging_mixin.py:104} INFO - [2022-06-26 09:44:02,897] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:44:02,899] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:44:02,900] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting copy.py took 0.010 seconds
+[2022-06-26 09:44:12,945] {scheduler_job.py:182} INFO - Started process (PID=12444) to work on /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:44:12,946] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting copy.py for tasks to queue
+[2022-06-26 09:44:12,948] {logging_mixin.py:104} INFO - [2022-06-26 09:44:12,948] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:44:12,949] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:44:12,950] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting copy.py took 0.010 seconds
+[2022-06-26 09:44:23,008] {scheduler_job.py:182} INFO - Started process (PID=12457) to work on /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:44:23,010] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting copy.py for tasks to queue
+[2022-06-26 09:44:23,011] {logging_mixin.py:104} INFO - [2022-06-26 09:44:23,011] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:44:23,013] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:44:23,014] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting copy.py took 0.010 seconds
+[2022-06-26 09:44:33,064] {scheduler_job.py:182} INFO - Started process (PID=12470) to work on /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:44:33,066] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting copy.py for tasks to queue
+[2022-06-26 09:44:33,068] {logging_mixin.py:104} INFO - [2022-06-26 09:44:33,067] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:44:33,069] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:44:33,070] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting copy.py took 0.009 seconds
+[2022-06-26 09:44:44,101] {scheduler_job.py:182} INFO - Started process (PID=12483) to work on /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:44:44,103] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting copy.py for tasks to queue
+[2022-06-26 09:44:44,104] {logging_mixin.py:104} INFO - [2022-06-26 09:44:44,104] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:44:44,106] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:44:44,107] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting copy.py took 0.009 seconds
+[2022-06-26 09:44:54,168] {scheduler_job.py:182} INFO - Started process (PID=12496) to work on /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:44:54,170] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting copy.py for tasks to queue
+[2022-06-26 09:44:54,171] {logging_mixin.py:104} INFO - [2022-06-26 09:44:54,171] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:44:54,174] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:44:54,175] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting copy.py took 0.011 seconds
+[2022-06-26 09:45:04,247] {scheduler_job.py:182} INFO - Started process (PID=12507) to work on /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:45:04,249] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting copy.py for tasks to queue
+[2022-06-26 09:45:04,251] {logging_mixin.py:104} INFO - [2022-06-26 09:45:04,250] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:45:04,252] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:45:04,253] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting copy.py took 0.010 seconds
+[2022-06-26 09:45:14,306] {scheduler_job.py:182} INFO - Started process (PID=12514) to work on /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:45:14,308] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting copy.py for tasks to queue
+[2022-06-26 09:45:14,309] {logging_mixin.py:104} INFO - [2022-06-26 09:45:14,309] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:45:14,311] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:45:14,312] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting copy.py took 0.010 seconds
+[2022-06-26 09:45:24,375] {scheduler_job.py:182} INFO - Started process (PID=12527) to work on /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:45:24,377] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting copy.py for tasks to queue
+[2022-06-26 09:45:24,378] {logging_mixin.py:104} INFO - [2022-06-26 09:45:24,378] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:45:24,380] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:45:24,381] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting copy.py took 0.010 seconds
+[2022-06-26 09:45:34,446] {scheduler_job.py:182} INFO - Started process (PID=12540) to work on /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:45:34,449] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting copy.py for tasks to queue
+[2022-06-26 09:45:34,452] {logging_mixin.py:104} INFO - [2022-06-26 09:45:34,451] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:45:34,455] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:45:34,456] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting copy.py took 0.015 seconds
+[2022-06-26 09:45:44,514] {scheduler_job.py:182} INFO - Started process (PID=12553) to work on /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:45:44,516] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting copy.py for tasks to queue
+[2022-06-26 09:45:44,517] {logging_mixin.py:104} INFO - [2022-06-26 09:45:44,517] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:45:44,519] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:45:44,520] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting copy.py took 0.010 seconds
+[2022-06-26 09:45:54,587] {scheduler_job.py:182} INFO - Started process (PID=12566) to work on /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:45:54,590] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting copy.py for tasks to queue
+[2022-06-26 09:45:54,591] {logging_mixin.py:104} INFO - [2022-06-26 09:45:54,591] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:45:54,593] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:45:54,594] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting copy.py took 0.010 seconds
+[2022-06-26 09:46:04,658] {scheduler_job.py:182} INFO - Started process (PID=12579) to work on /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:46:04,660] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting copy.py for tasks to queue
+[2022-06-26 09:46:04,661] {logging_mixin.py:104} INFO - [2022-06-26 09:46:04,661] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:46:04,663] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:46:04,664] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting copy.py took 0.009 seconds
+[2022-06-26 09:46:14,705] {scheduler_job.py:182} INFO - Started process (PID=12592) to work on /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:46:14,707] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting copy.py for tasks to queue
+[2022-06-26 09:46:14,708] {logging_mixin.py:104} INFO - [2022-06-26 09:46:14,708] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:46:14,710] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:46:14,711] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting copy.py took 0.010 seconds
+[2022-06-26 09:46:24,769] {scheduler_job.py:182} INFO - Started process (PID=12603) to work on /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:46:24,771] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting copy.py for tasks to queue
+[2022-06-26 09:46:24,772] {logging_mixin.py:104} INFO - [2022-06-26 09:46:24,772] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:46:24,774] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:46:24,775] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting copy.py took 0.009 seconds
+[2022-06-26 09:46:34,823] {scheduler_job.py:182} INFO - Started process (PID=12610) to work on /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:46:34,825] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting copy.py for tasks to queue
+[2022-06-26 09:46:34,826] {logging_mixin.py:104} INFO - [2022-06-26 09:46:34,826] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:46:34,828] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:46:34,829] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting copy.py took 0.010 seconds
+[2022-06-26 09:46:44,880] {scheduler_job.py:182} INFO - Started process (PID=12623) to work on /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:46:44,885] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting copy.py for tasks to queue
+[2022-06-26 09:46:44,909] {logging_mixin.py:104} INFO - [2022-06-26 09:46:44,908] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:46:44,932] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:46:44,952] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting copy.py took 0.076 seconds
+[2022-06-26 09:46:54,996] {scheduler_job.py:182} INFO - Started process (PID=12636) to work on /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:46:54,999] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting copy.py for tasks to queue
+[2022-06-26 09:46:55,000] {logging_mixin.py:104} INFO - [2022-06-26 09:46:55,000] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:46:55,002] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:46:55,002] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting copy.py took 0.010 seconds
+[2022-06-26 09:47:05,038] {scheduler_job.py:182} INFO - Started process (PID=12649) to work on /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:47:05,040] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting copy.py for tasks to queue
+[2022-06-26 09:47:05,042] {logging_mixin.py:104} INFO - [2022-06-26 09:47:05,042] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:47:05,044] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:47:05,045] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting copy.py took 0.011 seconds
+[2022-06-26 09:47:15,099] {scheduler_job.py:182} INFO - Started process (PID=12662) to work on /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:47:15,101] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting copy.py for tasks to queue
+[2022-06-26 09:47:15,102] {logging_mixin.py:104} INFO - [2022-06-26 09:47:15,102] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:47:15,104] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:47:15,105] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting copy.py took 0.012 seconds
+[2022-06-26 09:47:25,143] {scheduler_job.py:182} INFO - Started process (PID=12675) to work on /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:47:25,145] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting copy.py for tasks to queue
+[2022-06-26 09:47:25,146] {logging_mixin.py:104} INFO - [2022-06-26 09:47:25,146] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:47:25,147] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:47:25,148] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting copy.py took 0.010 seconds
+[2022-06-26 09:47:35,194] {scheduler_job.py:182} INFO - Started process (PID=12688) to work on /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:47:35,196] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting copy.py for tasks to queue
+[2022-06-26 09:47:35,197] {logging_mixin.py:104} INFO - [2022-06-26 09:47:35,197] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:47:35,198] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:47:35,199] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting copy.py took 0.009 seconds
+[2022-06-26 09:47:45,248] {scheduler_job.py:182} INFO - Started process (PID=12699) to work on /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:47:45,250] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/company_forecasting copy.py for tasks to queue
+[2022-06-26 09:47:45,251] {logging_mixin.py:104} INFO - [2022-06-26 09:47:45,251] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:47:45,253] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/company_forecasting copy.py
+[2022-06-26 09:47:45,254] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/company_forecasting copy.py took 0.010 seconds

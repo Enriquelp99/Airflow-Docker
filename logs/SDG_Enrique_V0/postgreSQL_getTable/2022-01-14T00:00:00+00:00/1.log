@@ -1,0 +1,41 @@
+[2022-06-29 20:54:25,920] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: SDG_Enrique_V0.postgreSQL_getTable 2022-01-14T00:00:00+00:00 [queued]>
+[2022-06-29 20:54:26,229] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: SDG_Enrique_V0.postgreSQL_getTable 2022-01-14T00:00:00+00:00 [queued]>
+[2022-06-29 20:54:26,234] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-29 20:54:26,236] {taskinstance.py:1043} INFO - Starting attempt 1 of 2
+[2022-06-29 20:54:26,237] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-29 20:54:26,337] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): postgreSQL_getTable> on 2022-01-14T00:00:00+00:00
+[2022-06-29 20:54:26,378] {standard_task_runner.py:52} INFO - Started process 1430 to run task
+[2022-06-29 20:54:26,442] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'SDG_Enrique_V0', 'postgreSQL_getTable', '2022-01-14T00:00:00+00:00', '--job-id', '1354', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/company_forecasting.py', '--cfg-path', '/tmp/tmpx2k8g2jo', '--error-file', '/tmp/tmpnwv950aj']
+[2022-06-29 20:54:26,516] {standard_task_runner.py:77} INFO - Job 1354: Subtask postgreSQL_getTable
+[2022-06-29 20:54:27,659] {logging_mixin.py:104} INFO - Running <TaskInstance: SDG_Enrique_V0.postgreSQL_getTable 2022-01-14T00:00:00+00:00 [running]> on host 1ff8f57a8cbf
+[2022-06-29 20:54:29,327] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=enrique-liebana@outlook.com
+AIRFLOW_CTX_DAG_OWNER=Enrique Liebana Peña
+AIRFLOW_CTX_DAG_ID=SDG_Enrique_V0
+AIRFLOW_CTX_TASK_ID=postgreSQL_getTable
+AIRFLOW_CTX_EXECUTION_DATE=2022-01-14T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-01-14T00:00:00+00:00
+[2022-06-29 20:54:30,051] {base.py:74} INFO - Using connection to: id: postgres_conection. Host: host.docker.internal, Port: 5432, Schema: data_company, Login: airflow, Password: XXXXXXXX, extra: None
+[2022-06-29 20:55:48,760] {process_utils.py:100} INFO - Sending Signals.SIGTERM to GPID 1430
+[2022-06-29 20:55:48,785] {taskinstance.py:1239} ERROR - Received SIGTERM. Terminating subprocesses.
+[2022-06-29 20:55:48,826] {taskinstance.py:1455} ERROR - Task received SIGTERM signal
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/company_forecasting.py", line 51, in postgreSQL_getTable
+    csv_writer.writerows(cursor)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1241, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2022-06-29 20:55:48,837] {taskinstance.py:1503} INFO - Marking task as FAILED. dag_id=SDG_Enrique_V0, task_id=postgreSQL_getTable, execution_date=20220114T000000, start_date=20220629T205426, end_date=20220629T205548
+[2022-06-29 20:55:49,072] {process_utils.py:66} INFO - Process psutil.Process(pid=1430, status='terminated', exitcode=1, started='20:54:26') (1430) terminated with exit code 1

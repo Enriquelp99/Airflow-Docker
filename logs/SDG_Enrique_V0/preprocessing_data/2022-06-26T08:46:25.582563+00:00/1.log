@@ -1,0 +1,85 @@
+[2022-06-26 08:47:21,597] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: SDG_Enrique_V0.preprocessing_data 2022-06-26T08:46:25.582563+00:00 [queued]>
+[2022-06-26 08:47:21,622] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: SDG_Enrique_V0.preprocessing_data 2022-06-26T08:46:25.582563+00:00 [queued]>
+[2022-06-26 08:47:21,623] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-26 08:47:21,624] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2022-06-26 08:47:21,625] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-26 08:47:21,637] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): preprocessing_data> on 2022-06-26T08:46:25.582563+00:00
+[2022-06-26 08:47:21,649] {standard_task_runner.py:52} INFO - Started process 9741 to run task
+[2022-06-26 08:47:21,655] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'SDG_Enrique_V0', 'preprocessing_data', '2022-06-26T08:46:25.582563+00:00', '--job-id', '186', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/company_forecasting.py', '--cfg-path', '/tmp/tmpa079qtzm', '--error-file', '/tmp/tmp0wh4n3u5']
+[2022-06-26 08:47:21,659] {standard_task_runner.py:77} INFO - Job 186: Subtask preprocessing_data
+[2022-06-26 08:47:21,724] {logging_mixin.py:104} INFO - Running <TaskInstance: SDG_Enrique_V0.preprocessing_data 2022-06-26T08:46:25.582563+00:00 [running]> on host 5e8dc4b25004
+[2022-06-26 08:47:21,799] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=enrique-liebana@outlook.com
+AIRFLOW_CTX_DAG_OWNER=Enrique
+AIRFLOW_CTX_DAG_ID=SDG_Enrique_V0
+AIRFLOW_CTX_TASK_ID=preprocessing_data
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-26T08:46:25.582563+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-26T08:46:25.582563+00:00
+[2022-06-26 08:47:30,114] {logging_mixin.py:104} INFO - **************** OBJECT COLUmNS *********************
+[2022-06-26 08:47:30,633] {logging_mixin.py:104} INFO - Index(['Unnamed: 0', 'rev_mean', 'mou_mean', 'totmrc_mean', 'da_mean',
+       'ovrmou_mean', 'ovrrev_mean', 'vceovr_mean', 'datovr_mean', 'roam_mean',
+       ...
+       'forgntvl', 'ethnic', 'kid0_2', 'kid3_5', 'kid6_10', 'kid11_15',
+       'kid16_17', 'creditcd', 'eqpdays', 'customer_id'],
+      dtype='object', length=101)
+[2022-06-26 08:47:30,937] {logging_mixin.py:104} INFO - (98227, 92)
+[2022-06-26 08:47:31,358] {logging_mixin.py:104} INFO - <bound method NDFrame.describe of        crclscod  asl_flag  area  ...  kid11_15  kid16_17  creditcd
+0             0         0    13  ...         0         0         1
+1            21         0     3  ...         0         0         1
+2             7         0     6  ...         0         0         1
+3             4         0     3  ...         0         0         1
+4             0         0    10  ...         0         0         1
+...         ...       ...   ...  ...       ...       ...       ...
+99995         4         0     8  ...         0         0         1
+99996         4         0     8  ...         0         1         1
+99997        17         0     8  ...         0         0         1
+99998        21         0    17  ...         0         0         0
+99999         4         0     8  ...         0         0         0
+
+[98227 rows x 11 columns]>
+[2022-06-26 08:47:31,361] {logging_mixin.py:104} INFO - Index(['new_cell', 'dualband', 'marital'], dtype='object')
+[2022-06-26 08:47:33,925] {logging_mixin.py:104} INFO - ['rev_mean', 'mou_mean', 'totmrc_mean', 'da_mean', 'ovrmou_mean', 'datovr_mean', 'roam_mean', 'change_mou', 'change_rev', 'drop_vce_mean', 'drop_dat_mean', 'blck_vce_mean', 'blck_dat_mean', 'unan_vce_mean', 'unan_dat_mean', 'plcd_vce_mean', 'plcd_dat_mean', 'recv_vce_mean', 'recv_sms_mean', 'custcare_mean', 'ccrndmou_mean', 'threeway_mean', 'mou_cvce_mean', 'mou_cdat_mean', 'mou_rvce_mean', 'owylis_vce_mean', 'mouowylisv_mean', 'iwylis_vce_mean', 'mouiwylisv_mean', 'mou_peav_mean', 'mou_pead_mean', 'opk_vce_mean', 'mou_opkv_mean', 'drop_blk_mean', 'callfwdv_mean', 'callwait_mean', 'churn', 'months', 'uniqsubs', 'actvsubs', 'crclscod', 'asl_flag', 'totcalls', 'totrev', 'avgrev', 'avgmou', 'avgqty', 'area', 'refurb_new', 'hnd_price', 'phones', 'models', 'truck', 'rv', 'forgntvl', 'ethnic', 'kid0_2', 'kid3_5', 'kid6_10', 'kid11_15', 'kid16_17', 'creditcd', 'eqpdays', 'new_cell_N', 'new_cell_U', 'new_cell_Y', 'dualband_N', 'dualband_T', 'dualband_U', 'dualband_Y', 'marital_A', 'marital_B', 'marital_M', 'marital_S', 'marital_U']
+[2022-06-26 08:47:33,927] {logging_mixin.py:104} INFO - ['ovrrev_mean', 'vceovr_mean', 'comp_vce_mean', 'comp_dat_mean', 'cc_mou_mean', 'inonemin_mean', 'peak_vce_mean', 'peak_dat_mean', 'opk_dat_mean', 'mou_opkd_mean', 'attempt_mean', 'complete_mean', 'totmou', 'adjrev', 'adjmou', 'adjqty', 'avg3mou', 'avg3qty', 'avg3rev', 'avg6mou', 'avg6qty', 'avg6rev']
+[2022-06-26 08:47:33,950] {logging_mixin.py:104} INFO - Index(['rev_mean', 'mou_mean', 'totmrc_mean', 'da_mean', 'ovrmou_mean',
+       'datovr_mean', 'roam_mean', 'change_mou', 'change_rev', 'drop_vce_mean',
+       'drop_dat_mean', 'blck_vce_mean', 'blck_dat_mean', 'unan_vce_mean',
+       'unan_dat_mean', 'plcd_vce_mean', 'plcd_dat_mean', 'recv_vce_mean',
+       'recv_sms_mean', 'custcare_mean', 'ccrndmou_mean', 'threeway_mean',
+       'mou_cvce_mean', 'mou_cdat_mean', 'mou_rvce_mean', 'owylis_vce_mean',
+       'mouowylisv_mean', 'iwylis_vce_mean', 'mouiwylisv_mean',
+       'mou_peav_mean', 'mou_pead_mean', 'opk_vce_mean', 'mou_opkv_mean',
+       'drop_blk_mean', 'callfwdv_mean', 'callwait_mean', 'churn', 'months',
+       'uniqsubs', 'actvsubs', 'crclscod', 'asl_flag', 'totcalls', 'totrev',
+       'avgrev', 'avgmou', 'avgqty', 'area', 'refurb_new', 'hnd_price',
+       'phones', 'models', 'truck', 'rv', 'forgntvl', 'ethnic', 'kid0_2',
+       'kid3_5', 'kid6_10', 'kid11_15', 'kid16_17', 'creditcd', 'eqpdays',
+       'new_cell_N', 'new_cell_U', 'new_cell_Y', 'dualband_N', 'dualband_T',
+       'dualband_U', 'dualband_Y', 'marital_A', 'marital_B', 'marital_M',
+       'marital_S', 'marital_U'],
+      dtype='object')
+[2022-06-26 08:47:33,999] {logging_mixin.py:104} INFO - (96534, 75)
+[2022-06-26 08:47:50,924] {base.py:74} INFO - Using connection to: id: postgres_conection. Host: host.docker.internal, Port: 5432, Schema: data_company, Login: airflow, Password: XXXXXXXX, extra: None
+[2022-06-26 08:47:50,944] {taskinstance.py:1455} ERROR - syntax error at or near "REAL"
+LINE 3:         rev_mean REAL,
+                         ^
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/company_forecasting.py", line 366, in preprocessing
+    );""")
+psycopg2.errors.SyntaxError: syntax error at or near "REAL"
+LINE 3:         rev_mean REAL,
+                         ^
+
+[2022-06-26 08:47:50,965] {taskinstance.py:1503} INFO - Marking task as FAILED. dag_id=SDG_Enrique_V0, task_id=preprocessing_data, execution_date=20220626T084625, start_date=20220626T084721, end_date=20220626T084750
+[2022-06-26 08:47:51,055] {local_task_job.py:146} INFO - Task exited with return code 1

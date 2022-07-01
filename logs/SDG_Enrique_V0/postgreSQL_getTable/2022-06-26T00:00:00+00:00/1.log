@@ -1,0 +1,75 @@
+[2022-06-26 17:53:26,819] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: SDG_Enrique_V0.postgreSQL_getTable 2022-06-26T00:00:00+00:00 [queued]>
+[2022-06-26 17:53:26,835] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: SDG_Enrique_V0.postgreSQL_getTable 2022-06-26T00:00:00+00:00 [queued]>
+[2022-06-26 17:53:26,836] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-26 17:53:26,836] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2022-06-26 17:53:26,837] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-26 17:53:26,845] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): postgreSQL_getTable> on 2022-06-26T00:00:00+00:00
+[2022-06-26 17:53:26,851] {standard_task_runner.py:52} INFO - Started process 28433 to run task
+[2022-06-26 17:53:26,855] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'SDG_Enrique_V0', 'postgreSQL_getTable', '2022-06-26T00:00:00+00:00', '--job-id', '218', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/company_forecasting.py', '--cfg-path', '/tmp/tmpdvrml079', '--error-file', '/tmp/tmpoladfrtf']
+[2022-06-26 17:53:26,858] {standard_task_runner.py:77} INFO - Job 218: Subtask postgreSQL_getTable
+[2022-06-26 17:53:26,910] {logging_mixin.py:104} INFO - Running <TaskInstance: SDG_Enrique_V0.postgreSQL_getTable 2022-06-26T00:00:00+00:00 [running]> on host 5e8dc4b25004
+[2022-06-26 17:53:26,951] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=enrique-liebana@outlook.com
+AIRFLOW_CTX_DAG_OWNER=Enrique
+AIRFLOW_CTX_DAG_ID=SDG_Enrique_V0
+AIRFLOW_CTX_TASK_ID=postgreSQL_getTable
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-26T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-26T00:00:00+00:00
+[2022-06-26 17:53:26,962] {base.py:74} INFO - Using connection to: id: postgres_conection. Host: host.docker.internal, Port: 5432, Schema: data_company, Login: airflow, Password: XXXXXXXX, extra: None
+[2022-06-26 17:53:47,812] {company_forecasting.py:78} INFO - Backup Company data in : /raw_data/company.csv
+[2022-06-26 17:53:47,814] {python.py:118} INFO - Done. Returned value was: None
+[2022-06-26 17:53:47,841] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=SDG_Enrique_V0, task_id=postgreSQL_getTable, execution_date=20220626T000000, start_date=20220626T175326, end_date=20220626T175347
+[2022-06-26 17:53:47,879] {taskinstance.py:1220} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-26 17:53:47,945] {local_task_job.py:146} INFO - Task exited with return code 0
+[2022-06-26 19:14:02,655] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: SDG_Enrique_V0.postgreSQL_getTable 2022-06-26T00:00:00+00:00 [queued]>
+[2022-06-26 19:14:02,666] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: SDG_Enrique_V0.postgreSQL_getTable 2022-06-26T00:00:00+00:00 [queued]>
+[2022-06-26 19:14:02,667] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-26 19:14:02,667] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2022-06-26 19:14:02,668] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-26 19:14:02,683] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): postgreSQL_getTable> on 2022-06-26T00:00:00+00:00
+[2022-06-26 19:14:02,689] {standard_task_runner.py:52} INFO - Started process 256 to run task
+[2022-06-26 19:14:02,694] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'SDG_Enrique_V0', 'postgreSQL_getTable', '2022-06-26T00:00:00+00:00', '--job-id', '240', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/company_forecasting.py', '--cfg-path', '/tmp/tmpkmo0a4pp', '--error-file', '/tmp/tmp12vja2e6']
+[2022-06-26 19:14:02,696] {standard_task_runner.py:77} INFO - Job 240: Subtask postgreSQL_getTable
+[2022-06-26 19:14:02,747] {logging_mixin.py:104} INFO - Running <TaskInstance: SDG_Enrique_V0.postgreSQL_getTable 2022-06-26T00:00:00+00:00 [running]> on host 6fc8504e86cf
+[2022-06-26 19:14:02,821] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=enrique-liebana@outlook.com
+AIRFLOW_CTX_DAG_OWNER=Enrique
+AIRFLOW_CTX_DAG_ID=SDG_Enrique_V0
+AIRFLOW_CTX_TASK_ID=postgreSQL_getTable
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-26T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-26T00:00:00+00:00
+[2022-06-26 19:14:02,833] {base.py:74} INFO - Using connection to: id: postgres_conection. Host: host.docker.internal, Port: 5432, Schema: data_company, Login: airflow, Password: XXXXXXXX, extra: None
+[2022-06-26 19:14:24,415] {company_forecasting.py:78} INFO - Backup Company data in : /raw_data/company.csv
+[2022-06-26 19:14:24,417] {python.py:118} INFO - Done. Returned value was: None
+[2022-06-26 19:14:24,432] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=SDG_Enrique_V0, task_id=postgreSQL_getTable, execution_date=20220626T000000, start_date=20220626T191402, end_date=20220626T191424
+[2022-06-26 19:14:24,486] {taskinstance.py:1220} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-26 19:14:24,562] {local_task_job.py:146} INFO - Task exited with return code 0
+[2022-06-26 19:24:51,921] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: SDG_Enrique_V0.postgreSQL_getTable 2022-06-26T00:00:00+00:00 [queued]>
+[2022-06-26 19:24:51,937] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: SDG_Enrique_V0.postgreSQL_getTable 2022-06-26T00:00:00+00:00 [queued]>
+[2022-06-26 19:24:51,937] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-26 19:24:51,938] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2022-06-26 19:24:51,939] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-26 19:24:51,946] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): postgreSQL_getTable> on 2022-06-26T00:00:00+00:00
+[2022-06-26 19:24:51,951] {standard_task_runner.py:52} INFO - Started process 450 to run task
+[2022-06-26 19:24:51,956] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'SDG_Enrique_V0', 'postgreSQL_getTable', '2022-06-26T00:00:00+00:00', '--job-id', '286', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/company_forecasting.py', '--cfg-path', '/tmp/tmp2udpf80z', '--error-file', '/tmp/tmpq__jntk5']
+[2022-06-26 19:24:51,958] {standard_task_runner.py:77} INFO - Job 286: Subtask postgreSQL_getTable
+[2022-06-26 19:24:51,999] {logging_mixin.py:104} INFO - Running <TaskInstance: SDG_Enrique_V0.postgreSQL_getTable 2022-06-26T00:00:00+00:00 [running]> on host 6fc8504e86cf
+[2022-06-26 19:24:52,040] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=enrique-liebana@outlook.com
+AIRFLOW_CTX_DAG_OWNER=Enrique
+AIRFLOW_CTX_DAG_ID=SDG_Enrique_V0
+AIRFLOW_CTX_TASK_ID=postgreSQL_getTable
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-26T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-26T00:00:00+00:00
+[2022-06-26 19:24:52,052] {base.py:74} INFO - Using connection to: id: postgres_conection. Host: host.docker.internal, Port: 5432, Schema: data_company, Login: airflow, Password: XXXXXXXX, extra: None
+[2022-06-26 19:25:04,318] {company_forecasting.py:78} INFO - Backup Company data in : /raw_data/company.csv
+[2022-06-26 19:25:04,322] {python.py:118} INFO - Done. Returned value was: None
+[2022-06-26 19:25:04,333] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=SDG_Enrique_V0, task_id=postgreSQL_getTable, execution_date=20220626T000000, start_date=20220626T192451, end_date=20220626T192504
+[2022-06-26 19:25:04,361] {taskinstance.py:1220} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-26 19:25:04,404] {local_task_job.py:146} INFO - Task exited with return code 0

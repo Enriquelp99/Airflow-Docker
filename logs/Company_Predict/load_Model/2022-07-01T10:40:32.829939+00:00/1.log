@@ -1,0 +1,24 @@
+[2022-07-01 10:43:36,848] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: Company_Predict.load_Model 2022-07-01T10:40:32.829939+00:00 [queued]>
+[2022-07-01 10:43:36,861] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: Company_Predict.load_Model 2022-07-01T10:40:32.829939+00:00 [queued]>
+[2022-07-01 10:43:36,862] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-01 10:43:36,862] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2022-07-01 10:43:36,863] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-01 10:43:36,870] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): load_Model> on 2022-07-01T10:40:32.829939+00:00
+[2022-07-01 10:43:36,875] {standard_task_runner.py:52} INFO - Started process 15640 to run task
+[2022-07-01 10:43:36,879] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'Company_Predict', 'load_Model', '2022-07-01T10:40:32.829939+00:00', '--job-id', '1587', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/company_predict.py', '--cfg-path', '/tmp/tmp2atqn2bv', '--error-file', '/tmp/tmp26xr5vgi']
+[2022-07-01 10:43:36,881] {standard_task_runner.py:77} INFO - Job 1587: Subtask load_Model
+[2022-07-01 10:43:36,924] {logging_mixin.py:104} INFO - Running <TaskInstance: Company_Predict.load_Model 2022-07-01T10:40:32.829939+00:00 [running]> on host 14dddcffc0ea
+[2022-07-01 10:43:36,964] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=enrique-liebana@outlook.com
+AIRFLOW_CTX_DAG_OWNER=Enrique Liebana Peña
+AIRFLOW_CTX_DAG_ID=Company_Predict
+AIRFLOW_CTX_TASK_ID=load_Model
+AIRFLOW_CTX_EXECUTION_DATE=2022-07-01T10:40:32.829939+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-07-01T10:40:32.829939+00:00
+[2022-07-01 10:43:42,839] {logging_mixin.py:104} INFO - XGBOOST        | ROC-AUC score = 0.689 | Accuracy = 0.634
+[2022-07-01 10:43:42,846] {python.py:118} INFO - Done. Returned value was: None
+[2022-07-01 10:43:42,860] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=Company_Predict, task_id=load_Model, execution_date=20220701T104032, start_date=20220701T104336, end_date=20220701T104342
+[2022-07-01 10:43:42,882] {taskinstance.py:1220} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-07-01 10:43:42,931] {local_task_job.py:146} INFO - Task exited with return code 0

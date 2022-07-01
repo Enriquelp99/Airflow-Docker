@@ -1,0 +1,22 @@
+[2022-06-26 19:16:03,662] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: trigger_dag.gridSearchLR 2022-06-26T19:13:39.981080+00:00 [queued]>
+[2022-06-26 19:16:03,700] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: trigger_dag.gridSearchLR 2022-06-26T19:13:39.981080+00:00 [queued]>
+[2022-06-26 19:16:03,702] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-26 19:16:03,705] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2022-06-26 19:16:03,706] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-26 19:16:03,801] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): gridSearchLR> on 2022-06-26T19:13:39.981080+00:00
+[2022-06-26 19:16:03,824] {standard_task_runner.py:52} INFO - Started process 455 to run task
+[2022-06-26 19:16:03,847] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'trigger_dag', 'gridSearchLR', '2022-06-26T19:13:39.981080+00:00', '--job-id', '248', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/trigger_dag.py', '--cfg-path', '/tmp/tmpnkvg3lrh', '--error-file', '/tmp/tmpvvhf_0hc']
+[2022-06-26 19:16:03,854] {standard_task_runner.py:77} INFO - Job 248: Subtask gridSearchLR
+[2022-06-26 19:16:03,994] {logging_mixin.py:104} INFO - Running <TaskInstance: trigger_dag.gridSearchLR 2022-06-26T19:13:39.981080+00:00 [running]> on host 6fc8504e86cf
+[2022-06-26 19:16:04,120] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=trigger_dag
+AIRFLOW_CTX_TASK_ID=gridSearchLR
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-26T19:13:39.981080+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-26T19:13:39.981080+00:00
+[2022-06-26 19:16:04,131] {python.py:118} INFO - Done. Returned value was: None
+[2022-06-26 19:16:04,177] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=trigger_dag, task_id=gridSearchLR, execution_date=20220626T191339, start_date=20220626T191603, end_date=20220626T191604
+[2022-06-26 19:16:04,253] {taskinstance.py:1220} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-26 19:16:04,292] {local_task_job.py:146} INFO - Task exited with return code 0

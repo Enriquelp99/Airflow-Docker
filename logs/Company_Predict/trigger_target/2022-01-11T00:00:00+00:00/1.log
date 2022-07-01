@@ -1,0 +1,74 @@
+[2022-06-29 20:53:24,947] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: Company_Predict.trigger_target 2022-01-11T00:00:00+00:00 [None]>
+[2022-06-29 20:53:25,163] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: Company_Predict.trigger_target 2022-01-11T00:00:00+00:00 [None]>
+[2022-06-29 20:53:25,190] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-29 20:53:25,205] {taskinstance.py:1043} INFO - Starting attempt 1 of 2
+[2022-06-29 20:53:25,206] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-29 20:53:25,239] {taskinstance.py:1063} INFO - Executing <Task(TriggerDagRunOperator): trigger_target> on 2022-01-11T00:00:00+00:00
+[2022-06-29 20:53:25,252] {standard_task_runner.py:52} INFO - Started process 1258 to run task
+[2022-06-29 20:53:25,314] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'Company_Predict', 'trigger_target', '2022-01-11T00:00:00+00:00', '--job-id', '1338', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/company_predict.py', '--cfg-path', '/tmp/tmpp5oaaayz', '--error-file', '/tmp/tmp6_2a6e_v']
+[2022-06-29 20:53:25,353] {standard_task_runner.py:77} INFO - Job 1338: Subtask trigger_target
+[2022-06-29 20:53:25,959] {logging_mixin.py:104} INFO - Running <TaskInstance: Company_Predict.trigger_target 2022-01-11T00:00:00+00:00 [running]> on host 1ff8f57a8cbf
+[2022-06-29 20:53:26,214] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=enrique-liebana@outlook.com
+AIRFLOW_CTX_DAG_OWNER=Enrique Liebana Peña
+AIRFLOW_CTX_DAG_ID=Company_Predict
+AIRFLOW_CTX_TASK_ID=trigger_target
+AIRFLOW_CTX_EXECUTION_DATE=2022-01-11T00:00:00+00:00
+[2022-06-29 20:53:26,274] {taskinstance.py:1455} ERROR - Dag id SDG_Enrique_V0 not found in DagModel
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/trigger_dagrun.py", line 135, in execute
+    replace_microseconds=False,
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/api/common/experimental/trigger_dag.py", line 114, in trigger_dag
+    raise DagNotFound(f"Dag id {dag_id} not found in DagModel")
+airflow.exceptions.DagNotFound: Dag id SDG_Enrique_V0 not found in DagModel
+[2022-06-29 20:53:26,294] {taskinstance.py:1503} INFO - Marking task as UP_FOR_RETRY. dag_id=Company_Predict, task_id=trigger_target, execution_date=20220111T000000, start_date=20220629T205324, end_date=20220629T205326
+[2022-06-29 20:53:26,411] {local_task_job.py:146} INFO - Task exited with return code 1
+[2022-06-29 20:56:28,531] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: Company_Predict.trigger_target 2022-01-11T00:00:00+00:00 [queued]>
+[2022-06-29 20:56:28,915] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: Company_Predict.trigger_target 2022-01-11T00:00:00+00:00 [queued]>
+[2022-06-29 20:56:28,936] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-29 20:56:28,947] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2022-06-29 20:56:28,959] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-29 20:56:29,091] {taskinstance.py:1063} INFO - Executing <Task(TriggerDagRunOperator): trigger_target> on 2022-01-11T00:00:00+00:00
+[2022-06-29 20:56:29,118] {standard_task_runner.py:52} INFO - Started process 1640 to run task
+[2022-06-29 20:56:29,172] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'Company_Predict', 'trigger_target', '2022-01-11T00:00:00+00:00', '--job-id', '1373', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/company_predict.py', '--cfg-path', '/tmp/tmpimhwbqj7', '--error-file', '/tmp/tmpjsgcytau']
+[2022-06-29 20:56:29,191] {standard_task_runner.py:77} INFO - Job 1373: Subtask trigger_target
+[2022-06-29 20:56:29,759] {logging_mixin.py:104} INFO - Running <TaskInstance: Company_Predict.trigger_target 2022-01-11T00:00:00+00:00 [running]> on host 1ff8f57a8cbf
+[2022-06-29 20:56:30,046] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=enrique-liebana@outlook.com
+AIRFLOW_CTX_DAG_OWNER=Enrique Liebana Peña
+AIRFLOW_CTX_DAG_ID=Company_Predict
+AIRFLOW_CTX_TASK_ID=trigger_target
+AIRFLOW_CTX_EXECUTION_DATE=2022-01-11T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-01-11T00:00:00+00:00
+[2022-06-29 20:56:30,199] {trigger_dagrun.py:165} INFO - Waiting for SDG_Enrique_V0 on 2022-01-11T00:00:00+00:00 to become allowed state ['success'] ...
+[2022-06-29 20:57:31,204] {taskinstance.py:1455} ERROR - No row was found for one()
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/trigger_dagrun.py", line 169, in execute
+    dag_run.refresh_from_db()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/session.py", line 65, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagrun.py", line 178, in refresh_from_db
+    DR.run_id == self.run_id,
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 3500, in one
+    raise orm_exc.NoResultFound("No row was found for one()")
+sqlalchemy.orm.exc.NoResultFound: No row was found for one()
+[2022-06-29 20:57:31,610] {taskinstance.py:1503} INFO - Marking task as FAILED. dag_id=Company_Predict, task_id=trigger_target, execution_date=20220111T000000, start_date=20220629T205628, end_date=20220629T205731
+[2022-06-29 20:57:32,481] {local_task_job.py:188} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2022-06-29 20:57:32,920] {process_utils.py:100} INFO - Sending Signals.SIGTERM to GPID 1640
+[2022-06-29 20:57:33,864] {process_utils.py:66} INFO - Process psutil.Process(pid=1640, status='terminated', exitcode=1, started='20:56:28') (1640) terminated with exit code 1

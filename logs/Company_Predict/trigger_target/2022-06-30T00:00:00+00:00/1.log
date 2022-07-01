@@ -1,0 +1,285 @@
+[2022-07-01 07:44:13,067] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: Company_Predict.trigger_target 2022-06-30T00:00:00+00:00 [queued]>
+[2022-07-01 07:44:13,087] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: Company_Predict.trigger_target 2022-06-30T00:00:00+00:00 [queued]>
+[2022-07-01 07:44:13,088] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-01 07:44:13,089] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2022-07-01 07:44:13,090] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-01 07:44:13,101] {taskinstance.py:1063} INFO - Executing <Task(TriggerDagRunOperator): trigger_target> on 2022-06-30T00:00:00+00:00
+[2022-07-01 07:44:13,110] {standard_task_runner.py:52} INFO - Started process 187 to run task
+[2022-07-01 07:44:13,114] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'Company_Predict', 'trigger_target', '2022-06-30T00:00:00+00:00', '--job-id', '1530', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/company_predict.py', '--cfg-path', '/tmp/tmpbm1uhiui', '--error-file', '/tmp/tmpllqw6swo']
+[2022-07-01 07:44:13,117] {standard_task_runner.py:77} INFO - Job 1530: Subtask trigger_target
+[2022-07-01 07:44:13,173] {logging_mixin.py:104} INFO - Running <TaskInstance: Company_Predict.trigger_target 2022-06-30T00:00:00+00:00 [running]> on host 14dddcffc0ea
+[2022-07-01 07:44:13,243] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=enrique-liebana@outlook.com
+AIRFLOW_CTX_DAG_OWNER=Enrique Liebana Peña
+AIRFLOW_CTX_DAG_ID=Company_Predict
+AIRFLOW_CTX_TASK_ID=trigger_target
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-30T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-30T00:00:00+00:00
+[2022-07-01 07:44:13,296] {taskinstance.py:1455} ERROR - (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "dag_run_dag_id_execution_date_key"
+DETAIL:  Key (dag_id, execution_date)=(SDG_Enrique_V0, 2022-06-30 00:00:00+00) already exists.
+
+[SQL: INSERT INTO dag_run (dag_id, execution_date, start_date, end_date, state, run_id, creating_job_id, external_trigger, run_type, conf, last_scheduling_decision, dag_hash) VALUES (%(dag_id)s, %(execution_date)s, %(start_date)s, %(end_date)s, %(state)s, %(run_id)s, %(creating_job_id)s, %(external_trigger)s, %(run_type)s, %(conf)s, %(last_scheduling_decision)s, %(dag_hash)s) RETURNING dag_run.id]
+[parameters: {'dag_id': 'SDG_Enrique_V0', 'execution_date': DateTime(2022, 6, 30, 0, 0, 0, tzinfo=Timezone('UTC')), 'start_date': datetime.datetime(2022, 7, 1, 7, 44, 13, 293507, tzinfo=Timezone('UTC')), 'end_date': None, 'state': 'running', 'run_id': 'manual__2022-06-30T00:00:00+00:00', 'creating_job_id': None, 'external_trigger': True, 'run_type': <DagRunType.MANUAL: 'manual'>, 'conf': <psycopg2.extensions.Binary object at 0x7f91c25f2490>, 'last_scheduling_decision': None, 'dag_hash': '416aa760e43189792114879ef11a2cae'}]
+(Background on this error at: http://sqlalche.me/e/13/gkpj)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1277, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 608, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "dag_run_dag_id_execution_date_key"
+DETAIL:  Key (dag_id, execution_date)=(SDG_Enrique_V0, 2022-06-30 00:00:00+00) already exists.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/trigger_dagrun.py", line 135, in execute
+    replace_microseconds=False,
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/api/common/experimental/trigger_dag.py", line 123, in trigger_dag
+    replace_microseconds=replace_microseconds,
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/api/common/experimental/trigger_dag.py", line 89, in _trigger_dag
+    dag_hash=dag_bag.dags_hash.get(dag_id),
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/session.py", line 65, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dag.py", line 1781, in create_dagrun
+    session.flush()
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2540, in flush
+    self._flush(objects)
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2682, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2642, in _flush
+    flush_context.execute()
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/orm/unitofwork.py", line 422, in execute
+    rec.execute(self)
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/orm/unitofwork.py", line 589, in execute
+    uow,
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/orm/persistence.py", line 245, in save_obj
+    insert,
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/orm/persistence.py", line 1136, in _emit_insert_statements
+    statement, params
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1011, in execute
+    return meth(self, multiparams, params)
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/sql/elements.py", line 298, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1130, in _execute_clauseelement
+    distilled_params,
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1317, in _execute_context
+    e, statement, parameters, cursor, context
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1511, in _handle_dbapi_exception
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1277, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 608, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "dag_run_dag_id_execution_date_key"
+DETAIL:  Key (dag_id, execution_date)=(SDG_Enrique_V0, 2022-06-30 00:00:00+00) already exists.
+
+[SQL: INSERT INTO dag_run (dag_id, execution_date, start_date, end_date, state, run_id, creating_job_id, external_trigger, run_type, conf, last_scheduling_decision, dag_hash) VALUES (%(dag_id)s, %(execution_date)s, %(start_date)s, %(end_date)s, %(state)s, %(run_id)s, %(creating_job_id)s, %(external_trigger)s, %(run_type)s, %(conf)s, %(last_scheduling_decision)s, %(dag_hash)s) RETURNING dag_run.id]
+[parameters: {'dag_id': 'SDG_Enrique_V0', 'execution_date': DateTime(2022, 6, 30, 0, 0, 0, tzinfo=Timezone('UTC')), 'start_date': datetime.datetime(2022, 7, 1, 7, 44, 13, 293507, tzinfo=Timezone('UTC')), 'end_date': None, 'state': 'running', 'run_id': 'manual__2022-06-30T00:00:00+00:00', 'creating_job_id': None, 'external_trigger': True, 'run_type': <DagRunType.MANUAL: 'manual'>, 'conf': <psycopg2.extensions.Binary object at 0x7f91c25f2490>, 'last_scheduling_decision': None, 'dag_hash': '416aa760e43189792114879ef11a2cae'}]
+(Background on this error at: http://sqlalche.me/e/13/gkpj)
+[2022-07-01 07:44:13,322] {taskinstance.py:1503} INFO - Marking task as FAILED. dag_id=Company_Predict, task_id=trigger_target, execution_date=20220630T000000, start_date=20220701T074413, end_date=20220701T074413
+[2022-07-01 07:44:13,452] {local_task_job.py:146} INFO - Task exited with return code 1
+[2022-07-01 10:35:29,243] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: Company_Predict.trigger_target 2022-06-30T00:00:00+00:00 [queued]>
+[2022-07-01 10:35:29,315] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: Company_Predict.trigger_target 2022-06-30T00:00:00+00:00 [queued]>
+[2022-07-01 10:35:29,316] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-01 10:35:29,317] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2022-07-01 10:35:29,318] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-01 10:35:29,356] {taskinstance.py:1063} INFO - Executing <Task(TriggerDagRunOperator): trigger_target> on 2022-06-30T00:00:00+00:00
+[2022-07-01 10:35:29,379] {standard_task_runner.py:52} INFO - Started process 14929 to run task
+[2022-07-01 10:35:29,428] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'Company_Predict', 'trigger_target', '2022-06-30T00:00:00+00:00', '--job-id', '1560', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/company_predict.py', '--cfg-path', '/tmp/tmps_w0jury', '--error-file', '/tmp/tmpjtc4em2c']
+[2022-07-01 10:35:29,459] {standard_task_runner.py:77} INFO - Job 1560: Subtask trigger_target
+[2022-07-01 10:35:29,620] {logging_mixin.py:104} INFO - Running <TaskInstance: Company_Predict.trigger_target 2022-06-30T00:00:00+00:00 [running]> on host 14dddcffc0ea
+[2022-07-01 10:35:29,757] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=enrique-liebana@outlook.com
+AIRFLOW_CTX_DAG_OWNER=Enrique Liebana Peña
+AIRFLOW_CTX_DAG_ID=Company_Predict
+AIRFLOW_CTX_TASK_ID=trigger_target
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-30T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-30T00:00:00+00:00
+[2022-07-01 10:35:29,877] {taskinstance.py:1455} ERROR - (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "dag_run_dag_id_execution_date_key"
+DETAIL:  Key (dag_id, execution_date)=(SDG_Enrique_V0, 2022-06-30 00:00:00+00) already exists.
+
+[SQL: INSERT INTO dag_run (dag_id, execution_date, start_date, end_date, state, run_id, creating_job_id, external_trigger, run_type, conf, last_scheduling_decision, dag_hash) VALUES (%(dag_id)s, %(execution_date)s, %(start_date)s, %(end_date)s, %(state)s, %(run_id)s, %(creating_job_id)s, %(external_trigger)s, %(run_type)s, %(conf)s, %(last_scheduling_decision)s, %(dag_hash)s) RETURNING dag_run.id]
+[parameters: {'dag_id': 'SDG_Enrique_V0', 'execution_date': DateTime(2022, 6, 30, 0, 0, 0, tzinfo=Timezone('UTC')), 'start_date': datetime.datetime(2022, 7, 1, 10, 35, 29, 872107, tzinfo=Timezone('UTC')), 'end_date': None, 'state': 'running', 'run_id': 'manual__2022-06-30T00:00:00+00:00', 'creating_job_id': None, 'external_trigger': True, 'run_type': <DagRunType.MANUAL: 'manual'>, 'conf': <psycopg2.extensions.Binary object at 0x7f91c25f2490>, 'last_scheduling_decision': None, 'dag_hash': '416aa760e43189792114879ef11a2cae'}]
+(Background on this error at: http://sqlalche.me/e/13/gkpj)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1277, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 608, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "dag_run_dag_id_execution_date_key"
+DETAIL:  Key (dag_id, execution_date)=(SDG_Enrique_V0, 2022-06-30 00:00:00+00) already exists.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/trigger_dagrun.py", line 135, in execute
+    replace_microseconds=False,
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/api/common/experimental/trigger_dag.py", line 123, in trigger_dag
+    replace_microseconds=replace_microseconds,
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/api/common/experimental/trigger_dag.py", line 89, in _trigger_dag
+    dag_hash=dag_bag.dags_hash.get(dag_id),
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/session.py", line 65, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dag.py", line 1781, in create_dagrun
+    session.flush()
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2540, in flush
+    self._flush(objects)
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2682, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2642, in _flush
+    flush_context.execute()
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/orm/unitofwork.py", line 422, in execute
+    rec.execute(self)
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/orm/unitofwork.py", line 589, in execute
+    uow,
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/orm/persistence.py", line 245, in save_obj
+    insert,
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/orm/persistence.py", line 1136, in _emit_insert_statements
+    statement, params
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1011, in execute
+    return meth(self, multiparams, params)
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/sql/elements.py", line 298, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1130, in _execute_clauseelement
+    distilled_params,
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1317, in _execute_context
+    e, statement, parameters, cursor, context
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1511, in _handle_dbapi_exception
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1277, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 608, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "dag_run_dag_id_execution_date_key"
+DETAIL:  Key (dag_id, execution_date)=(SDG_Enrique_V0, 2022-06-30 00:00:00+00) already exists.
+
+[SQL: INSERT INTO dag_run (dag_id, execution_date, start_date, end_date, state, run_id, creating_job_id, external_trigger, run_type, conf, last_scheduling_decision, dag_hash) VALUES (%(dag_id)s, %(execution_date)s, %(start_date)s, %(end_date)s, %(state)s, %(run_id)s, %(creating_job_id)s, %(external_trigger)s, %(run_type)s, %(conf)s, %(last_scheduling_decision)s, %(dag_hash)s) RETURNING dag_run.id]
+[parameters: {'dag_id': 'SDG_Enrique_V0', 'execution_date': DateTime(2022, 6, 30, 0, 0, 0, tzinfo=Timezone('UTC')), 'start_date': datetime.datetime(2022, 7, 1, 10, 35, 29, 872107, tzinfo=Timezone('UTC')), 'end_date': None, 'state': 'running', 'run_id': 'manual__2022-06-30T00:00:00+00:00', 'creating_job_id': None, 'external_trigger': True, 'run_type': <DagRunType.MANUAL: 'manual'>, 'conf': <psycopg2.extensions.Binary object at 0x7f91c25f2490>, 'last_scheduling_decision': None, 'dag_hash': '416aa760e43189792114879ef11a2cae'}]
+(Background on this error at: http://sqlalche.me/e/13/gkpj)
+[2022-07-01 10:35:29,908] {taskinstance.py:1503} INFO - Marking task as FAILED. dag_id=Company_Predict, task_id=trigger_target, execution_date=20220630T000000, start_date=20220701T103529, end_date=20220701T103529
+[2022-07-01 10:35:29,999] {local_task_job.py:146} INFO - Task exited with return code 1
+[2022-07-01 10:36:47,593] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: Company_Predict.trigger_target 2022-06-30T00:00:00+00:00 [queued]>
+[2022-07-01 10:36:47,639] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: Company_Predict.trigger_target 2022-06-30T00:00:00+00:00 [queued]>
+[2022-07-01 10:36:47,640] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-01 10:36:47,642] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2022-07-01 10:36:47,642] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-01 10:36:47,661] {taskinstance.py:1063} INFO - Executing <Task(TriggerDagRunOperator): trigger_target> on 2022-06-30T00:00:00+00:00
+[2022-07-01 10:36:47,672] {standard_task_runner.py:52} INFO - Started process 15054 to run task
+[2022-07-01 10:36:47,704] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'Company_Predict', 'trigger_target', '2022-06-30T00:00:00+00:00', '--job-id', '1569', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/company_predict.py', '--cfg-path', '/tmp/tmp78ja6t9s', '--error-file', '/tmp/tmpjw6asn96']
+[2022-07-01 10:36:47,708] {standard_task_runner.py:77} INFO - Job 1569: Subtask trigger_target
+[2022-07-01 10:36:47,807] {logging_mixin.py:104} INFO - Running <TaskInstance: Company_Predict.trigger_target 2022-06-30T00:00:00+00:00 [running]> on host 14dddcffc0ea
+[2022-07-01 10:36:47,902] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=enrique-liebana@outlook.com
+AIRFLOW_CTX_DAG_OWNER=Enrique Liebana Peña
+AIRFLOW_CTX_DAG_ID=Company_Predict
+AIRFLOW_CTX_TASK_ID=trigger_target
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-30T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-30T00:00:00+00:00
+[2022-07-01 10:36:48,008] {taskinstance.py:1455} ERROR - (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "dag_run_dag_id_execution_date_key"
+DETAIL:  Key (dag_id, execution_date)=(SDG_Enrique_V0, 2022-06-30 00:00:00+00) already exists.
+
+[SQL: INSERT INTO dag_run (dag_id, execution_date, start_date, end_date, state, run_id, creating_job_id, external_trigger, run_type, conf, last_scheduling_decision, dag_hash) VALUES (%(dag_id)s, %(execution_date)s, %(start_date)s, %(end_date)s, %(state)s, %(run_id)s, %(creating_job_id)s, %(external_trigger)s, %(run_type)s, %(conf)s, %(last_scheduling_decision)s, %(dag_hash)s) RETURNING dag_run.id]
+[parameters: {'dag_id': 'SDG_Enrique_V0', 'execution_date': DateTime(2022, 6, 30, 0, 0, 0, tzinfo=Timezone('UTC')), 'start_date': datetime.datetime(2022, 7, 1, 10, 36, 48, 1868, tzinfo=Timezone('UTC')), 'end_date': None, 'state': 'running', 'run_id': 'manual__2022-06-30T00:00:00+00:00', 'creating_job_id': None, 'external_trigger': True, 'run_type': <DagRunType.MANUAL: 'manual'>, 'conf': <psycopg2.extensions.Binary object at 0x7f91c25f2490>, 'last_scheduling_decision': None, 'dag_hash': '416aa760e43189792114879ef11a2cae'}]
+(Background on this error at: http://sqlalche.me/e/13/gkpj)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1277, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 608, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "dag_run_dag_id_execution_date_key"
+DETAIL:  Key (dag_id, execution_date)=(SDG_Enrique_V0, 2022-06-30 00:00:00+00) already exists.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/trigger_dagrun.py", line 135, in execute
+    replace_microseconds=False,
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/api/common/experimental/trigger_dag.py", line 123, in trigger_dag
+    replace_microseconds=replace_microseconds,
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/api/common/experimental/trigger_dag.py", line 89, in _trigger_dag
+    dag_hash=dag_bag.dags_hash.get(dag_id),
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/session.py", line 65, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dag.py", line 1781, in create_dagrun
+    session.flush()
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2540, in flush
+    self._flush(objects)
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2682, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2642, in _flush
+    flush_context.execute()
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/orm/unitofwork.py", line 422, in execute
+    rec.execute(self)
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/orm/unitofwork.py", line 589, in execute
+    uow,
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/orm/persistence.py", line 245, in save_obj
+    insert,
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/orm/persistence.py", line 1136, in _emit_insert_statements
+    statement, params
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1011, in execute
+    return meth(self, multiparams, params)
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/sql/elements.py", line 298, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1130, in _execute_clauseelement
+    distilled_params,
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1317, in _execute_context
+    e, statement, parameters, cursor, context
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1511, in _handle_dbapi_exception
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1277, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/airflow/.local/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 608, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "dag_run_dag_id_execution_date_key"
+DETAIL:  Key (dag_id, execution_date)=(SDG_Enrique_V0, 2022-06-30 00:00:00+00) already exists.
+
+[SQL: INSERT INTO dag_run (dag_id, execution_date, start_date, end_date, state, run_id, creating_job_id, external_trigger, run_type, conf, last_scheduling_decision, dag_hash) VALUES (%(dag_id)s, %(execution_date)s, %(start_date)s, %(end_date)s, %(state)s, %(run_id)s, %(creating_job_id)s, %(external_trigger)s, %(run_type)s, %(conf)s, %(last_scheduling_decision)s, %(dag_hash)s) RETURNING dag_run.id]
+[parameters: {'dag_id': 'SDG_Enrique_V0', 'execution_date': DateTime(2022, 6, 30, 0, 0, 0, tzinfo=Timezone('UTC')), 'start_date': datetime.datetime(2022, 7, 1, 10, 36, 48, 1868, tzinfo=Timezone('UTC')), 'end_date': None, 'state': 'running', 'run_id': 'manual__2022-06-30T00:00:00+00:00', 'creating_job_id': None, 'external_trigger': True, 'run_type': <DagRunType.MANUAL: 'manual'>, 'conf': <psycopg2.extensions.Binary object at 0x7f91c25f2490>, 'last_scheduling_decision': None, 'dag_hash': '416aa760e43189792114879ef11a2cae'}]
+(Background on this error at: http://sqlalche.me/e/13/gkpj)
+[2022-07-01 10:36:48,028] {taskinstance.py:1503} INFO - Marking task as FAILED. dag_id=Company_Predict, task_id=trigger_target, execution_date=20220630T000000, start_date=20220701T103647, end_date=20220701T103648
+[2022-07-01 10:36:48,103] {local_task_job.py:146} INFO - Task exited with return code 1

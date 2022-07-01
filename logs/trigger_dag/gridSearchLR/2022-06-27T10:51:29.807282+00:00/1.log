@@ -1,0 +1,23 @@
+[2022-06-27 10:51:31,898] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: trigger_dag.gridSearchLR 2022-06-27T10:51:29.807282+00:00 [queued]>
+[2022-06-27 10:51:31,907] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: trigger_dag.gridSearchLR 2022-06-27T10:51:29.807282+00:00 [queued]>
+[2022-06-27 10:51:31,908] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-27 10:51:31,908] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2022-06-27 10:51:31,909] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-27 10:51:31,921] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): gridSearchLR> on 2022-06-27T10:51:29.807282+00:00
+[2022-06-27 10:51:31,926] {standard_task_runner.py:52} INFO - Started process 400 to run task
+[2022-06-27 10:51:31,930] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'trigger_dag', 'gridSearchLR', '2022-06-27T10:51:29.807282+00:00', '--job-id', '587', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/trigger_dag.py', '--cfg-path', '/tmp/tmpb52fevm0', '--error-file', '/tmp/tmp19j21msr']
+[2022-06-27 10:51:31,934] {standard_task_runner.py:77} INFO - Job 587: Subtask gridSearchLR
+[2022-06-27 10:51:31,977] {logging_mixin.py:104} INFO - Running <TaskInstance: trigger_dag.gridSearchLR 2022-06-27T10:51:29.807282+00:00 [running]> on host 61d9f46d7859
+[2022-06-27 10:51:32,018] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=trigger_dag
+AIRFLOW_CTX_TASK_ID=gridSearchLR
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-27T10:51:29.807282+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-27T10:51:29.807282+00:00
+[2022-06-27 10:51:32,020] {logging_mixin.py:104} INFO - localhost:5001
+[2022-06-27 10:51:36,195] {python.py:118} INFO - Done. Returned value was: None
+[2022-06-27 10:51:36,208] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=trigger_dag, task_id=gridSearchLR, execution_date=20220627T105129, start_date=20220627T105131, end_date=20220627T105136
+[2022-06-27 10:51:36,230] {taskinstance.py:1220} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-27 10:51:36,268] {local_task_job.py:146} INFO - Task exited with return code 0

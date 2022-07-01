@@ -1,0 +1,15 @@
+artifact_uri: ./mlruns/4/514c8d80d73b4baf97495731c82abfb3/artifacts
+end_time: 1656526338982
+entry_point_name: ''
+experiment_id: '4'
+lifecycle_stage: active
+name: ''
+run_id: 514c8d80d73b4baf97495731c82abfb3
+run_uuid: 514c8d80d73b4baf97495731c82abfb3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1656526338951
+status: 3
+tags: []
+user_id: administrador

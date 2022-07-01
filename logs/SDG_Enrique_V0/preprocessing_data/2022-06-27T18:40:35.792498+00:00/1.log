@@ -1,0 +1,256 @@
+[2022-06-27 18:41:30,893] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: SDG_Enrique_V0.preprocessing_data 2022-06-27T18:40:35.792498+00:00 [queued]>
+[2022-06-27 18:41:30,907] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: SDG_Enrique_V0.preprocessing_data 2022-06-27T18:40:35.792498+00:00 [queued]>
+[2022-06-27 18:41:30,908] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-27 18:41:30,909] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2022-06-27 18:41:30,909] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-27 18:41:30,924] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): preprocessing_data> on 2022-06-27T18:40:35.792498+00:00
+[2022-06-27 18:41:30,931] {standard_task_runner.py:52} INFO - Started process 1987 to run task
+[2022-06-27 18:41:30,936] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'SDG_Enrique_V0', 'preprocessing_data', '2022-06-27T18:40:35.792498+00:00', '--job-id', '1297', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/company_forecasting.py', '--cfg-path', '/tmp/tmpeluclqya', '--error-file', '/tmp/tmpr3sn3sc6']
+[2022-06-27 18:41:30,938] {standard_task_runner.py:77} INFO - Job 1297: Subtask preprocessing_data
+[2022-06-27 18:41:30,987] {logging_mixin.py:104} INFO - Running <TaskInstance: SDG_Enrique_V0.preprocessing_data 2022-06-27T18:40:35.792498+00:00 [running]> on host 8799fce82f30
+[2022-06-27 18:41:31,027] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=enrique-liebana@outlook.com
+AIRFLOW_CTX_DAG_OWNER=Enrique
+AIRFLOW_CTX_DAG_ID=SDG_Enrique_V0
+AIRFLOW_CTX_TASK_ID=preprocessing_data
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-27T18:40:35.792498+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-27T18:40:35.792498+00:00
+[2022-06-27 18:41:39,350] {logging_mixin.py:104} INFO - **************** OBJECT COLUmNS *********************
+[2022-06-27 18:41:39,936] {logging_mixin.py:104} INFO - Index(['rev_mean', 'mou_mean', 'totmrc_mean', 'da_mean', 'ovrmou_mean',
+       'ovrrev_mean', 'vceovr_mean', 'datovr_mean', 'roam_mean', 'change_mou',
+       'change_rev', 'drop_vce_mean', 'drop_dat_mean', 'blck_vce_mean',
+       'blck_dat_mean', 'unan_vce_mean', 'unan_dat_mean', 'plcd_vce_mean',
+       'plcd_dat_mean', 'recv_vce_mean', 'recv_sms_mean', 'comp_vce_mean',
+       'comp_dat_mean', 'custcare_mean', 'ccrndmou_mean', 'cc_mou_mean',
+       'inonemin_mean', 'threeway_mean', 'mou_cvce_mean', 'mou_cdat_mean',
+       'mou_rvce_mean', 'owylis_vce_mean', 'mouowylisv_mean',
+       'iwylis_vce_mean', 'mouiwylisv_mean', 'peak_vce_mean', 'peak_dat_mean',
+       'mou_peav_mean', 'mou_pead_mean', 'opk_vce_mean', 'opk_dat_mean',
+       'mou_opkv_mean', 'mou_opkd_mean', 'drop_blk_mean', 'attempt_mean',
+       'complete_mean', 'callfwdv_mean', 'callwait_mean', 'churn', 'months',
+       'uniqsubs', 'actvsubs', 'new_cell', 'crclscod', 'asl_flag', 'totcalls',
+       'totmou', 'totrev', 'adjrev', 'adjmou', 'adjqty', 'avgrev', 'avgmou',
+       'avgqty', 'avg3mou', 'avg3qty', 'avg3rev', 'avg6mou', 'avg6qty',
+       'avg6rev', 'prizm_social_one', 'area', 'dualband', 'refurb_new',
+       'hnd_price', 'phones', 'models', 'hnd_webcap', 'truck', 'rv', 'ownrent',
+       'lor', 'dwlltype', 'marital', 'adults', 'infobase', 'income',
+       'numbcars', 'hhstatin', 'dwllsize', 'forgntvl', 'ethnic', 'kid0_2',
+       'kid3_5', 'kid6_10', 'kid11_15', 'kid16_17', 'creditcd', 'eqpdays',
+       'customer_id'],
+      dtype='object')
+[2022-06-27 18:41:41,787] {logging_mixin.py:104} INFO - (100000, 93)
+[2022-06-27 18:41:42,310] {logging_mixin.py:104} INFO - (100000, 93)
+[2022-06-27 18:41:42,334] {logging_mixin.py:104} INFO - []
+[2022-06-27 18:41:42,380] {logging_mixin.py:104} INFO - (100000, 93)
+[2022-06-27 18:41:42,462] {logging_mixin.py:104} INFO - (100000, 93)
+[2022-06-27 18:41:42,636] {logging_mixin.py:104} INFO - <bound method NDFrame.describe of        asl_flag  kid0_2  kid3_5  kid6_10  kid11_15  kid16_17
+0             0       0       0        0         0         0
+1             0       0       0        0         0         0
+2             0       0       1        0         0         0
+3             0       1       0        0         0         0
+4             0       0       0        0         0         0
+...         ...     ...     ...      ...       ...       ...
+99995         0       0       0        0         0         0
+99996         0       0       0        0         0         1
+99997         0       0       0        0         0         0
+99998         0       0       0        0         0         0
+99999         0       0       0        0         0         0
+
+[100000 rows x 6 columns]>
+[2022-06-27 18:41:43,861] {logging_mixin.py:104} INFO - Index(['rev_mean', 'mou_mean', 'totmrc_mean', 'da_mean', 'ovrmou_mean',
+       'ovrrev_mean', 'vceovr_mean', 'datovr_mean', 'roam_mean', 'change_mou',
+       'change_rev', 'avg6mou', 'avg6qty', 'avg6rev', 'hnd_price', 'truck',
+       'rv', 'adults', 'income', 'forgntvl'],
+      dtype='object')
+[2022-06-27 18:41:54,155] {logging_mixin.py:104} INFO - Index(['rev_mean', 'mou_mean', 'totmrc_mean', 'da_mean', 'ovrmou_mean',
+       'datovr_mean', 'roam_mean', 'change_mou', 'change_rev', 'drop_vce_mean',
+       ...
+       'ethnic_O', 'ethnic_P', 'ethnic_R', 'ethnic_S', 'ethnic_U', 'ethnic_X',
+       'ethnic_Z', 'creditcd_N', 'creditcd_U', 'creditcd_Y'],
+      dtype='object', length=178)
+[2022-06-27 18:42:10,170] {base.py:74} INFO - Using connection to: id: postgres_conection. Host: host.docker.internal, Port: 5432, Schema: data_company, Login: airflow, Password: XXXXXXXX, extra: None
+[2022-06-27 18:42:10,202] {logging_mixin.py:104} INFO - CREATE TABLE IF NOT EXISTS company_A02(rev_mean REAL, 
+mou_mean REAL, 
+totmrc_mean REAL, 
+da_mean REAL, 
+ovrmou_mean REAL, 
+datovr_mean REAL, 
+roam_mean REAL, 
+change_mou REAL, 
+change_rev REAL, 
+drop_vce_mean REAL, 
+drop_dat_mean REAL, 
+blck_vce_mean REAL, 
+blck_dat_mean REAL, 
+unan_vce_mean REAL, 
+unan_dat_mean REAL, 
+plcd_vce_mean REAL, 
+plcd_dat_mean REAL, 
+recv_vce_mean REAL, 
+recv_sms_mean REAL, 
+custcare_mean REAL, 
+ccrndmou_mean REAL, 
+threeway_mean REAL, 
+mou_cvce_mean REAL, 
+mou_rvce_mean REAL, 
+owylis_vce_mean REAL, 
+mouowylisv_mean REAL, 
+iwylis_vce_mean REAL, 
+mouiwylisv_mean REAL, 
+mou_peav_mean REAL, 
+opk_vce_mean REAL, 
+mou_opkv_mean REAL, 
+drop_blk_mean REAL, 
+callfwdv_mean REAL, 
+callwait_mean REAL, 
+churn INT4, 
+months REAL, 
+uniqsubs REAL, 
+actvsubs REAL, 
+asl_flag INT4, 
+totcalls REAL, 
+totrev REAL, 
+avgrev REAL, 
+avgmou REAL, 
+avgqty REAL, 
+hnd_price REAL, 
+phones REAL, 
+models REAL, 
+truck REAL, 
+rv REAL, 
+adults REAL, 
+income REAL, 
+forgntvl REAL, 
+kid0_2 INT4, 
+kid3_5 INT4, 
+kid6_10 INT4, 
+kid11_15 INT4, 
+kid16_17 INT4, 
+eqpdays REAL, 
+new_cell_N INT4, 
+new_cell_U INT4, 
+new_cell_Y INT4, 
+crclscod_A INT4, 
+crclscod_A2 INT4, 
+crclscod_A3 INT4, 
+crclscod_AA INT4, 
+crclscod_B INT4, 
+crclscod_B2 INT4, 
+crclscod_BA INT4, 
+crclscod_C INT4, 
+crclscod_C2 INT4, 
+crclscod_C5 INT4, 
+crclscod_CA INT4, 
+crclscod_CC INT4, 
+crclscod_CY INT4, 
+crclscod_D INT4, 
+crclscod_D2 INT4, 
+crclscod_D4 INT4, 
+crclscod_D5 INT4, 
+crclscod_DA INT4, 
+crclscod_E INT4, 
+crclscod_E2 INT4, 
+crclscod_E4 INT4, 
+crclscod_EA INT4, 
+crclscod_EC INT4, 
+crclscod_EF INT4, 
+crclscod_EM INT4, 
+crclscod_G INT4, 
+crclscod_GA INT4, 
+crclscod_GY INT4, 
+crclscod_H INT4, 
+crclscod_I INT4, 
+crclscod_IF INT4, 
+crclscod_J INT4, 
+crclscod_JF INT4, 
+crclscod_K INT4, 
+crclscod_L INT4, 
+crclscod_M INT4, 
+crclscod_O INT4, 
+crclscod_P1 INT4, 
+crclscod_S INT4, 
+crclscod_TP INT4, 
+crclscod_U INT4, 
+crclscod_U1 INT4, 
+crclscod_V INT4, 
+crclscod_V1 INT4, 
+crclscod_W INT4, 
+crclscod_Y INT4, 
+crclscod_Z INT4, 
+crclscod_Z1 INT4, 
+crclscod_Z2 INT4, 
+crclscod_Z4 INT4, 
+crclscod_Z5 INT4, 
+crclscod_ZA INT4, 
+crclscod_ZF INT4, 
+crclscod_ZY INT4, 
+prizm_social_one_C INT4, 
+prizm_social_one_R INT4, 
+prizm_social_one_S INT4, 
+prizm_social_one_T INT4, 
+prizm_social_one_U INT4, 
+area_0 INT4, 
+area_1 INT4, 
+area_2 INT4, 
+area_3 INT4, 
+area_4 INT4, 
+area_5 INT4, 
+area_6 INT4, 
+area_7 INT4, 
+area_8 INT4, 
+area_9 INT4, 
+area_10 INT4, 
+area_11 INT4, 
+area_12 INT4, 
+area_13 INT4, 
+area_14 INT4, 
+area_15 INT4, 
+area_16 INT4, 
+area_17 INT4, 
+area_18 INT4, 
+area_19 INT4, 
+dualband_N INT4, 
+dualband_T INT4, 
+dualband_U INT4, 
+dualband_Y INT4, 
+refurb_new_N INT4, 
+refurb_new_R INT4, 
+refurb_new_U INT4, 
+hnd_webcap_U INT4, 
+hnd_webcap_WC INT4, 
+hnd_webcap_WCMB INT4, 
+marital_A INT4, 
+marital_B INT4, 
+marital_M INT4, 
+marital_S INT4, 
+marital_U INT4, 
+infobase_M INT4, 
+infobase_N INT4, 
+infobase_U INT4, 
+ethnic_B INT4, 
+ethnic_C INT4, 
+ethnic_D INT4, 
+ethnic_F INT4, 
+ethnic_G INT4, 
+ethnic_H INT4, 
+ethnic_I INT4, 
+ethnic_J INT4, 
+ethnic_M INT4, 
+ethnic_N INT4, 
+ethnic_O INT4, 
+ethnic_P INT4, 
+ethnic_R INT4, 
+ethnic_S INT4, 
+ethnic_U INT4, 
+ethnic_X INT4, 
+ethnic_Z INT4, 
+creditcd_N INT4, 
+creditcd_U INT4, 
+creditcd_Y INT4);
+[2022-06-27 18:42:10,203] {logging_mixin.py:104} INFO - 
+[2022-06-27 18:42:13,962] {python.py:118} INFO - Done. Returned value was: None
+[2022-06-27 18:42:13,982] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=SDG_Enrique_V0, task_id=preprocessing_data, execution_date=20220627T184035, start_date=20220627T184130, end_date=20220627T184213
+[2022-06-27 18:42:14,056] {taskinstance.py:1220} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-27 18:42:14,100] {local_task_job.py:146} INFO - Task exited with return code 0

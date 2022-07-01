@@ -1,0 +1,117 @@
+[2022-06-29 21:42:30,832] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: SDG_Enrique_V0.readCSV_convertColumns 2022-06-29T00:00:00+00:00 [queued]>
+[2022-06-29 21:42:30,847] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: SDG_Enrique_V0.readCSV_convertColumns 2022-06-29T00:00:00+00:00 [queued]>
+[2022-06-29 21:42:30,848] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-29 21:42:30,849] {taskinstance.py:1043} INFO - Starting attempt 5 of 5
+[2022-06-29 21:42:30,850] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-29 21:42:30,859] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): readCSV_convertColumns> on 2022-06-29T00:00:00+00:00
+[2022-06-29 21:42:30,866] {standard_task_runner.py:52} INFO - Started process 2393 to run task
+[2022-06-29 21:42:30,877] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'SDG_Enrique_V0', 'readCSV_convertColumns', '2022-06-29T00:00:00+00:00', '--job-id', '1454', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/company_forecasting.py', '--cfg-path', '/tmp/tmp6juhk7_e', '--error-file', '/tmp/tmp3gcvso9c']
+[2022-06-29 21:42:30,880] {standard_task_runner.py:77} INFO - Job 1454: Subtask readCSV_convertColumns
+[2022-06-29 21:42:30,929] {logging_mixin.py:104} INFO - Running <TaskInstance: SDG_Enrique_V0.readCSV_convertColumns 2022-06-29T00:00:00+00:00 [running]> on host 3cf820b1df4c
+[2022-06-29 21:42:30,978] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=enrique-liebana@outlook.com
+AIRFLOW_CTX_DAG_OWNER=Enrique Liebana Peña
+AIRFLOW_CTX_DAG_ID=SDG_Enrique_V0
+AIRFLOW_CTX_TASK_ID=readCSV_convertColumns
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-29T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-29T00:00:00+00:00
+[2022-06-29 21:42:31,023] {taskinstance.py:1455} ERROR - Error tokenizing data. C error: Expected 100 fields in line 2933, saw 114
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/company_forecasting.py", line 59, in read_and_convertColumns
+    data_company = pd.read_csv('/raw_data/company.csv',delimiter=',',header=0)
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/io/parsers.py", line 688, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/io/parsers.py", line 460, in _read
+    data = parser.read(nrows)
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/io/parsers.py", line 1198, in read
+    ret = self._engine.read(nrows)
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/io/parsers.py", line 2157, in read
+    data = self._reader.read(nrows)
+  File "pandas/_libs/parsers.pyx", line 847, in pandas._libs.parsers.TextReader.read
+  File "pandas/_libs/parsers.pyx", line 862, in pandas._libs.parsers.TextReader._read_low_memory
+  File "pandas/_libs/parsers.pyx", line 918, in pandas._libs.parsers.TextReader._read_rows
+  File "pandas/_libs/parsers.pyx", line 905, in pandas._libs.parsers.TextReader._tokenize_rows
+  File "pandas/_libs/parsers.pyx", line 2042, in pandas._libs.parsers.raise_parser_error
+pandas.errors.ParserError: Error tokenizing data. C error: Expected 100 fields in line 2933, saw 114
+
+[2022-06-29 21:42:31,029] {taskinstance.py:1503} INFO - Marking task as FAILED. dag_id=SDG_Enrique_V0, task_id=readCSV_convertColumns, execution_date=20220629T000000, start_date=20220629T214230, end_date=20220629T214231
+[2022-06-29 21:42:31,093] {local_task_job.py:146} INFO - Task exited with return code 1
+[2022-07-01 07:44:34,546] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: SDG_Enrique_V0.readCSV_convertColumns 2022-06-29T00:00:00+00:00 [queued]>
+[2022-07-01 07:44:34,565] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: SDG_Enrique_V0.readCSV_convertColumns 2022-06-29T00:00:00+00:00 [queued]>
+[2022-07-01 07:44:34,566] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-01 07:44:34,567] {taskinstance.py:1043} INFO - Starting attempt 5 of 5
+[2022-07-01 07:44:34,567] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-01 07:44:34,575] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): readCSV_convertColumns> on 2022-06-29T00:00:00+00:00
+[2022-07-01 07:44:34,580] {standard_task_runner.py:52} INFO - Started process 220 to run task
+[2022-07-01 07:44:34,584] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'SDG_Enrique_V0', 'readCSV_convertColumns', '2022-06-29T00:00:00+00:00', '--job-id', '1534', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/company_forecasting.py', '--cfg-path', '/tmp/tmp4bq_h4i_', '--error-file', '/tmp/tmpapzz5f5n']
+[2022-07-01 07:44:34,586] {standard_task_runner.py:77} INFO - Job 1534: Subtask readCSV_convertColumns
+[2022-07-01 07:44:34,634] {logging_mixin.py:104} INFO - Running <TaskInstance: SDG_Enrique_V0.readCSV_convertColumns 2022-06-29T00:00:00+00:00 [running]> on host 14dddcffc0ea
+[2022-07-01 07:44:34,679] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=enrique-liebana@outlook.com
+AIRFLOW_CTX_DAG_OWNER=Enrique Liebana Peña
+AIRFLOW_CTX_DAG_ID=SDG_Enrique_V0
+AIRFLOW_CTX_TASK_ID=readCSV_convertColumns
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-29T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-29T00:00:00+00:00
+[2022-07-01 07:44:36,680] {logging_mixin.py:104} WARNING - /home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py:1315 DtypeWarning: Columns (46,56,59) have mixed types.Specify dtype option on import or set low_memory=False.
+[2022-07-01 07:44:37,008] {logging_mixin.py:104} INFO -   rev_mean mou_mean totmrc_mean  ... creditcd eqpdays customer_id
+0  23,9975   219,25        22,5  ...        Y   361.0     1000001
+1  57,4925   482,75      37,425  ...        Y   240.0     1000002
+2    16,99    10,25       16,99  ...        Y  1504.0     1000003
+3       38      7,5          38  ...        Y  1812.0     1000004
+4    55,23    570,5       71,98  ...        Y   434.0     1000005
+
+[5 rows x 100 columns]
+[2022-07-01 07:44:37,014] {logging_mixin.py:104} INFO - rev_mean        object
+mou_mean        object
+totmrc_mean     object
+da_mean         object
+ovrmou_mean     object
+                ...   
+kid11_15        object
+kid16_17        object
+creditcd        object
+eqpdays        float64
+customer_id      int64
+Length: 100, dtype: object
+[2022-07-01 07:44:37,015] {logging_mixin.py:104} INFO - **************** FLOAT COLUmNS *********************
+[2022-07-01 07:44:43,895] {logging_mixin.py:104} INFO -    rev_mean  mou_mean  totmrc_mean  da_mean  ...  avgrev  avgmou  avgqty  hnd_price
+0   23.9975    219.25       22.500   0.2475  ...   29.66   83.37   32.69  149.98999
+1   57.4925    482.75       37.425   0.2475  ...   51.53  479.40  265.89        NaN
+2   16.9900     10.25       16.990   0.0000  ...   34.54  433.98  140.86   29.98999
+3   38.0000      7.50       38.000   0.0000  ...   40.45   63.23   30.81   29.98999
+4   55.2300    570.50       71.980   0.0000  ...   38.69  249.38   79.50  149.98999
+
+[5 rows x 56 columns]
+[2022-07-01 07:44:43,898] {logging_mixin.py:104} INFO - **************** OBJECT COLUmNS *********************
+[2022-07-01 07:44:44,394] {logging_mixin.py:104} INFO - ************+***********RESULTS*****************************
+[2022-07-01 07:44:44,403] {logging_mixin.py:104} INFO - FLOAT64 (100000, 69)
+[2022-07-01 07:44:44,406] {logging_mixin.py:104} INFO - INT64 (100000, 10)
+[2022-07-01 07:44:44,408] {logging_mixin.py:104} INFO - STRING (100000, 21)
+[2022-07-01 07:44:44,522] {logging_mixin.py:104} INFO -    rev_mean  mou_mean  totmrc_mean  ...  creditcd  eqpdays  customer_id
+0   23.9975    219.25       22.500  ...         Y    361.0      1000001
+1   57.4925    482.75       37.425  ...         Y    240.0      1000002
+2   16.9900     10.25       16.990  ...         Y   1504.0      1000003
+3   38.0000      7.50       38.000  ...         Y   1812.0      1000004
+4   55.2300    570.50       71.980  ...         Y    434.0      1000005
+
+[5 rows x 100 columns]
+[2022-07-01 07:45:04,964] {base.py:74} INFO - Using connection to: id: postgres_conection. Host: host.docker.internal, Port: 5432, Schema: data_company, Login: airflow, Password: XXXXXXXX, extra: None
+[2022-07-01 07:45:07,637] {python.py:118} INFO - Done. Returned value was: None
+[2022-07-01 07:45:07,647] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=SDG_Enrique_V0, task_id=readCSV_convertColumns, execution_date=20220629T000000, start_date=20220701T074434, end_date=20220701T074507
+[2022-07-01 07:45:07,673] {taskinstance.py:1220} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-07-01 07:45:07,729] {local_task_job.py:146} INFO - Task exited with return code 0

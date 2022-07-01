@@ -1,0 +1,184 @@
+[2022-06-26 09:18:21,101] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: SDG_Enrique_V0.readCSV_convertColumns 2022-06-26T09:18:00.992650+00:00 [queued]>
+[2022-06-26 09:18:21,117] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: SDG_Enrique_V0.readCSV_convertColumns 2022-06-26T09:18:00.992650+00:00 [queued]>
+[2022-06-26 09:18:21,118] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-26 09:18:21,119] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2022-06-26 09:18:21,119] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-26 09:18:21,128] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): readCSV_convertColumns> on 2022-06-26T09:18:00.992650+00:00
+[2022-06-26 09:18:21,134] {standard_task_runner.py:52} INFO - Started process 11066 to run task
+[2022-06-26 09:18:21,138] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'SDG_Enrique_V0', 'readCSV_convertColumns', '2022-06-26T09:18:00.992650+00:00', '--job-id', '201', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/company_forecasting.py', '--cfg-path', '/tmp/tmpenpl171g', '--error-file', '/tmp/tmp1zhrzkpb']
+[2022-06-26 09:18:21,140] {standard_task_runner.py:77} INFO - Job 201: Subtask readCSV_convertColumns
+[2022-06-26 09:18:21,185] {logging_mixin.py:104} INFO - Running <TaskInstance: SDG_Enrique_V0.readCSV_convertColumns 2022-06-26T09:18:00.992650+00:00 [running]> on host 5e8dc4b25004
+[2022-06-26 09:18:21,225] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=enrique-liebana@outlook.com
+AIRFLOW_CTX_DAG_OWNER=Enrique
+AIRFLOW_CTX_DAG_ID=SDG_Enrique_V0
+AIRFLOW_CTX_TASK_ID=readCSV_convertColumns
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-26T09:18:00.992650+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-26T09:18:00.992650+00:00
+[2022-06-26 09:18:23,447] {logging_mixin.py:104} WARNING - /home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py:1315 DtypeWarning: Columns (46,56,59) have mixed types.Specify dtype option on import or set low_memory=False.
+[2022-06-26 09:18:23,763] {logging_mixin.py:104} INFO -   rev_mean mou_mean totmrc_mean  ... creditcd eqpdays customer_id
+0  23,9975   219,25        22,5  ...        Y   361.0     1000001
+1  57,4925   482,75      37,425  ...        Y   240.0     1000002
+2    16,99    10,25       16,99  ...        Y  1504.0     1000003
+3       38      7,5          38  ...        Y  1812.0     1000004
+4    55,23    570,5       71,98  ...        Y   434.0     1000005
+
+[5 rows x 100 columns]
+[2022-06-26 09:18:23,768] {logging_mixin.py:104} INFO - rev_mean        object
+mou_mean        object
+totmrc_mean     object
+da_mean         object
+ovrmou_mean     object
+                ...   
+kid11_15        object
+kid16_17        object
+creditcd        object
+eqpdays        float64
+customer_id      int64
+Length: 100, dtype: object
+[2022-06-26 09:18:23,769] {logging_mixin.py:104} INFO - **************** FLOAT COLUmNS *********************
+[2022-06-26 09:18:30,008] {logging_mixin.py:104} INFO -    rev_mean  mou_mean  totmrc_mean  da_mean  ...  avgrev  avgmou  avgqty  hnd_price
+0   23.9975    219.25       22.500   0.2475  ...   29.66   83.37   32.69  149.98999
+1   57.4925    482.75       37.425   0.2475  ...   51.53  479.40  265.89        NaN
+2   16.9900     10.25       16.990   0.0000  ...   34.54  433.98  140.86   29.98999
+3   38.0000      7.50       38.000   0.0000  ...   40.45   63.23   30.81   29.98999
+4   55.2300    570.50       71.980   0.0000  ...   38.69  249.38   79.50  149.98999
+
+[5 rows x 56 columns]
+[2022-06-26 09:18:30,010] {logging_mixin.py:104} INFO - **************** OBJECT COLUmNS *********************
+[2022-06-26 09:18:30,536] {logging_mixin.py:104} INFO - ************+***********RESULTS*****************************
+[2022-06-26 09:18:30,553] {logging_mixin.py:104} INFO - FLOAT64 (100000, 69)
+[2022-06-26 09:18:30,559] {logging_mixin.py:104} INFO - INT64 (100000, 10)
+[2022-06-26 09:18:30,564] {logging_mixin.py:104} INFO - STRING (100000, 21)
+[2022-06-26 09:18:30,711] {logging_mixin.py:104} INFO -    rev_mean  mou_mean  totmrc_mean  ...  creditcd  eqpdays  customer_id
+0   23.9975    219.25       22.500  ...         Y    361.0      1000001
+1   57.4925    482.75       37.425  ...         Y    240.0      1000002
+2   16.9900     10.25       16.990  ...         Y   1504.0      1000003
+3   38.0000      7.50       38.000  ...         Y   1812.0      1000004
+4   55.2300    570.50       71.980  ...         Y    434.0      1000005
+
+[5 rows x 100 columns]
+[2022-06-26 09:18:47,749] {base.py:74} INFO - Using connection to: id: postgres_conection. Host: host.docker.internal, Port: 5432, Schema: data_company, Login: airflow, Password: XXXXXXXX, extra: None
+[2022-06-26 09:18:47,767] {logging_mixin.py:104} INFO - CREATE TABLE IF NOT EXISTS company_0A1(rev_mean REAL, 
+mou_mean REAL, 
+totmrc_mean REAL, 
+da_mean REAL, 
+ovrmou_mean REAL, 
+ovrrev_mean REAL, 
+vceovr_mean REAL, 
+datovr_mean REAL, 
+roam_mean REAL, 
+change_mou REAL, 
+change_rev REAL, 
+drop_vce_mean REAL, 
+drop_dat_mean REAL, 
+blck_vce_mean REAL, 
+blck_dat_mean REAL, 
+unan_vce_mean REAL, 
+unan_dat_mean REAL, 
+plcd_vce_mean REAL, 
+plcd_dat_mean REAL, 
+recv_vce_mean REAL, 
+recv_sms_mean REAL, 
+comp_vce_mean REAL, 
+comp_dat_mean REAL, 
+custcare_mean REAL, 
+ccrndmou_mean REAL, 
+cc_mou_mean REAL, 
+inonemin_mean REAL, 
+threeway_mean REAL, 
+mou_cvce_mean REAL, 
+mou_cdat_mean REAL, 
+mou_rvce_mean REAL, 
+owylis_vce_mean REAL, 
+mouowylisv_mean REAL, 
+iwylis_vce_mean REAL, 
+mouiwylisv_mean REAL, 
+peak_vce_mean REAL, 
+peak_dat_mean REAL, 
+mou_peav_mean REAL, 
+mou_pead_mean REAL, 
+opk_vce_mean REAL, 
+opk_dat_mean REAL, 
+mou_opkv_mean REAL, 
+mou_opkd_mean REAL, 
+drop_blk_mean REAL, 
+attempt_mean REAL, 
+complete_mean REAL, 
+callfwdv_mean REAL, 
+callwait_mean REAL, 
+churn INT4, 
+months INT4, 
+uniqsubs INT4, 
+actvsubs INT4, 
+new_cell VARCHAR, 
+crclscod VARCHAR, 
+asl_flag VARCHAR, 
+totcalls INT4, 
+totmou REAL, 
+totrev REAL, 
+adjrev REAL, 
+adjmou REAL, 
+adjqty INT4, 
+avgrev REAL, 
+avgmou REAL, 
+avgqty REAL, 
+avg3mou INT4, 
+avg3qty INT4, 
+avg3rev INT4, 
+avg6mou REAL, 
+avg6qty REAL, 
+avg6rev REAL, 
+prizm_social_one VARCHAR, 
+area VARCHAR, 
+dualband VARCHAR, 
+refurb_new VARCHAR, 
+hnd_price REAL, 
+phones REAL, 
+models REAL, 
+hnd_webcap VARCHAR, 
+truck REAL, 
+rv REAL, 
+ownrent VARCHAR, 
+lor REAL, 
+dwlltype VARCHAR, 
+marital VARCHAR, 
+adults REAL, 
+infobase VARCHAR, 
+income REAL, 
+numbcars REAL, 
+hhstatin VARCHAR, 
+dwllsize VARCHAR, 
+forgntvl REAL, 
+ethnic VARCHAR, 
+kid0_2 VARCHAR, 
+kid3_5 VARCHAR, 
+kid6_10 VARCHAR, 
+kid11_15 VARCHAR, 
+kid16_17 VARCHAR, 
+creditcd VARCHAR, 
+eqpdays REAL, 
+customer_id INT4);
+[2022-06-26 09:18:47,768] {logging_mixin.py:104} INFO - 
+[2022-06-26 09:18:50,111] {taskinstance.py:1455} ERROR - invalid input syntax for type real: "U"
+CONTEXT:  COPY company_a01, line 2, column actvsubs: "U"
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/company_forecasting.py", line 111, in read_and_convertColumns
+    cur.copy_expert(sql=sql % table, file=file)
+psycopg2.errors.InvalidTextRepresentation: invalid input syntax for type real: "U"
+CONTEXT:  COPY company_a01, line 2, column actvsubs: "U"
+
+[2022-06-26 09:18:50,118] {taskinstance.py:1503} INFO - Marking task as FAILED. dag_id=SDG_Enrique_V0, task_id=readCSV_convertColumns, execution_date=20220626T091800, start_date=20220626T091821, end_date=20220626T091850
+[2022-06-26 09:18:50,252] {local_task_job.py:146} INFO - Task exited with return code 1

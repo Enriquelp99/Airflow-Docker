@@ -1,0 +1,27 @@
+[2022-07-01 10:27:38,944] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: Company_Predict.load_Model 2022-07-01T10:27:36.961433+00:00 [queued]>
+[2022-07-01 10:27:38,961] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: Company_Predict.load_Model 2022-07-01T10:27:36.961433+00:00 [queued]>
+[2022-07-01 10:27:38,962] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-01 10:27:38,962] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2022-07-01 10:27:38,963] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-01 10:27:38,970] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): load_Model> on 2022-07-01T10:27:36.961433+00:00
+[2022-07-01 10:27:38,977] {standard_task_runner.py:52} INFO - Started process 14197 to run task
+[2022-07-01 10:27:38,981] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'Company_Predict', 'load_Model', '2022-07-01T10:27:36.961433+00:00', '--job-id', '1551', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/company_predict.py', '--cfg-path', '/tmp/tmpoe2hs94e', '--error-file', '/tmp/tmpm6nme14x']
+[2022-07-01 10:27:38,983] {standard_task_runner.py:77} INFO - Job 1551: Subtask load_Model
+[2022-07-01 10:27:39,027] {logging_mixin.py:104} INFO - Running <TaskInstance: Company_Predict.load_Model 2022-07-01T10:27:36.961433+00:00 [running]> on host 14dddcffc0ea
+[2022-07-01 10:27:39,065] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=enrique-liebana@outlook.com
+AIRFLOW_CTX_DAG_OWNER=Enrique Liebana Peña
+AIRFLOW_CTX_DAG_ID=Company_Predict
+AIRFLOW_CTX_TASK_ID=load_Model
+AIRFLOW_CTX_EXECUTION_DATE=2022-07-01T10:27:36.961433+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-07-01T10:27:36.961433+00:00
+[2022-07-01 10:27:46,368] {logging_mixin.py:104} WARNING - /home/airflow/.local/lib/python3.6/site-packages/xgboost/sklearn.py:1224 UserWarning: The use of label encoder in XGBClassifier is deprecated and will be removed in a future release. To remove this warning, do the following: 1) Pass option use_label_encoder=False when constructing XGBClassifier object; and 2) Encode your labels (y) as integers starting with 0, i.e. 0, 1, 2, ..., [num_class - 1].
+[2022-07-01 10:27:47,061] {logging_mixin.py:104} INFO - [10:27:47] WARNING: ../src/learner.cc:1115: Starting in XGBoost 1.3.0, the default evaluation metric used with the objective 'binary:logistic' was changed from 'error' to 'logloss'. Explicitly set eval_metric if you'd like to restore the old behavior.
+[2022-07-01 10:28:05,218] {logging_mixin.py:104} INFO - XGBOOST        | ROC-AUC score = 0.689 | Accuracy = 0.634
+[2022-07-01 10:28:05,265] {logging_mixin.py:104} INFO - 0.63435
+[2022-07-01 10:28:05,271] {python.py:118} INFO - Done. Returned value was: None
+[2022-07-01 10:28:05,289] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=Company_Predict, task_id=load_Model, execution_date=20220701T102736, start_date=20220701T102738, end_date=20220701T102805
+[2022-07-01 10:28:05,319] {taskinstance.py:1220} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-07-01 10:28:05,409] {local_task_job.py:146} INFO - Task exited with return code 0

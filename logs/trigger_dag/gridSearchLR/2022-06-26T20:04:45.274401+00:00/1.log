@@ -1,0 +1,54 @@
+[2022-06-26 20:04:47,779] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: trigger_dag.gridSearchLR 2022-06-26T20:04:45.274401+00:00 [queued]>
+[2022-06-26 20:04:47,794] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: trigger_dag.gridSearchLR 2022-06-26T20:04:45.274401+00:00 [queued]>
+[2022-06-26 20:04:47,795] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-26 20:04:47,795] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2022-06-26 20:04:47,796] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-26 20:04:47,805] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): gridSearchLR> on 2022-06-26T20:04:45.274401+00:00
+[2022-06-26 20:04:47,811] {standard_task_runner.py:52} INFO - Started process 3877 to run task
+[2022-06-26 20:04:47,816] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'trigger_dag', 'gridSearchLR', '2022-06-26T20:04:45.274401+00:00', '--job-id', '299', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/trigger_dag.py', '--cfg-path', '/tmp/tmp4giq3rnt', '--error-file', '/tmp/tmpv52rg7ef']
+[2022-06-26 20:04:47,819] {standard_task_runner.py:77} INFO - Job 299: Subtask gridSearchLR
+[2022-06-26 20:04:47,865] {logging_mixin.py:104} INFO - Running <TaskInstance: trigger_dag.gridSearchLR 2022-06-26T20:04:45.274401+00:00 [running]> on host 6fc8504e86cf
+[2022-06-26 20:04:47,906] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=trigger_dag
+AIRFLOW_CTX_TASK_ID=gridSearchLR
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-26T20:04:45.274401+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-26T20:04:45.274401+00:00
+[2022-06-26 20:04:48,009] {logging_mixin.py:104} WARNING - 2022/06/26 20:04:48 WARNING mlflow.tracking.context.git_context: Failed to import Git (the Git executable is probably not on your PATH), so Git SHA is not available. Error: Failed to initialize: Bad git executable.
+The git executable must be specified in one of the following ways:
+    - be included in your $PATH
+    - be set via $GIT_PYTHON_GIT_EXECUTABLE
+    - explicitly set via git.refresh()
+
+All git commands will error until this is rectified.
+
+This initial warning can be silenced or aggravated in the future by setting the
+$GIT_PYTHON_REFRESH environment variable. Use one of the following values:
+    - quiet|q|silence|s|none|n|0: for no warning or exception
+    - warn|w|warning|1: for a printed warning
+    - error|e|raise|r|2: for a raised exception
+
+Example:
+    export GIT_PYTHON_REFRESH=quiet
+[2022-06-26 20:04:48,017] {logging_mixin.py:104} WARNING - 
+[2022-06-26 20:04:51,818] {taskinstance.py:1455} ERROR - Run with UUID 0c07b84c123e411faa1e773e615cf8f1 is already active. To start a new run, first end the current run with mlflow.end_run(). To start a nested run, call start_run with nested=True
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/trigger_dag.py", line 47, in check_mlflow_setting
+    with mlflow.start_run():
+  File "/home/airflow/.local/lib/python3.6/site-packages/mlflow/tracking/fluent.py", line 232, in start_run
+    ).format(_active_run_stack[0].info.run_id)
+Exception: Run with UUID 0c07b84c123e411faa1e773e615cf8f1 is already active. To start a new run, first end the current run with mlflow.end_run(). To start a nested run, call start_run with nested=True
+[2022-06-26 20:04:51,824] {taskinstance.py:1503} INFO - Marking task as FAILED. dag_id=trigger_dag, task_id=gridSearchLR, execution_date=20220626T200445, start_date=20220626T200447, end_date=20220626T200451
+[2022-06-26 20:04:51,928] {local_task_job.py:146} INFO - Task exited with return code 1

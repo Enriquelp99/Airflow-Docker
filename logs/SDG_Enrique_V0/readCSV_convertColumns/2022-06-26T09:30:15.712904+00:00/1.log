@@ -1,0 +1,655 @@
+[2022-06-26 09:30:52,676] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: SDG_Enrique_V0.readCSV_convertColumns 2022-06-26T09:30:15.712904+00:00 [queued]>
+[2022-06-26 09:30:52,704] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: SDG_Enrique_V0.readCSV_convertColumns 2022-06-26T09:30:15.712904+00:00 [queued]>
+[2022-06-26 09:30:52,705] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-26 09:30:52,706] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2022-06-26 09:30:52,707] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-26 09:30:52,722] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): readCSV_convertColumns> on 2022-06-26T09:30:15.712904+00:00
+[2022-06-26 09:30:52,736] {standard_task_runner.py:52} INFO - Started process 11598 to run task
+[2022-06-26 09:30:52,744] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'SDG_Enrique_V0', 'readCSV_convertColumns', '2022-06-26T09:30:15.712904+00:00', '--job-id', '205', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/company_forecasting.py', '--cfg-path', '/tmp/tmpkahftcbw', '--error-file', '/tmp/tmppnrne7uq']
+[2022-06-26 09:30:52,748] {standard_task_runner.py:77} INFO - Job 205: Subtask readCSV_convertColumns
+[2022-06-26 09:30:52,861] {logging_mixin.py:104} INFO - Running <TaskInstance: SDG_Enrique_V0.readCSV_convertColumns 2022-06-26T09:30:15.712904+00:00 [running]> on host 5e8dc4b25004
+[2022-06-26 09:30:52,930] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=enrique-liebana@outlook.com
+AIRFLOW_CTX_DAG_OWNER=Enrique
+AIRFLOW_CTX_DAG_ID=SDG_Enrique_V0
+AIRFLOW_CTX_TASK_ID=readCSV_convertColumns
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-26T09:30:15.712904+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-26T09:30:15.712904+00:00
+[2022-06-26 09:30:59,649] {logging_mixin.py:104} WARNING - /home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py:1315 DtypeWarning: Columns (46,56,59) have mixed types.Specify dtype option on import or set low_memory=False.
+[2022-06-26 09:31:00,475] {logging_mixin.py:104} INFO -   rev_mean mou_mean totmrc_mean da_mean ovrmou_mean ovrrev_mean vceovr_mean  \
+0  23,9975   219,25        22,5  0,2475           0           0           0   
+1  57,4925   482,75      37,425  0,2475       22,75         9,1         9,1   
+2    16,99    10,25       16,99       0           0           0           0   
+3       38      7,5          38       0           0           0           0   
+4    55,23    570,5       71,98       0           0           0           0   
+
+  datovr_mean roam_mean change_mou change_rev drop_vce_mean drop_dat_mean  \
+0           0         0    -157,25   -18,9975   0,666666667             0   
+1           0         0     532,25    50,9875   8,333333333             0   
+2           0         0      -4,25          0   0,333333333             0   
+3           0         0       -1,5          0             0             0   
+4           0         0       38,5          0   9,666666667             0   
+
+  blck_vce_mean blck_dat_mean unan_vce_mean unan_dat_mean plcd_vce_mean  \
+0   0,666666667             0   6,333333333             0   52,33333333   
+1             1             0   61,33333333             0   263,3333333   
+2             0             0   2,666666667             0             9   
+3             0             0             0             0   3,666666667   
+4   0,666666667             0            77             0   222,3333333   
+
+  plcd_dat_mean recv_vce_mean  recv_sms_mean comp_vce_mean comp_dat_mean  \
+0             0   42,33333333              0            45             0   
+1             0            69              0   193,3333333             0   
+2             0   0,333333333              0             6             0   
+3             0   1,333333333              0   3,666666667             0   
+4             0   94,66666667              0           137             0   
+
+  custcare_mean ccrndmou_mean  cc_mou_mean inonemin_mean threeway_mean  \
+0             0             0            0            18             0   
+1   1,666666667   6,333333333  5,463333333            53   0,333333333   
+2             0             0            0   0,333333333             0   
+3             0             0            0   1,333333333             0   
+4   8,666666667            15  11,07666667            66             0   
+
+  mou_cvce_mean mou_cdat_mean mou_rvce_mean owylis_vce_mean mouowylisv_mean  \
+0   90,64333333             0   97,17666667               0               0   
+1   189,3966667             0         55,28     46,33333333     24,21666667   
+2   5,426666667             0             0               0               0   
+3          8,41             0   0,413333333     0,333333333     0,256666667   
+4   285,2333333             0        106,33     14,66666667     10,81666667   
+
+  iwylis_vce_mean mouiwylisv_mean peak_vce_mean peak_dat_mean mou_peav_mean  \
+0               0               0            58             0         132,6   
+1     6,333333333     3,696666667   83,66666667             0   75,33333333   
+2               0               0             5             0   5,193333333   
+3               0               0   1,333333333             0          3,38   
+4     0,666666667     0,366666667   97,33333333             0   173,4766667   
+
+  mou_pead_mean opk_vce_mean opk_dat_mean mou_opkv_mean mou_opkd_mean  \
+0             0           24            0         55,22             0   
+1             0          157            0   169,3433333             0   
+2             0            1            0   0,233333333             0   
+3             0  3,666666667            0          5,45             0   
+4             0  90,33333333            0   218,0866667             0   
+
+  drop_blk_mean attempt_mean complete_mean callfwdv_mean callwait_mean  churn  \
+0   1,333333333  52,33333333            45             0   0,333333333      1   
+1   9,333333333  263,3333333   193,3333333             0   5,666666667      0   
+2   0,333333333            9             6             0             0      1   
+3             0  3,666666667   3,666666667             0             0      0   
+4   10,33333333  222,3333333           137             0             0      0   
+
+   months  uniqsubs  actvsubs new_cell crclscod asl_flag  totcalls  \
+0      61         2         1        U        A        N      1652   
+1      56         1         1        N       EA        N     14654   
+2      58         1         1        Y        C        N      7903   
+3      60         1         1        Y        B        N      1502   
+4      57         1         1        Y        A        N      4485   
+
+        totmou   totrev   adjrev    adjmou  adjqty avgrev  avgmou  avgqty  \
+0         4228  1504,62  1453,44      4085    1602  29,66   83,37   32,69   
+1        26400  2851,68  2833,88     26367   14624  51,53   479,4  265,89   
+2  24385,05333  2155,91  1934,47  24303,05    7888  34,54  433,98  140,86   
+3         3065   2000,9  1941,81      3035    1479  40,45   63,23   30,81   
+4        14028  2181,12  2166,48     13965    4452  38,69  249,38    79,5   
+
+   avg3mou  avg3qty  avg3rev  avg6mou  avg6qty  avg6rev prizm_social_one  \
+0      272      116       30    322.0    136.0     38.0                S   
+1      305      158       40    477.0    275.0     48.0                U   
+2       12        7       17     11.0      6.0     17.0                S   
+3        8        3       38     50.0     25.0     40.0                T   
+4      558      191       55    586.0    196.0     80.0                U   
+
+                            area dualband refurb_new    hnd_price  phones  \
+0  NORTHWEST/ROCKY MOUNTAIN AREA        Y          N  149,9899902     2.0   
+1                   CHICAGO AREA        N          N          NaN     7.0   
+2               GREAT LAKES AREA        N          N  29,98999023     2.0   
+3                   CHICAGO AREA        N          N  29,98999023     1.0   
+4               NEW ENGLAND AREA        Y          N  149,9899902     6.0   
+
+   models hnd_webcap  truck   rv ownrent   lor dwlltype marital  adults  \
+0     2.0       WCMB    0.0  0.0       O  15.0        S       S     1.0   
+1     6.0         WC    1.0  1.0     NaN   1.0        S       S     1.0   
+2     1.0        NaN    0.0  0.0       O   7.0        S       M     2.0   
+3     1.0        NaN    0.0  0.0     NaN   6.0        M       M     4.0   
+4     4.0       WCMB    0.0  0.0       R   5.0        M       S     1.0   
+
+  infobase  income  numbcars hhstatin dwllsize  forgntvl ethnic kid0_2 kid3_5  \
+0        M     4.0       3.0        C        A       0.0      N      U      U   
+1        M     5.0       1.0        C        A       0.0      Z      U      U   
+2        M     5.0       2.0        C        A       0.0      N      U      Y   
+3        M     6.0       1.0        C        D       0.0      U      Y      U   
+4        M     6.0       1.0        C        O       0.0      I      U      U   
+
+  kid6_10 kid11_15 kid16_17 creditcd  eqpdays  customer_id  
+0       U        U        U        Y    361.0      1000001  
+1       U        U        U        Y    240.0      1000002  
+2       U        U        U        Y   1504.0      1000003  
+3       U        U        U        Y   1812.0      1000004  
+4       U        U        U        Y    434.0      1000005
+[2022-06-26 09:31:00,485] {logging_mixin.py:104} INFO - rev_mean             object
+mou_mean             object
+totmrc_mean          object
+da_mean              object
+ovrmou_mean          object
+ovrrev_mean          object
+vceovr_mean          object
+datovr_mean          object
+roam_mean            object
+change_mou           object
+change_rev           object
+drop_vce_mean        object
+drop_dat_mean        object
+blck_vce_mean        object
+blck_dat_mean        object
+unan_vce_mean        object
+unan_dat_mean        object
+plcd_vce_mean        object
+plcd_dat_mean        object
+recv_vce_mean        object
+recv_sms_mean         int64
+comp_vce_mean        object
+comp_dat_mean        object
+custcare_mean        object
+ccrndmou_mean        object
+cc_mou_mean          object
+inonemin_mean        object
+threeway_mean        object
+mou_cvce_mean        object
+mou_cdat_mean        object
+mou_rvce_mean        object
+owylis_vce_mean      object
+mouowylisv_mean      object
+iwylis_vce_mean      object
+mouiwylisv_mean      object
+peak_vce_mean        object
+peak_dat_mean        object
+mou_peav_mean        object
+mou_pead_mean        object
+opk_vce_mean         object
+opk_dat_mean         object
+mou_opkv_mean        object
+mou_opkd_mean        object
+drop_blk_mean        object
+attempt_mean         object
+complete_mean        object
+callfwdv_mean        object
+callwait_mean        object
+churn                 int64
+months                int64
+uniqsubs              int64
+actvsubs              int64
+new_cell             object
+crclscod             object
+asl_flag             object
+totcalls              int64
+totmou               object
+totrev               object
+adjrev               object
+adjmou               object
+adjqty                int64
+avgrev               object
+avgmou               object
+avgqty               object
+avg3mou               int64
+avg3qty               int64
+avg3rev               int64
+avg6mou             float64
+avg6qty             float64
+avg6rev             float64
+prizm_social_one     object
+area                 object
+dualband             object
+refurb_new           object
+hnd_price            object
+phones              float64
+models              float64
+hnd_webcap           object
+truck               float64
+rv                  float64
+ownrent              object
+lor                 float64
+dwlltype             object
+marital              object
+adults              float64
+infobase             object
+income              float64
+numbcars            float64
+hhstatin             object
+dwllsize             object
+forgntvl            float64
+ethnic               object
+kid0_2               object
+kid3_5               object
+kid6_10              object
+kid11_15             object
+kid16_17             object
+creditcd             object
+eqpdays             float64
+customer_id           int64
+dtype: object
+[2022-06-26 09:31:00,488] {logging_mixin.py:104} INFO - **************** FLOAT COLUmNS *********************
+[2022-06-26 09:31:17,365] {logging_mixin.py:104} INFO -    rev_mean  mou_mean  totmrc_mean  da_mean  ovrmou_mean  ovrrev_mean  \
+0   23.9975    219.25       22.500   0.2475         0.00          0.0   
+1   57.4925    482.75       37.425   0.2475        22.75          9.1   
+2   16.9900     10.25       16.990   0.0000         0.00          0.0   
+3   38.0000      7.50       38.000   0.0000         0.00          0.0   
+4   55.2300    570.50       71.980   0.0000         0.00          0.0   
+
+   vceovr_mean  datovr_mean  roam_mean  change_mou  change_rev  drop_vce_mean  \
+0          0.0          0.0        0.0     -157.25    -18.9975       0.666667   
+1          9.1          0.0        0.0      532.25     50.9875       8.333333   
+2          0.0          0.0        0.0       -4.25      0.0000       0.333333   
+3          0.0          0.0        0.0       -1.50      0.0000       0.000000   
+4          0.0          0.0        0.0       38.50      0.0000       9.666667   
+
+   drop_dat_mean  blck_vce_mean  blck_dat_mean  unan_vce_mean  unan_dat_mean  \
+0            0.0       0.666667            0.0       6.333333            0.0   
+1            0.0       1.000000            0.0      61.333333            0.0   
+2            0.0       0.000000            0.0       2.666667            0.0   
+3            0.0       0.000000            0.0       0.000000            0.0   
+4            0.0       0.666667            0.0      77.000000            0.0   
+
+   plcd_vce_mean  plcd_dat_mean  recv_vce_mean  recv_sms_mean  comp_vce_mean  \
+0      52.333333            0.0      42.333333            0.0      45.000000   
+1     263.333333            0.0      69.000000            0.0     193.333333   
+2       9.000000            0.0       0.333333            0.0       6.000000   
+3       3.666667            0.0       1.333333            0.0       3.666667   
+4     222.333333            0.0      94.666667            0.0     137.000000   
+
+   comp_dat_mean  custcare_mean  ccrndmou_mean  cc_mou_mean  inonemin_mean  \
+0            0.0       0.000000       0.000000     0.000000      18.000000   
+1            0.0       1.666667       6.333333     5.463333      53.000000   
+2            0.0       0.000000       0.000000     0.000000       0.333333   
+3            0.0       0.000000       0.000000     0.000000       1.333333   
+4            0.0       8.666667      15.000000    11.076667      66.000000   
+
+   threeway_mean  mou_cvce_mean  mou_cdat_mean  mou_rvce_mean  \
+0       0.000000      90.643333            0.0      97.176667   
+1       0.333333     189.396667            0.0      55.280000   
+2       0.000000       5.426667            0.0       0.000000   
+3       0.000000       8.410000            0.0       0.413333   
+4       0.000000     285.233333            0.0     106.330000   
+
+   owylis_vce_mean  mouowylisv_mean  iwylis_vce_mean  mouiwylisv_mean  \
+0         0.000000         0.000000         0.000000         0.000000   
+1        46.333333        24.216667         6.333333         3.696667   
+2         0.000000         0.000000         0.000000         0.000000   
+3         0.333333         0.256667         0.000000         0.000000   
+4        14.666667        10.816667         0.666667         0.366667   
+
+   peak_vce_mean  peak_dat_mean  mou_peav_mean  mou_pead_mean  opk_vce_mean  \
+0      58.000000            0.0     132.600000            0.0     24.000000   
+1      83.666667            0.0      75.333333            0.0    157.000000   
+2       5.000000            0.0       5.193333            0.0      1.000000   
+3       1.333333            0.0       3.380000            0.0      3.666667   
+4      97.333333            0.0     173.476667            0.0     90.333333   
+
+   opk_dat_mean  mou_opkv_mean  mou_opkd_mean  drop_blk_mean  attempt_mean  \
+0           0.0      55.220000            0.0       1.333333     52.333333   
+1           0.0     169.343333            0.0       9.333333    263.333333   
+2           0.0       0.233333            0.0       0.333333      9.000000   
+3           0.0       5.450000            0.0       0.000000      3.666667   
+4           0.0     218.086667            0.0      10.333333    222.333333   
+
+   complete_mean  callfwdv_mean  callwait_mean       totmou   totrev   adjrev  \
+0      45.000000            0.0       0.333333   4228.00000  1504.62  1453.44   
+1     193.333333            0.0       5.666667  26400.00000  2851.68  2833.88   
+2       6.000000            0.0       0.000000  24385.05333  2155.91  1934.47   
+3       3.666667            0.0       0.000000   3065.00000  2000.90  1941.81   
+4     137.000000            0.0       0.000000  14028.00000  2181.12  2166.48   
+
+     adjmou  avgrev  avgmou  avgqty  hnd_price  
+0   4085.00   29.66   83.37   32.69  149.98999  
+1  26367.00   51.53  479.40  265.89        NaN  
+2  24303.05   34.54  433.98  140.86   29.98999  
+3   3035.00   40.45   63.23   30.81   29.98999  
+4  13965.00   38.69  249.38   79.50  149.98999
+[2022-06-26 09:31:17,372] {logging_mixin.py:104} INFO - **************** OBJECT COLUmNS *********************
+[2022-06-26 09:31:18,687] {logging_mixin.py:104} INFO - ************+***********RESULTS*****************************
+[2022-06-26 09:31:18,746] {logging_mixin.py:104} INFO - FLOAT64 (100000, 69)
+[2022-06-26 09:31:18,754] {logging_mixin.py:104} INFO - INT64 (100000, 10)
+[2022-06-26 09:31:18,768] {logging_mixin.py:104} INFO - STRING (100000, 21)
+[2022-06-26 09:31:18,867] {logging_mixin.py:104} INFO -    rev_mean  mou_mean  totmrc_mean  da_mean  ovrmou_mean  ovrrev_mean  \
+0   23.9975    219.25       22.500   0.2475         0.00          0.0   
+1   57.4925    482.75       37.425   0.2475        22.75          9.1   
+2   16.9900     10.25       16.990   0.0000         0.00          0.0   
+3   38.0000      7.50       38.000   0.0000         0.00          0.0   
+4   55.2300    570.50       71.980   0.0000         0.00          0.0   
+
+   vceovr_mean  datovr_mean  roam_mean  change_mou  change_rev  drop_vce_mean  \
+0          0.0          0.0        0.0     -157.25    -18.9975       0.666667   
+1          9.1          0.0        0.0      532.25     50.9875       8.333333   
+2          0.0          0.0        0.0       -4.25      0.0000       0.333333   
+3          0.0          0.0        0.0       -1.50      0.0000       0.000000   
+4          0.0          0.0        0.0       38.50      0.0000       9.666667   
+
+   drop_dat_mean  blck_vce_mean  blck_dat_mean  unan_vce_mean  unan_dat_mean  \
+0            0.0       0.666667            0.0       6.333333            0.0   
+1            0.0       1.000000            0.0      61.333333            0.0   
+2            0.0       0.000000            0.0       2.666667            0.0   
+3            0.0       0.000000            0.0       0.000000            0.0   
+4            0.0       0.666667            0.0      77.000000            0.0   
+
+   plcd_vce_mean  plcd_dat_mean  recv_vce_mean  recv_sms_mean  comp_vce_mean  \
+0      52.333333            0.0      42.333333            0.0      45.000000   
+1     263.333333            0.0      69.000000            0.0     193.333333   
+2       9.000000            0.0       0.333333            0.0       6.000000   
+3       3.666667            0.0       1.333333            0.0       3.666667   
+4     222.333333            0.0      94.666667            0.0     137.000000   
+
+   comp_dat_mean  custcare_mean  ccrndmou_mean  cc_mou_mean  inonemin_mean  \
+0            0.0       0.000000       0.000000     0.000000      18.000000   
+1            0.0       1.666667       6.333333     5.463333      53.000000   
+2            0.0       0.000000       0.000000     0.000000       0.333333   
+3            0.0       0.000000       0.000000     0.000000       1.333333   
+4            0.0       8.666667      15.000000    11.076667      66.000000   
+
+   threeway_mean  mou_cvce_mean  mou_cdat_mean  mou_rvce_mean  \
+0       0.000000      90.643333            0.0      97.176667   
+1       0.333333     189.396667            0.0      55.280000   
+2       0.000000       5.426667            0.0       0.000000   
+3       0.000000       8.410000            0.0       0.413333   
+4       0.000000     285.233333            0.0     106.330000   
+
+   owylis_vce_mean  mouowylisv_mean  iwylis_vce_mean  mouiwylisv_mean  \
+0         0.000000         0.000000         0.000000         0.000000   
+1        46.333333        24.216667         6.333333         3.696667   
+2         0.000000         0.000000         0.000000         0.000000   
+3         0.333333         0.256667         0.000000         0.000000   
+4        14.666667        10.816667         0.666667         0.366667   
+
+   peak_vce_mean  peak_dat_mean  mou_peav_mean  mou_pead_mean  opk_vce_mean  \
+0      58.000000            0.0     132.600000            0.0     24.000000   
+1      83.666667            0.0      75.333333            0.0    157.000000   
+2       5.000000            0.0       5.193333            0.0      1.000000   
+3       1.333333            0.0       3.380000            0.0      3.666667   
+4      97.333333            0.0     173.476667            0.0     90.333333   
+
+   opk_dat_mean  mou_opkv_mean  mou_opkd_mean  drop_blk_mean  attempt_mean  \
+0           0.0      55.220000            0.0       1.333333     52.333333   
+1           0.0     169.343333            0.0       9.333333    263.333333   
+2           0.0       0.233333            0.0       0.333333      9.000000   
+3           0.0       5.450000            0.0       0.000000      3.666667   
+4           0.0     218.086667            0.0      10.333333    222.333333   
+
+   complete_mean  callfwdv_mean  callwait_mean  churn  months  uniqsubs  \
+0      45.000000            0.0       0.333333      1      61         2   
+1     193.333333            0.0       5.666667      0      56         1   
+2       6.000000            0.0       0.000000      1      58         1   
+3       3.666667            0.0       0.000000      0      60         1   
+4     137.000000            0.0       0.000000      0      57         1   
+
+   actvsubs new_cell crclscod asl_flag  totcalls       totmou   totrev  \
+0         1        U        A        N      1652   4228.00000  1504.62   
+1         1        N       EA        N     14654  26400.00000  2851.68   
+2         1        Y        C        N      7903  24385.05333  2155.91   
+3         1        Y        B        N      1502   3065.00000  2000.90   
+4         1        Y        A        N      4485  14028.00000  2181.12   
+
+    adjrev    adjmou  adjqty  avgrev  avgmou  avgqty  avg3mou  avg3qty  \
+0  1453.44   4085.00    1602   29.66   83.37   32.69      272      116   
+1  2833.88  26367.00   14624   51.53  479.40  265.89      305      158   
+2  1934.47  24303.05    7888   34.54  433.98  140.86       12        7   
+3  1941.81   3035.00    1479   40.45   63.23   30.81        8        3   
+4  2166.48  13965.00    4452   38.69  249.38   79.50      558      191   
+
+   avg3rev  avg6mou  avg6qty  avg6rev prizm_social_one  \
+0       30    322.0    136.0     38.0                S   
+1       40    477.0    275.0     48.0                U   
+2       17     11.0      6.0     17.0                S   
+3       38     50.0     25.0     40.0                T   
+4       55    586.0    196.0     80.0                U   
+
+                            area dualband refurb_new  hnd_price  phones  \
+0  NORTHWEST/ROCKY MOUNTAIN AREA        Y          N  149.98999     2.0   
+1                   CHICAGO AREA        N          N        NaN     7.0   
+2               GREAT LAKES AREA        N          N   29.98999     2.0   
+3                   CHICAGO AREA        N          N   29.98999     1.0   
+4               NEW ENGLAND AREA        Y          N  149.98999     6.0   
+
+   models hnd_webcap  truck   rv ownrent   lor dwlltype marital  adults  \
+0     2.0       WCMB    0.0  0.0       O  15.0        S       S     1.0   
+1     6.0         WC    1.0  1.0    <NA>   1.0        S       S     1.0   
+2     1.0       <NA>    0.0  0.0       O   7.0        S       M     2.0   
+3     1.0       <NA>    0.0  0.0    <NA>   6.0        M       M     4.0   
+4     4.0       WCMB    0.0  0.0       R   5.0        M       S     1.0   
+
+  infobase  income  numbcars hhstatin dwllsize  forgntvl ethnic kid0_2 kid3_5  \
+0        M     4.0       3.0        C        A       0.0      N      U      U   
+1        M     5.0       1.0        C        A       0.0      Z      U      U   
+2        M     5.0       2.0        C        A       0.0      N      U      Y   
+3        M     6.0       1.0        C        D       0.0      U      Y      U   
+4        M     6.0       1.0        C        O       0.0      I      U      U   
+
+  kid6_10 kid11_15 kid16_17 creditcd  eqpdays  customer_id  
+0       U        U        U        Y    361.0      1000001  
+1       U        U        U        Y    240.0      1000002  
+2       U        U        U        Y   1504.0      1000003  
+3       U        U        U        Y   1812.0      1000004  
+4       U        U        U        Y    434.0      1000005
+[2022-06-26 09:31:18,891] {logging_mixin.py:104} INFO - rev_mean            float64
+mou_mean            float64
+totmrc_mean         float64
+da_mean             float64
+ovrmou_mean         float64
+ovrrev_mean         float64
+vceovr_mean         float64
+datovr_mean         float64
+roam_mean           float64
+change_mou          float64
+change_rev          float64
+drop_vce_mean       float64
+drop_dat_mean       float64
+blck_vce_mean       float64
+blck_dat_mean       float64
+unan_vce_mean       float64
+unan_dat_mean       float64
+plcd_vce_mean       float64
+plcd_dat_mean       float64
+recv_vce_mean       float64
+recv_sms_mean       float64
+comp_vce_mean       float64
+comp_dat_mean       float64
+custcare_mean       float64
+ccrndmou_mean       float64
+cc_mou_mean         float64
+inonemin_mean       float64
+threeway_mean       float64
+mou_cvce_mean       float64
+mou_cdat_mean       float64
+mou_rvce_mean       float64
+owylis_vce_mean     float64
+mouowylisv_mean     float64
+iwylis_vce_mean     float64
+mouiwylisv_mean     float64
+peak_vce_mean       float64
+peak_dat_mean       float64
+mou_peav_mean       float64
+mou_pead_mean       float64
+opk_vce_mean        float64
+opk_dat_mean        float64
+mou_opkv_mean       float64
+mou_opkd_mean       float64
+drop_blk_mean       float64
+attempt_mean        float64
+complete_mean       float64
+callfwdv_mean       float64
+callwait_mean       float64
+churn                 int64
+months                int64
+uniqsubs              int64
+actvsubs              int64
+new_cell             string
+crclscod             string
+asl_flag             string
+totcalls              int64
+totmou              float64
+totrev              float64
+adjrev              float64
+adjmou              float64
+adjqty                int64
+avgrev              float64
+avgmou              float64
+avgqty              float64
+avg3mou               int64
+avg3qty               int64
+avg3rev               int64
+avg6mou             float64
+avg6qty             float64
+avg6rev             float64
+prizm_social_one     string
+area                 string
+dualband             string
+refurb_new           string
+hnd_price           float64
+phones              float64
+models              float64
+hnd_webcap           string
+truck               float64
+rv                  float64
+ownrent              string
+lor                 float64
+dwlltype             string
+marital              string
+adults              float64
+infobase             string
+income              float64
+numbcars            float64
+hhstatin             string
+dwllsize             string
+forgntvl            float64
+ethnic               string
+kid0_2               string
+kid3_5               string
+kid6_10              string
+kid11_15             string
+kid16_17             string
+creditcd             string
+eqpdays             float64
+customer_id           int64
+dtype: object
+[2022-06-26 09:31:48,614] {base.py:74} INFO - Using connection to: id: postgres_conection. Host: host.docker.internal, Port: 5432, Schema: data_company, Login: airflow, Password: XXXXXXXX, extra: None
+[2022-06-26 09:31:48,650] {logging_mixin.py:104} INFO - CREATE TABLE IF NOT EXISTS company_0A1(rev_mean REAL, 
+mou_mean REAL, 
+totmrc_mean REAL, 
+da_mean REAL, 
+ovrmou_mean REAL, 
+ovrrev_mean REAL, 
+vceovr_mean REAL, 
+datovr_mean REAL, 
+roam_mean REAL, 
+change_mou REAL, 
+change_rev REAL, 
+drop_vce_mean REAL, 
+drop_dat_mean REAL, 
+blck_vce_mean REAL, 
+blck_dat_mean REAL, 
+unan_vce_mean REAL, 
+unan_dat_mean REAL, 
+plcd_vce_mean REAL, 
+plcd_dat_mean REAL, 
+recv_vce_mean REAL, 
+recv_sms_mean REAL, 
+comp_vce_mean REAL, 
+comp_dat_mean REAL, 
+custcare_mean REAL, 
+ccrndmou_mean REAL, 
+cc_mou_mean REAL, 
+inonemin_mean REAL, 
+threeway_mean REAL, 
+mou_cvce_mean REAL, 
+mou_cdat_mean REAL, 
+mou_rvce_mean REAL, 
+owylis_vce_mean REAL, 
+mouowylisv_mean REAL, 
+iwylis_vce_mean REAL, 
+mouiwylisv_mean REAL, 
+peak_vce_mean REAL, 
+peak_dat_mean REAL, 
+mou_peav_mean REAL, 
+mou_pead_mean REAL, 
+opk_vce_mean REAL, 
+opk_dat_mean REAL, 
+mou_opkv_mean REAL, 
+mou_opkd_mean REAL, 
+drop_blk_mean REAL, 
+attempt_mean REAL, 
+complete_mean REAL, 
+callfwdv_mean REAL, 
+callwait_mean REAL, 
+churn VARCHAR, 
+months VARCHAR, 
+uniqsubs VARCHAR, 
+actvsubs VARCHAR, 
+new_cell VARCHAR, 
+crclscod VARCHAR, 
+asl_flag VARCHAR, 
+totcalls VARCHAR, 
+totmou REAL, 
+totrev REAL, 
+adjrev REAL, 
+adjmou REAL, 
+adjqty VARCHAR, 
+avgrev REAL, 
+avgmou REAL, 
+avgqty REAL, 
+avg3mou VARCHAR, 
+avg3qty VARCHAR, 
+avg3rev VARCHAR, 
+avg6mou REAL, 
+avg6qty REAL, 
+avg6rev REAL, 
+prizm_social_one VARCHAR, 
+area VARCHAR, 
+dualband VARCHAR, 
+refurb_new VARCHAR, 
+hnd_price REAL, 
+phones REAL, 
+models REAL, 
+hnd_webcap VARCHAR, 
+truck REAL, 
+rv REAL, 
+ownrent VARCHAR, 
+lor REAL, 
+dwlltype VARCHAR, 
+marital VARCHAR, 
+adults REAL, 
+infobase VARCHAR, 
+income REAL, 
+numbcars REAL, 
+hhstatin VARCHAR, 
+dwllsize VARCHAR, 
+forgntvl REAL, 
+ethnic VARCHAR, 
+kid0_2 VARCHAR, 
+kid3_5 VARCHAR, 
+kid6_10 VARCHAR, 
+kid11_15 VARCHAR, 
+kid16_17 VARCHAR, 
+creditcd VARCHAR, 
+eqpdays REAL, 
+customer_id VARCHAR);
+[2022-06-26 09:31:48,661] {logging_mixin.py:104} INFO - 
+[2022-06-26 09:31:54,401] {taskinstance.py:1455} ERROR - invalid input syntax for type real: "U"
+CONTEXT:  COPY company_a01, line 2, column actvsubs: "U"
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/company_forecasting.py", line 114, in read_and_convertColumns
+    cur.copy_expert(sql=sql % table, file=file)
+psycopg2.errors.InvalidTextRepresentation: invalid input syntax for type real: "U"
+CONTEXT:  COPY company_a01, line 2, column actvsubs: "U"
+
+[2022-06-26 09:31:54,435] {taskinstance.py:1503} INFO - Marking task as FAILED. dag_id=SDG_Enrique_V0, task_id=readCSV_convertColumns, execution_date=20220626T093015, start_date=20220626T093052, end_date=20220626T093154
+[2022-06-26 09:31:54,745] {local_task_job.py:146} INFO - Task exited with return code 1

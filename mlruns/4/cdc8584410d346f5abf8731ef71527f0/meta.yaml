@@ -1,0 +1,15 @@
+artifact_uri: ./mlruns/4/cdc8584410d346f5abf8731ef71527f0/artifacts
+end_time: 1656526287742
+entry_point_name: ''
+experiment_id: '4'
+lifecycle_stage: active
+name: ''
+run_id: cdc8584410d346f5abf8731ef71527f0
+run_uuid: cdc8584410d346f5abf8731ef71527f0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1656526284967
+status: 3
+tags: []
+user_id: administrador

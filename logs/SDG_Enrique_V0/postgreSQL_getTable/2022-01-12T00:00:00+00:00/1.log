@@ -1,0 +1,44 @@
+[2022-06-29 20:57:00,542] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: SDG_Enrique_V0.postgreSQL_getTable 2022-01-12T00:00:00+00:00 [queued]>
+[2022-06-29 20:57:00,756] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: SDG_Enrique_V0.postgreSQL_getTable 2022-01-12T00:00:00+00:00 [queued]>
+[2022-06-29 20:57:00,786] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-29 20:57:00,795] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2022-06-29 20:57:00,797] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-29 20:57:01,131] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): postgreSQL_getTable> on 2022-01-12T00:00:00+00:00
+[2022-06-29 20:57:01,192] {standard_task_runner.py:52} INFO - Started process 1697 to run task
+[2022-06-29 20:57:01,378] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'SDG_Enrique_V0', 'postgreSQL_getTable', '2022-01-12T00:00:00+00:00', '--job-id', '1383', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/company_forecasting.py', '--cfg-path', '/tmp/tmpasrb0uja', '--error-file', '/tmp/tmpn1g42u7y']
+[2022-06-29 20:57:01,512] {standard_task_runner.py:77} INFO - Job 1383: Subtask postgreSQL_getTable
+[2022-06-29 20:57:02,230] {logging_mixin.py:104} INFO - Running <TaskInstance: SDG_Enrique_V0.postgreSQL_getTable 2022-01-12T00:00:00+00:00 [running]> on host 1ff8f57a8cbf
+[2022-06-29 20:57:05,142] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=enrique-liebana@outlook.com
+AIRFLOW_CTX_DAG_OWNER=Enrique Liebana Peña
+AIRFLOW_CTX_DAG_ID=SDG_Enrique_V0
+AIRFLOW_CTX_TASK_ID=postgreSQL_getTable
+AIRFLOW_CTX_EXECUTION_DATE=2022-01-12T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-01-12T00:00:00+00:00
+[2022-06-29 20:57:05,676] {base.py:74} INFO - Using connection to: id: postgres_conection. Host: host.docker.internal, Port: 5432, Schema: data_company, Login: airflow, Password: XXXXXXXX, extra: None
+[2022-06-29 20:57:33,356] {local_task_job.py:188} WARNING - State of this instance has been externally set to None. Terminating instance.
+[2022-06-29 20:57:33,836] {process_utils.py:100} INFO - Sending Signals.SIGTERM to GPID 1697
+[2022-06-29 20:57:35,483] {taskinstance.py:1239} ERROR - Received SIGTERM. Terminating subprocesses.
+[2022-06-29 20:57:35,544] {taskinstance.py:1455} ERROR - Task received SIGTERM signal
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/company_forecasting.py", line 47, in postgreSQL_getTable
+    cursor.execute("select * from company")
+  File "/usr/local/lib/python3.6/encodings/utf_8.py", line 15, in decode
+    def decode(input, errors='strict'):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1241, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2022-06-29 20:57:35,666] {taskinstance.py:1503} INFO - Marking task as FAILED. dag_id=SDG_Enrique_V0, task_id=postgreSQL_getTable, execution_date=20220112T000000, start_date=20220629T205700, end_date=20220629T205735
+[2022-06-29 20:57:36,746] {process_utils.py:66} INFO - Process psutil.Process(pid=1697, status='terminated', exitcode=1, started='20:57:00') (1697) terminated with exit code 1

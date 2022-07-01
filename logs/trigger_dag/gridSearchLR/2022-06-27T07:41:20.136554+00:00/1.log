@@ -1,0 +1,120 @@
+[2022-06-27 07:41:22,097] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: trigger_dag.gridSearchLR 2022-06-27T07:41:20.136554+00:00 [queued]>
+[2022-06-27 07:41:22,114] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: trigger_dag.gridSearchLR 2022-06-27T07:41:20.136554+00:00 [queued]>
+[2022-06-27 07:41:22,114] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-27 07:41:22,115] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2022-06-27 07:41:22,115] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-27 07:41:22,123] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): gridSearchLR> on 2022-06-27T07:41:20.136554+00:00
+[2022-06-27 07:41:22,128] {standard_task_runner.py:52} INFO - Started process 896 to run task
+[2022-06-27 07:41:22,133] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'trigger_dag', 'gridSearchLR', '2022-06-27T07:41:20.136554+00:00', '--job-id', '457', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/trigger_dag.py', '--cfg-path', '/tmp/tmpjjylqzok', '--error-file', '/tmp/tmpkt0udxt6']
+[2022-06-27 07:41:22,138] {standard_task_runner.py:77} INFO - Job 457: Subtask gridSearchLR
+[2022-06-27 07:41:22,183] {logging_mixin.py:104} INFO - Running <TaskInstance: trigger_dag.gridSearchLR 2022-06-27T07:41:20.136554+00:00 [running]> on host 17b3f79b4d8e
+[2022-06-27 07:41:22,222] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=trigger_dag
+AIRFLOW_CTX_TASK_ID=gridSearchLR
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-27T07:41:20.136554+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-27T07:41:20.136554+00:00
+[2022-06-27 07:41:22,263] {connectionpool.py:752} WARNING - Retrying (Retry(total=4, connect=4, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fb758d821d0>: Failed to establish a new connection: [Errno 111] Connection refused',)': /api/2.0/mlflow/experiments/create
+[2022-06-27 07:41:26,269] {connectionpool.py:752} WARNING - Retrying (Retry(total=3, connect=3, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fb758d820f0>: Failed to establish a new connection: [Errno 111] Connection refused',)': /api/2.0/mlflow/experiments/create
+[2022-06-27 07:41:34,087] {connectionpool.py:752} WARNING - Retrying (Retry(total=2, connect=2, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fb758d82128>: Failed to establish a new connection: [Errno 111] Connection refused',)': /api/2.0/mlflow/experiments/create
+[2022-06-27 07:41:50,107] {connectionpool.py:752} WARNING - Retrying (Retry(total=1, connect=1, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fb758d82b00>: Failed to establish a new connection: [Errno 111] Connection refused',)': /api/2.0/mlflow/experiments/create
+[2022-06-27 07:42:17,735] {local_task_job.py:188} WARNING - State of this instance has been externally set to None. Terminating instance.
+[2022-06-27 07:42:17,743] {process_utils.py:100} INFO - Sending Signals.SIGTERM to GPID 896
+[2022-06-27 07:42:17,781] {taskinstance.py:1239} ERROR - Received SIGTERM. Terminating subprocesses.
+[2022-06-27 07:42:17,783] {taskinstance.py:1455} ERROR - API request to http://127.0.0.1:5000/api/2.0/mlflow/experiments/create failed with exception Task received SIGTERM signal
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 392, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/local/lib/python3.6/http/client.py", line 1291, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/local/lib/python3.6/http/client.py", line 1337, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.6/http/client.py", line 1286, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.6/http/client.py", line 1046, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.6/http/client.py", line 984, in send
+    self.connect()
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connection.py", line 187, in connect
+    conn = self._new_conn()
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connection.py", line 172, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fb758d70860>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/mlflow/utils/rest_utils.py", line 144, in http_request
+    **kwargs,
+  File "/home/airflow/.local/lib/python3.6/site-packages/mlflow/utils/rest_utils.py", line 75, in _get_http_response_with_retries
+    response = http.request(method, url, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 767, in urlopen
+    **response_kw
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 767, in urlopen
+    **response_kw
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 767, in urlopen
+    **response_kw
+  [Previous line repeated 1 more time]
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 729, in urlopen
+    retries.sleep()
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/util/retry.py", line 311, in sleep
+    self._sleep_backoff()
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/util/retry.py", line 295, in _sleep_backoff
+    time.sleep(backoff)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1241, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/trigger_dag.py", line 28, in check_mlflow_setting
+    client = MlflowClient()
+  File "/home/airflow/.local/lib/python3.6/site-packages/mlflow/tracking/fluent.py", line 936, in create_experiment
+    return MlflowClient().create_experiment(name, artifact_location, tags)
+  File "/home/airflow/.local/lib/python3.6/site-packages/mlflow/tracking/client.py", line 507, in create_experiment
+    return self._tracking_client.create_experiment(name, artifact_location, tags)
+  File "/home/airflow/.local/lib/python3.6/site-packages/mlflow/tracking/_tracking_service/client.py", line 185, in create_experiment
+    tags=[ExperimentTag(key, value) for (key, value) in tags.items()] if tags else [],
+  File "/home/airflow/.local/lib/python3.6/site-packages/mlflow/store/tracking/rest_store.py", line 99, in create_experiment
+    response_proto = self._call_endpoint(CreateExperiment, req_body)
+  File "/home/airflow/.local/lib/python3.6/site-packages/mlflow/store/tracking/rest_store.py", line 56, in _call_endpoint
+    return call_endpoint(self.get_host_creds(), endpoint, method, json_body, response_proto)
+  File "/home/airflow/.local/lib/python3.6/site-packages/mlflow/utils/rest_utils.py", line 238, in call_endpoint
+    host_creds=host_creds, endpoint=endpoint, method=method, json=json_body
+  File "/home/airflow/.local/lib/python3.6/site-packages/mlflow/utils/rest_utils.py", line 147, in http_request
+    raise MlflowException("API request to %s failed with exception %s" % (url, e))
+mlflow.exceptions.MlflowException: API request to http://127.0.0.1:5000/api/2.0/mlflow/experiments/create failed with exception Task received SIGTERM signal
+[2022-06-27 07:42:17,791] {taskinstance.py:1503} INFO - Marking task as FAILED. dag_id=trigger_dag, task_id=gridSearchLR, execution_date=20220627T074120, start_date=20220627T074122, end_date=20220627T074217
+[2022-06-27 07:42:17,833] {process_utils.py:66} INFO - Process psutil.Process(pid=896, status='terminated', exitcode=1, started='07:41:21') (896) terminated with exit code 1

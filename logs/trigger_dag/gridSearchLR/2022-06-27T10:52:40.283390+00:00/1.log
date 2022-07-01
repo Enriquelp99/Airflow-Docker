@@ -1,0 +1,72 @@
+[2022-06-27 10:52:42,798] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: trigger_dag.gridSearchLR 2022-06-27T10:52:40.283390+00:00 [queued]>
+[2022-06-27 10:52:42,809] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: trigger_dag.gridSearchLR 2022-06-27T10:52:40.283390+00:00 [queued]>
+[2022-06-27 10:52:42,809] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-27 10:52:42,810] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2022-06-27 10:52:42,810] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-27 10:52:42,823] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): gridSearchLR> on 2022-06-27T10:52:40.283390+00:00
+[2022-06-27 10:52:42,834] {standard_task_runner.py:52} INFO - Started process 506 to run task
+[2022-06-27 10:52:42,845] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'trigger_dag', 'gridSearchLR', '2022-06-27T10:52:40.283390+00:00', '--job-id', '589', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/trigger_dag.py', '--cfg-path', '/tmp/tmp3wk8emwl', '--error-file', '/tmp/tmp3_1vst4u']
+[2022-06-27 10:52:42,848] {standard_task_runner.py:77} INFO - Job 589: Subtask gridSearchLR
+[2022-06-27 10:52:42,895] {logging_mixin.py:104} INFO - Running <TaskInstance: trigger_dag.gridSearchLR 2022-06-27T10:52:40.283390+00:00 [running]> on host 61d9f46d7859
+[2022-06-27 10:52:42,937] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=trigger_dag
+AIRFLOW_CTX_TASK_ID=gridSearchLR
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-27T10:52:40.283390+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-27T10:52:40.283390+00:00
+[2022-06-27 10:52:42,939] {logging_mixin.py:104} INFO - localhost:5001
+[2022-06-27 10:52:46,984] {logging_mixin.py:104} WARNING - 2022/06/27 10:52:46 WARNING mlflow.tracking.context.git_context: Failed to import Git (the Git executable is probably not on your PATH), so Git SHA is not available. Error: Failed to initialize: Bad git executable.
+The git executable must be specified in one of the following ways:
+    - be included in your $PATH
+    - be set via $GIT_PYTHON_GIT_EXECUTABLE
+    - explicitly set via git.refresh()
+
+All git commands will error until this is rectified.
+
+This initial warning can be silenced or aggravated in the future by setting the
+$GIT_PYTHON_REFRESH environment variable. Use one of the following values:
+    - quiet|q|silence|s|none|n|0: for no warning or exception
+    - warn|w|warning|1: for a printed warning
+    - error|e|raise|r|2: for a raised exception
+
+Example:
+    export GIT_PYTHON_REFRESH=quiet
+[2022-06-27 10:52:46,985] {logging_mixin.py:104} WARNING - 
+[2022-06-27 10:52:47,101] {logging_mixin.py:104} INFO - newton-cg 0.0001
+[2022-06-27 10:52:51,373] {taskinstance.py:1455} ERROR - Could not find a registered artifact repository for: localhost:5001/0/f54a2433bd6f4d72800476a4706a61e6/artifacts. Currently registered schemes are: ['', 'file', 's3', 'gs', 'wasbs', 'ftp', 'sftp', 'dbfs', 'hdfs', 'viewfs', 'runs', 'models', 'http', 'https', 'mlflow-artifacts']
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/trigger_dag.py", line 69, in prueba
+    train(a,b,dataFrame)
+  File "/opt/airflow/dags/trigger_dag.py", line 62, in train
+    mlflow.sklearn.log_model(lr,"model")
+  File "/home/airflow/.local/lib/python3.6/site-packages/mlflow/sklearn/__init__.py", line 387, in log_model
+    extra_pip_requirements=extra_pip_requirements,
+  File "/home/airflow/.local/lib/python3.6/site-packages/mlflow/models/model.py", line 283, in log
+    mlflow.tracking.fluent.log_artifacts(local_path, artifact_path)
+  File "/home/airflow/.local/lib/python3.6/site-packages/mlflow/tracking/fluent.py", line 639, in log_artifacts
+    MlflowClient().log_artifacts(run_id, local_dir, artifact_path)
+  File "/home/airflow/.local/lib/python3.6/site-packages/mlflow/tracking/client.py", line 1001, in log_artifacts
+    self._tracking_client.log_artifacts(run_id, local_dir, artifact_path)
+  File "/home/airflow/.local/lib/python3.6/site-packages/mlflow/tracking/_tracking_service/client.py", line 364, in log_artifacts
+    self._get_artifact_repo(run_id).log_artifacts(local_dir, artifact_path)
+  File "/home/airflow/.local/lib/python3.6/site-packages/mlflow/tracking/_tracking_service/client.py", line 332, in _get_artifact_repo
+    artifact_repo = get_artifact_repository(artifact_uri)
+  File "/home/airflow/.local/lib/python3.6/site-packages/mlflow/store/artifact/artifact_repository_registry.py", line 107, in get_artifact_repository
+    return _artifact_repository_registry.get_artifact_repository(artifact_uri)
+  File "/home/airflow/.local/lib/python3.6/site-packages/mlflow/store/artifact/artifact_repository_registry.py", line 70, in get_artifact_repository
+    artifact_uri, list(self._registry.keys())
+mlflow.exceptions.MlflowException: Could not find a registered artifact repository for: localhost:5001/0/f54a2433bd6f4d72800476a4706a61e6/artifacts. Currently registered schemes are: ['', 'file', 's3', 'gs', 'wasbs', 'ftp', 'sftp', 'dbfs', 'hdfs', 'viewfs', 'runs', 'models', 'http', 'https', 'mlflow-artifacts']
+[2022-06-27 10:52:51,380] {taskinstance.py:1503} INFO - Marking task as FAILED. dag_id=trigger_dag, task_id=gridSearchLR, execution_date=20220627T105240, start_date=20220627T105242, end_date=20220627T105251
+[2022-06-27 10:52:51,462] {local_task_job.py:146} INFO - Task exited with return code 1

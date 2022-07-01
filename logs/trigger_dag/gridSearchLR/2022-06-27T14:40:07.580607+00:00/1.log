@@ -1,0 +1,37 @@
+[2022-06-27 14:40:09,581] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: trigger_dag.gridSearchLR 2022-06-27T14:40:07.580607+00:00 [queued]>
+[2022-06-27 14:40:09,598] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: trigger_dag.gridSearchLR 2022-06-27T14:40:07.580607+00:00 [queued]>
+[2022-06-27 14:40:09,600] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-27 14:40:09,600] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2022-06-27 14:40:09,601] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-27 14:40:09,608] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): gridSearchLR> on 2022-06-27T14:40:07.580607+00:00
+[2022-06-27 14:40:09,613] {standard_task_runner.py:52} INFO - Started process 534 to run task
+[2022-06-27 14:40:09,620] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'trigger_dag', 'gridSearchLR', '2022-06-27T14:40:07.580607+00:00', '--job-id', '1182', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/trigger_dag.py', '--cfg-path', '/tmp/tmpvq2wq0cp', '--error-file', '/tmp/tmph1l94oy6']
+[2022-06-27 14:40:09,623] {standard_task_runner.py:77} INFO - Job 1182: Subtask gridSearchLR
+[2022-06-27 14:40:09,668] {logging_mixin.py:104} INFO - Running <TaskInstance: trigger_dag.gridSearchLR 2022-06-27T14:40:07.580607+00:00 [running]> on host d45254a3a0e0
+[2022-06-27 14:40:09,707] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=trigger_dag
+AIRFLOW_CTX_TASK_ID=gridSearchLR
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-27T14:40:07.580607+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-27T14:40:07.580607+00:00
+[2022-06-27 14:40:09,709] {taskinstance.py:1455} ERROR - __init__() got an unexpected keyword argument 'n_estimators'
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/trigger_dag.py", line 42, in prueba
+    rfr = LogisticRegression(**params).fit([[0, 1]], [1])
+  File "/home/airflow/.local/lib/python3.6/site-packages/sklearn/utils/validation.py", line 63, in inner_f
+    return f(*args, **kwargs)
+TypeError: __init__() got an unexpected keyword argument 'n_estimators'
+[2022-06-27 14:40:09,714] {taskinstance.py:1503} INFO - Marking task as FAILED. dag_id=trigger_dag, task_id=gridSearchLR, execution_date=20220627T144007, start_date=20220627T144009, end_date=20220627T144009
+[2022-06-27 14:40:09,753] {local_task_job.py:146} INFO - Task exited with return code 1

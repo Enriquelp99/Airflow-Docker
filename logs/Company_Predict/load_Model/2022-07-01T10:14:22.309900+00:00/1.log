@@ -1,0 +1,67 @@
+[2022-07-01 10:14:24,175] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: Company_Predict.load_Model 2022-07-01T10:14:22.309900+00:00 [queued]>
+[2022-07-01 10:14:24,191] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: Company_Predict.load_Model 2022-07-01T10:14:22.309900+00:00 [queued]>
+[2022-07-01 10:14:24,192] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-01 10:14:24,193] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2022-07-01 10:14:24,194] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-01 10:14:24,202] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): load_Model> on 2022-07-01T10:14:22.309900+00:00
+[2022-07-01 10:14:24,207] {standard_task_runner.py:52} INFO - Started process 13064 to run task
+[2022-07-01 10:14:24,212] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'Company_Predict', 'load_Model', '2022-07-01T10:14:22.309900+00:00', '--job-id', '1550', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/company_predict.py', '--cfg-path', '/tmp/tmp0_bak9b9', '--error-file', '/tmp/tmp6c0ez4km']
+[2022-07-01 10:14:24,214] {standard_task_runner.py:77} INFO - Job 1550: Subtask load_Model
+[2022-07-01 10:14:24,268] {logging_mixin.py:104} INFO - Running <TaskInstance: Company_Predict.load_Model 2022-07-01T10:14:22.309900+00:00 [running]> on host 14dddcffc0ea
+[2022-07-01 10:14:24,334] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=enrique-liebana@outlook.com
+AIRFLOW_CTX_DAG_OWNER=Enrique Liebana Peña
+AIRFLOW_CTX_DAG_ID=Company_Predict
+AIRFLOW_CTX_TASK_ID=load_Model
+AIRFLOW_CTX_EXECUTION_DATE=2022-07-01T10:14:22.309900+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-07-01T10:14:22.309900+00:00
+[2022-07-01 10:14:33,071] {taskinstance.py:1455} ERROR - [10:14:33] ../src/common/json.cc:458: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+Stack trace:
+  [bt] (0) /home/airflow/.local/lib/python3.6/site-packages/xgboost/lib/libxgboost.so(+0xcb04d) [0x7f9186cd404d]
+  [bt] (1) /home/airflow/.local/lib/python3.6/site-packages/xgboost/lib/libxgboost.so(+0xccd85) [0x7f9186cd5d85]
+  [bt] (2) /home/airflow/.local/lib/python3.6/site-packages/xgboost/lib/libxgboost.so(+0xd1cf2) [0x7f9186cdacf2]
+  [bt] (3) /home/airflow/.local/lib/python3.6/site-packages/xgboost/lib/libxgboost.so(+0xd308d) [0x7f9186cdc08d]
+  [bt] (4) /home/airflow/.local/lib/python3.6/site-packages/xgboost/lib/libxgboost.so(+0x1bf95d) [0x7f9186dc895d]
+  [bt] (5) /home/airflow/.local/lib/python3.6/site-packages/xgboost/lib/libxgboost.so(XGBoosterUnserializeFromBuffer+0x5c) [0x7f9186ca1bbc]
+  [bt] (6) /usr/lib/x86_64-linux-gnu/libffi.so.6(ffi_call_unix64+0x4c) [0x7f91e84af8ee]
+  [bt] (7) /usr/lib/x86_64-linux-gnu/libffi.so.6(ffi_call+0x22f) [0x7f91e84af2bf]
+  [bt] (8) /usr/local/lib/python3.6/lib-dynload/_ctypes.cpython-36m-x86_64-linux-gnu.so(+0xd749) [0x7f91e8092749]
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/company_predict.py", line 31, in _load_model
+    pickled_model = pickle.load(open('models/XGBoost_F.pkl', 'rb'))
+  File "/home/airflow/.local/lib/python3.6/site-packages/xgboost/core.py", line 1452, in __setstate__
+    _LIB.XGBoosterUnserializeFromBuffer(handle, ptr, length))
+  File "/home/airflow/.local/lib/python3.6/site-packages/xgboost/core.py", line 218, in _check_call
+    raise XGBoostError(py_str(_LIB.XGBGetLastError()))
+xgboost.core.XGBoostError: [10:14:33] ../src/common/json.cc:458: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+Stack trace:
+  [bt] (0) /home/airflow/.local/lib/python3.6/site-packages/xgboost/lib/libxgboost.so(+0xcb04d) [0x7f9186cd404d]
+  [bt] (1) /home/airflow/.local/lib/python3.6/site-packages/xgboost/lib/libxgboost.so(+0xccd85) [0x7f9186cd5d85]
+  [bt] (2) /home/airflow/.local/lib/python3.6/site-packages/xgboost/lib/libxgboost.so(+0xd1cf2) [0x7f9186cdacf2]
+  [bt] (3) /home/airflow/.local/lib/python3.6/site-packages/xgboost/lib/libxgboost.so(+0xd308d) [0x7f9186cdc08d]
+  [bt] (4) /home/airflow/.local/lib/python3.6/site-packages/xgboost/lib/libxgboost.so(+0x1bf95d) [0x7f9186dc895d]
+  [bt] (5) /home/airflow/.local/lib/python3.6/site-packages/xgboost/lib/libxgboost.so(XGBoosterUnserializeFromBuffer+0x5c) [0x7f9186ca1bbc]
+  [bt] (6) /usr/lib/x86_64-linux-gnu/libffi.so.6(ffi_call_unix64+0x4c) [0x7f91e84af8ee]
+  [bt] (7) /usr/lib/x86_64-linux-gnu/libffi.so.6(ffi_call+0x22f) [0x7f91e84af2bf]
+  [bt] (8) /usr/local/lib/python3.6/lib-dynload/_ctypes.cpython-36m-x86_64-linux-gnu.so(+0xd749) [0x7f91e8092749]
+
+
+[2022-07-01 10:14:33,078] {taskinstance.py:1503} INFO - Marking task as FAILED. dag_id=Company_Predict, task_id=load_Model, execution_date=20220701T101422, start_date=20220701T101424, end_date=20220701T101433
+[2022-07-01 10:14:33,136] {local_task_job.py:146} INFO - Task exited with return code 1

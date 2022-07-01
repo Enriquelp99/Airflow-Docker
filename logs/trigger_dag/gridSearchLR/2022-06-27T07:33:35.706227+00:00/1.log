@@ -1,0 +1,121 @@
+[2022-06-27 07:33:37,786] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: trigger_dag.gridSearchLR 2022-06-27T07:33:35.706227+00:00 [queued]>
+[2022-06-27 07:33:37,799] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: trigger_dag.gridSearchLR 2022-06-27T07:33:35.706227+00:00 [queued]>
+[2022-06-27 07:33:37,799] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-27 07:33:37,800] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2022-06-27 07:33:37,801] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-27 07:33:37,807] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): gridSearchLR> on 2022-06-27T07:33:35.706227+00:00
+[2022-06-27 07:33:37,812] {standard_task_runner.py:52} INFO - Started process 483 to run task
+[2022-06-27 07:33:37,816] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'trigger_dag', 'gridSearchLR', '2022-06-27T07:33:35.706227+00:00', '--job-id', '456', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/trigger_dag.py', '--cfg-path', '/tmp/tmpykir8e55', '--error-file', '/tmp/tmpwrz1wodn']
+[2022-06-27 07:33:37,818] {standard_task_runner.py:77} INFO - Job 456: Subtask gridSearchLR
+[2022-06-27 07:33:37,859] {logging_mixin.py:104} INFO - Running <TaskInstance: trigger_dag.gridSearchLR 2022-06-27T07:33:35.706227+00:00 [running]> on host 17b3f79b4d8e
+[2022-06-27 07:33:37,900] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=trigger_dag
+AIRFLOW_CTX_TASK_ID=gridSearchLR
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-27T07:33:35.706227+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-27T07:33:35.706227+00:00
+[2022-06-27 07:33:37,941] {connectionpool.py:752} WARNING - Retrying (Retry(total=4, connect=4, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fb758d53b00>: Failed to establish a new connection: [Errno -2] Name or service not known',)': /api/2.0/mlflow/experiments/create
+[2022-06-27 07:33:41,953] {connectionpool.py:752} WARNING - Retrying (Retry(total=3, connect=3, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fb758d53b38>: Failed to establish a new connection: [Errno -2] Name or service not known',)': /api/2.0/mlflow/experiments/create
+[2022-06-27 07:33:49,969] {connectionpool.py:752} WARNING - Retrying (Retry(total=2, connect=2, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fb758d537b8>: Failed to establish a new connection: [Errno -2] Name or service not known',)': /api/2.0/mlflow/experiments/create
+[2022-06-27 07:34:05,971] {connectionpool.py:752} WARNING - Retrying (Retry(total=1, connect=1, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fb758d53a20>: Failed to establish a new connection: [Errno -2] Name or service not known',)': /api/2.0/mlflow/experiments/create
+[2022-06-27 07:34:37,972] {connectionpool.py:752} WARNING - Retrying (Retry(total=0, connect=0, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fb758d534e0>: Failed to establish a new connection: [Errno -2] Name or service not known',)': /api/2.0/mlflow/experiments/create
+[2022-06-27 07:34:37,985] {taskinstance.py:1455} ERROR - API request to http://mlflow:5000/api/2.0/mlflow/experiments/create failed with exception HTTPConnectionPool(host='mlflow', port=5000): Max retries exceeded with url: /api/2.0/mlflow/experiments/create (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fb758d53860>: Failed to establish a new connection: [Errno -2] Name or service not known',))
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/util/connection.py", line 61, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/local/lib/python3.6/socket.py", line 745, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 392, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/local/lib/python3.6/http/client.py", line 1291, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/local/lib/python3.6/http/client.py", line 1337, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.6/http/client.py", line 1286, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.6/http/client.py", line 1046, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.6/http/client.py", line 984, in send
+    self.connect()
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connection.py", line 187, in connect
+    conn = self._new_conn()
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connection.py", line 172, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fb758d53860>: Failed to establish a new connection: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 767, in urlopen
+    **response_kw
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 767, in urlopen
+    **response_kw
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 767, in urlopen
+    **response_kw
+  [Previous line repeated 2 more times]
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 727, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/util/retry.py", line 446, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='mlflow', port=5000): Max retries exceeded with url: /api/2.0/mlflow/experiments/create (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fb758d53860>: Failed to establish a new connection: [Errno -2] Name or service not known',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/mlflow/utils/rest_utils.py", line 144, in http_request
+    **kwargs,
+  File "/home/airflow/.local/lib/python3.6/site-packages/mlflow/utils/rest_utils.py", line 75, in _get_http_response_with_retries
+    response = http.request(method, url, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='mlflow', port=5000): Max retries exceeded with url: /api/2.0/mlflow/experiments/create (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fb758d53860>: Failed to establish a new connection: [Errno -2] Name or service not known',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/trigger_dag.py", line 28, in check_mlflow_setting
+    experiment_id = mlflow.create_experiment("mLflow Classification LogisticR")
+  File "/home/airflow/.local/lib/python3.6/site-packages/mlflow/tracking/fluent.py", line 936, in create_experiment
+    return MlflowClient().create_experiment(name, artifact_location, tags)
+  File "/home/airflow/.local/lib/python3.6/site-packages/mlflow/tracking/client.py", line 507, in create_experiment
+    return self._tracking_client.create_experiment(name, artifact_location, tags)
+  File "/home/airflow/.local/lib/python3.6/site-packages/mlflow/tracking/_tracking_service/client.py", line 185, in create_experiment
+    tags=[ExperimentTag(key, value) for (key, value) in tags.items()] if tags else [],
+  File "/home/airflow/.local/lib/python3.6/site-packages/mlflow/store/tracking/rest_store.py", line 99, in create_experiment
+    response_proto = self._call_endpoint(CreateExperiment, req_body)
+  File "/home/airflow/.local/lib/python3.6/site-packages/mlflow/store/tracking/rest_store.py", line 56, in _call_endpoint
+    return call_endpoint(self.get_host_creds(), endpoint, method, json_body, response_proto)
+  File "/home/airflow/.local/lib/python3.6/site-packages/mlflow/utils/rest_utils.py", line 238, in call_endpoint
+    host_creds=host_creds, endpoint=endpoint, method=method, json=json_body
+  File "/home/airflow/.local/lib/python3.6/site-packages/mlflow/utils/rest_utils.py", line 147, in http_request
+    raise MlflowException("API request to %s failed with exception %s" % (url, e))
+mlflow.exceptions.MlflowException: API request to http://mlflow:5000/api/2.0/mlflow/experiments/create failed with exception HTTPConnectionPool(host='mlflow', port=5000): Max retries exceeded with url: /api/2.0/mlflow/experiments/create (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fb758d53860>: Failed to establish a new connection: [Errno -2] Name or service not known',))
+[2022-06-27 07:34:37,993] {taskinstance.py:1503} INFO - Marking task as FAILED. dag_id=trigger_dag, task_id=gridSearchLR, execution_date=20220627T073335, start_date=20220627T073337, end_date=20220627T073437
+[2022-06-27 07:34:38,056] {local_task_job.py:146} INFO - Task exited with return code 1

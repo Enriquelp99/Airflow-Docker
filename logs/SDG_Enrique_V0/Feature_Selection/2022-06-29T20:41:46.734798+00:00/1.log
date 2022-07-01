@@ -1,0 +1,117 @@
+[2022-06-29 20:41:48,499] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: SDG_Enrique_V0.Feature_Selection 2022-06-29T20:41:46.734798+00:00 [queued]>
+[2022-06-29 20:41:48,512] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: SDG_Enrique_V0.Feature_Selection 2022-06-29T20:41:46.734798+00:00 [queued]>
+[2022-06-29 20:41:48,514] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-29 20:41:48,515] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2022-06-29 20:41:48,516] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-29 20:41:48,535] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): Feature_Selection> on 2022-06-29T20:41:46.734798+00:00
+[2022-06-29 20:41:48,541] {standard_task_runner.py:52} INFO - Started process 435 to run task
+[2022-06-29 20:41:48,553] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'SDG_Enrique_V0', 'Feature_Selection', '2022-06-29T20:41:46.734798+00:00', '--job-id', '1324', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/company_forecasting.py', '--cfg-path', '/tmp/tmpm991f6rw', '--error-file', '/tmp/tmpk2ocjquq']
+[2022-06-29 20:41:48,557] {standard_task_runner.py:77} INFO - Job 1324: Subtask Feature_Selection
+[2022-06-29 20:41:48,605] {logging_mixin.py:104} INFO - Running <TaskInstance: SDG_Enrique_V0.Feature_Selection 2022-06-29T20:41:46.734798+00:00 [running]> on host 1ff8f57a8cbf
+[2022-06-29 20:41:48,666] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=enrique-liebana@outlook.com
+AIRFLOW_CTX_DAG_OWNER=Enrique
+AIRFLOW_CTX_DAG_ID=SDG_Enrique_V0
+AIRFLOW_CTX_TASK_ID=Feature_Selection
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-29T20:41:46.734798+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-29T20:41:46.734798+00:00
+[2022-06-29 20:41:58,119] {base.py:74} INFO - Using connection to: id: postgres_conection. Host: host.docker.internal, Port: 5432, Schema: data_company, Login: airflow, Password: XXXXXXXX, extra: None
+[2022-06-29 20:41:58,151] {logging_mixin.py:104} INFO - CREATE TABLE IF NOT EXISTS company_P(rev_mean REAL, 
+mou_mean REAL, 
+totmrc_mean REAL, 
+da_mean REAL, 
+ovrmou_mean REAL, 
+datovr_mean REAL, 
+roam_mean REAL, 
+change_mou REAL, 
+change_rev REAL, 
+drop_vce_mean REAL, 
+blck_vce_mean REAL, 
+unan_vce_mean REAL, 
+plcd_vce_mean REAL, 
+plcd_dat_mean REAL, 
+recv_vce_mean REAL, 
+custcare_mean REAL, 
+ccrndmou_mean REAL, 
+threeway_mean REAL, 
+mou_cvce_mean REAL, 
+mou_rvce_mean REAL, 
+owylis_vce_mean REAL, 
+iwylis_vce_mean REAL, 
+mouiwylisv_mean REAL, 
+opk_vce_mean REAL, 
+mou_opkv_mean REAL, 
+drop_blk_mean REAL, 
+callfwdv_mean REAL, 
+callwait_mean REAL, 
+uniqsubs REAL, 
+actvsubs REAL, 
+totcalls REAL, 
+totrev REAL, 
+avgrev REAL, 
+hnd_price REAL, 
+phones REAL, 
+models REAL, 
+truck REAL, 
+rv REAL, 
+lor REAL, 
+adults REAL, 
+infobase INT4, 
+income REAL, 
+forgntvl REAL, 
+kid0_2 INT4, 
+kid3_5 INT4, 
+kid6_10 INT4, 
+eqpdays REAL, 
+new_cell_U INT4, 
+new_cell_Y INT4, 
+crclscod_A INT4, 
+crclscod_A2 INT4, 
+crclscod_A3 INT4, 
+crclscod_AA INT4, 
+crclscod_BA INT4, 
+crclscod_C5 INT4, 
+crclscod_D INT4, 
+crclscod_EM INT4, 
+prizm_social_one_R INT4, 
+prizm_social_one_T INT4, 
+prizm_social_one_U INT4, 
+area_0 INT4, 
+area_1 INT4, 
+area_2 INT4, 
+area_4 INT4, 
+area_5 INT4, 
+area_6 INT4, 
+area_9 INT4, 
+area_10 INT4, 
+area_11 INT4, 
+area_12 INT4, 
+area_13 INT4, 
+area_14 INT4, 
+area_18 INT4, 
+refurb_new_N INT4, 
+hnd_webcap_U INT4, 
+ownrent_R INT4, 
+ownrent_U INT4, 
+dwlltype_M INT4, 
+dwlltype_S INT4, 
+dwlltype_U INT4, 
+marital_A INT4, 
+marital_B INT4, 
+ethnic_G INT4, 
+ethnic_H INT4, 
+ethnic_I INT4, 
+ethnic_N INT4, 
+ethnic_O INT4, 
+ethnic_S INT4, 
+ethnic_U INT4, 
+ethnic_Z INT4, 
+creditcd_N INT4, 
+churn REAL);
+[2022-06-29 20:41:58,152] {logging_mixin.py:104} INFO - 
+[2022-06-29 20:41:59,428] {python.py:118} INFO - Done. Returned value was: None
+[2022-06-29 20:41:59,452] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=SDG_Enrique_V0, task_id=Feature_Selection, execution_date=20220629T204146, start_date=20220629T204148, end_date=20220629T204159
+[2022-06-29 20:41:59,493] {taskinstance.py:1220} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-29 20:41:59,543] {local_task_job.py:146} INFO - Task exited with return code 0

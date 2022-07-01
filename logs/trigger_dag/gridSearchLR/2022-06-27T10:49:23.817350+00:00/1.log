@@ -1,0 +1,45 @@
+[2022-06-27 10:49:25,754] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: trigger_dag.gridSearchLR 2022-06-27T10:49:23.817350+00:00 [queued]>
+[2022-06-27 10:49:25,764] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: trigger_dag.gridSearchLR 2022-06-27T10:49:23.817350+00:00 [queued]>
+[2022-06-27 10:49:25,765] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-27 10:49:25,765] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2022-06-27 10:49:25,766] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-27 10:49:25,777] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): gridSearchLR> on 2022-06-27T10:49:23.817350+00:00
+[2022-06-27 10:49:25,783] {standard_task_runner.py:52} INFO - Started process 211 to run task
+[2022-06-27 10:49:25,788] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'trigger_dag', 'gridSearchLR', '2022-06-27T10:49:23.817350+00:00', '--job-id', '585', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/trigger_dag.py', '--cfg-path', '/tmp/tmpls492trx', '--error-file', '/tmp/tmpd78x3iqt']
+[2022-06-27 10:49:25,791] {standard_task_runner.py:77} INFO - Job 585: Subtask gridSearchLR
+[2022-06-27 10:49:25,856] {logging_mixin.py:104} INFO - Running <TaskInstance: trigger_dag.gridSearchLR 2022-06-27T10:49:23.817350+00:00 [running]> on host 61d9f46d7859
+[2022-06-27 10:49:25,895] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=trigger_dag
+AIRFLOW_CTX_TASK_ID=gridSearchLR
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-27T10:49:23.817350+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-27T10:49:23.817350+00:00
+[2022-06-27 10:49:26,205] {logging_mixin.py:104} WARNING - 2022/06/27 10:49:26 INFO mlflow.tracking.fluent: Autologging successfully enabled for sklearn.
+[2022-06-27 10:49:26,286] {logging_mixin.py:104} WARNING - 2022/06/27 10:49:26 WARNING mlflow.tracking.context.git_context: Failed to import Git (the Git executable is probably not on your PATH), so Git SHA is not available. Error: Failed to initialize: Bad git executable.
+The git executable must be specified in one of the following ways:
+    - be included in your $PATH
+    - be set via $GIT_PYTHON_GIT_EXECUTABLE
+    - explicitly set via git.refresh()
+
+All git commands will error until this is rectified.
+
+This initial warning can be silenced or aggravated in the future by setting the
+$GIT_PYTHON_REFRESH environment variable. Use one of the following values:
+    - quiet|q|silence|s|none|n|0: for no warning or exception
+    - warn|w|warning|1: for a printed warning
+    - error|e|raise|r|2: for a raised exception
+
+Example:
+    export GIT_PYTHON_REFRESH=quiet
+[2022-06-27 10:49:26,287] {logging_mixin.py:104} WARNING - 
+[2022-06-27 10:49:29,703] {logging_mixin.py:104} INFO - run_id: a94ce341dfd241ad9d6408926bd023d4
+[2022-06-27 10:49:29,703] {logging_mixin.py:104} INFO - artifacts: ['model/MLmodel', 'model/conda.yaml', 'model/model.pkl', 'model/requirements.txt']
+[2022-06-27 10:49:29,704] {logging_mixin.py:104} INFO - params: {'fit_intercept': 'True', 'copy_X': 'True', 'n_jobs': 'None', 'normalize': 'False', 'positive': 'False'}
+[2022-06-27 10:49:29,705] {logging_mixin.py:104} INFO - metrics: {'training_mae': 0.0, 'training_mse': 0.0, 'training_rmse': 0.0, 'training_r2_score': 1.0, 'training_score': 1.0}
+[2022-06-27 10:49:29,705] {logging_mixin.py:104} INFO - tags: {'estimator_class': 'sklearn.linear_model._base.LinearRegression', 'estimator_name': 'LinearRegression'}
+[2022-06-27 10:49:29,706] {python.py:118} INFO - Done. Returned value was: None
+[2022-06-27 10:49:29,720] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=trigger_dag, task_id=gridSearchLR, execution_date=20220627T104923, start_date=20220627T104925, end_date=20220627T104929
+[2022-06-27 10:49:29,752] {taskinstance.py:1220} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-27 10:49:29,815] {local_task_job.py:146} INFO - Task exited with return code 0

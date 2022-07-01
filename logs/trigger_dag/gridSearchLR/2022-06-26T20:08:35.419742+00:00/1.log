@@ -1,0 +1,47 @@
+[2022-06-26 20:08:37,961] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: trigger_dag.gridSearchLR 2022-06-26T20:08:35.419742+00:00 [queued]>
+[2022-06-26 20:08:37,976] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: trigger_dag.gridSearchLR 2022-06-26T20:08:35.419742+00:00 [queued]>
+[2022-06-26 20:08:37,977] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-26 20:08:37,977] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2022-06-26 20:08:37,978] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-26 20:08:37,985] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): gridSearchLR> on 2022-06-26T20:08:35.419742+00:00
+[2022-06-26 20:08:37,991] {standard_task_runner.py:52} INFO - Started process 4205 to run task
+[2022-06-26 20:08:37,995] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'trigger_dag', 'gridSearchLR', '2022-06-26T20:08:35.419742+00:00', '--job-id', '301', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/trigger_dag.py', '--cfg-path', '/tmp/tmplb8172xb', '--error-file', '/tmp/tmpyblgt_ac']
+[2022-06-26 20:08:37,999] {standard_task_runner.py:77} INFO - Job 301: Subtask gridSearchLR
+[2022-06-26 20:08:38,043] {logging_mixin.py:104} INFO - Running <TaskInstance: trigger_dag.gridSearchLR 2022-06-26T20:08:35.419742+00:00 [running]> on host 6fc8504e86cf
+[2022-06-26 20:08:38,087] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=trigger_dag
+AIRFLOW_CTX_TASK_ID=gridSearchLR
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-26T20:08:35.419742+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-26T20:08:35.419742+00:00
+[2022-06-26 20:08:38,121] {taskinstance.py:1455} ERROR - expected string or bytes-like object
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/trigger_dag.py", line 27, in check_mlflow_setting
+    experiment = mlflow.get_experiment(experiment_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/mlflow/tracking/fluent.py", line 843, in get_experiment
+    return MlflowClient().get_experiment(experiment_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/mlflow/tracking/client.py", line 429, in get_experiment
+    return self._tracking_client.get_experiment(experiment_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/mlflow/tracking/_tracking_service/client.py", line 160, in get_experiment
+    return self.store.get_experiment(experiment_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/mlflow/store/tracking/file_store.py", line 371, in get_experiment
+    experiment = self._get_experiment(experiment_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/mlflow/store/tracking/file_store.py", line 337, in _get_experiment
+    _validate_experiment_id(experiment_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/mlflow/utils/validation.py", line 266, in _validate_experiment_id
+    if exp_id is not None and _EXPERIMENT_ID_REGEX.match(exp_id) is None:
+TypeError: expected string or bytes-like object
+[2022-06-26 20:08:38,126] {taskinstance.py:1503} INFO - Marking task as FAILED. dag_id=trigger_dag, task_id=gridSearchLR, execution_date=20220626T200835, start_date=20220626T200837, end_date=20220626T200838
+[2022-06-26 20:08:38,171] {local_task_job.py:146} INFO - Task exited with return code 1

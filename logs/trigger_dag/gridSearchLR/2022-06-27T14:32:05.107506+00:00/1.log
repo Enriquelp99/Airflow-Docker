@@ -1,0 +1,46 @@
+[2022-06-27 14:32:06,902] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: trigger_dag.gridSearchLR 2022-06-27T14:32:05.107506+00:00 [queued]>
+[2022-06-27 14:32:06,912] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: trigger_dag.gridSearchLR 2022-06-27T14:32:05.107506+00:00 [queued]>
+[2022-06-27 14:32:06,913] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-27 14:32:06,913] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2022-06-27 14:32:06,914] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-27 14:32:06,929] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): gridSearchLR> on 2022-06-27T14:32:05.107506+00:00
+[2022-06-27 14:32:06,934] {standard_task_runner.py:52} INFO - Started process 540 to run task
+[2022-06-27 14:32:06,939] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'trigger_dag', 'gridSearchLR', '2022-06-27T14:32:05.107506+00:00', '--job-id', '1178', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/trigger_dag.py', '--cfg-path', '/tmp/tmpy2jvjlyx', '--error-file', '/tmp/tmph9dic7fc']
+[2022-06-27 14:32:06,941] {standard_task_runner.py:77} INFO - Job 1178: Subtask gridSearchLR
+[2022-06-27 14:32:06,996] {logging_mixin.py:104} INFO - Running <TaskInstance: trigger_dag.gridSearchLR 2022-06-27T14:32:05.107506+00:00 [running]> on host d45254a3a0e0
+[2022-06-27 14:32:07,034] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=trigger_dag
+AIRFLOW_CTX_TASK_ID=gridSearchLR
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-27T14:32:05.107506+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-27T14:32:05.107506+00:00
+[2022-06-27 14:32:07,036] {logging_mixin.py:104} INFO - ./mlruns/
+[2022-06-27 14:32:07,060] {taskinstance.py:1455} ERROR - Experiment 'A2A' already exists.
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/trigger_dag.py", line 42, in prueba
+    experimentid = mlflow.create_experiment('A2A')
+  File "/home/airflow/.local/lib/python3.6/site-packages/mlflow/tracking/fluent.py", line 936, in create_experiment
+    return MlflowClient().create_experiment(name, artifact_location, tags)
+  File "/home/airflow/.local/lib/python3.6/site-packages/mlflow/tracking/client.py", line 507, in create_experiment
+    return self._tracking_client.create_experiment(name, artifact_location, tags)
+  File "/home/airflow/.local/lib/python3.6/site-packages/mlflow/tracking/_tracking_service/client.py", line 185, in create_experiment
+    tags=[ExperimentTag(key, value) for (key, value) in tags.items()] if tags else [],
+  File "/home/airflow/.local/lib/python3.6/site-packages/mlflow/store/tracking/file_store.py", line 321, in create_experiment
+    self._validate_experiment_name(name)
+  File "/home/airflow/.local/lib/python3.6/site-packages/mlflow/store/tracking/file_store.py", line 316, in _validate_experiment_name
+    databricks_pb2.RESOURCE_ALREADY_EXISTS,
+mlflow.exceptions.MlflowException: Experiment 'A2A' already exists.
+[2022-06-27 14:32:07,069] {taskinstance.py:1503} INFO - Marking task as FAILED. dag_id=trigger_dag, task_id=gridSearchLR, execution_date=20220627T143205, start_date=20220627T143206, end_date=20220627T143207
+[2022-06-27 14:32:07,114] {local_task_job.py:146} INFO - Task exited with return code 1

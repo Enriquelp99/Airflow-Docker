@@ -1,0 +1,26 @@
+[2022-07-01 07:49:00,137] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: Company_Predict.trigger_target 2022-07-01T07:48:58.169415+00:00 [queued]>
+[2022-07-01 07:49:00,151] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: Company_Predict.trigger_target 2022-07-01T07:48:58.169415+00:00 [queued]>
+[2022-07-01 07:49:00,152] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-01 07:49:00,153] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2022-07-01 07:49:00,154] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-01 07:49:00,162] {taskinstance.py:1063} INFO - Executing <Task(TriggerDagRunOperator): trigger_target> on 2022-07-01T07:48:58.169415+00:00
+[2022-07-01 07:49:00,167] {standard_task_runner.py:52} INFO - Started process 621 to run task
+[2022-07-01 07:49:00,172] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'Company_Predict', 'trigger_target', '2022-07-01T07:48:58.169415+00:00', '--job-id', '1540', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/company_predict.py', '--cfg-path', '/tmp/tmp8kuwgy4i', '--error-file', '/tmp/tmpq0uc_5ft']
+[2022-07-01 07:49:00,175] {standard_task_runner.py:77} INFO - Job 1540: Subtask trigger_target
+[2022-07-01 07:49:00,221] {logging_mixin.py:104} INFO - Running <TaskInstance: Company_Predict.trigger_target 2022-07-01T07:48:58.169415+00:00 [running]> on host 14dddcffc0ea
+[2022-07-01 07:49:00,267] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=enrique-liebana@outlook.com
+AIRFLOW_CTX_DAG_OWNER=Enrique Liebana Peña
+AIRFLOW_CTX_DAG_ID=Company_Predict
+AIRFLOW_CTX_TASK_ID=trigger_target
+AIRFLOW_CTX_EXECUTION_DATE=2022-07-01T07:48:58.169415+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-07-01T07:48:58.169415+00:00
+[2022-07-01 07:49:00,316] {trigger_dagrun.py:165} INFO - Waiting for SDG_Enrique_V0 on 2022-07-01T00:00:00+00:00 to become allowed state ['success'] ...
+[2022-07-01 07:50:00,342] {trigger_dagrun.py:165} INFO - Waiting for SDG_Enrique_V0 on 2022-07-01T00:00:00+00:00 to become allowed state ['success'] ...
+[2022-07-01 07:51:00,354] {trigger_dagrun.py:165} INFO - Waiting for SDG_Enrique_V0 on 2022-07-01T00:00:00+00:00 to become allowed state ['success'] ...
+[2022-07-01 07:52:00,357] {trigger_dagrun.py:174} INFO - SDG_Enrique_V0 finished with allowed state success
+[2022-07-01 07:52:00,369] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=Company_Predict, task_id=trigger_target, execution_date=20220701T074858, start_date=20220701T074900, end_date=20220701T075200
+[2022-07-01 07:52:00,401] {taskinstance.py:1220} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-07-01 07:52:00,417] {local_task_job.py:146} INFO - Task exited with return code 0

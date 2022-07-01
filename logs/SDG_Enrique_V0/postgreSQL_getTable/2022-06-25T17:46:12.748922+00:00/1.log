@@ -1,0 +1,36 @@
+[2022-06-25 17:46:15,186] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: SDG_Enrique_V0.postgreSQL_getTable 2022-06-25T17:46:12.748922+00:00 [queued]>
+[2022-06-25 17:46:15,201] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: SDG_Enrique_V0.postgreSQL_getTable 2022-06-25T17:46:12.748922+00:00 [queued]>
+[2022-06-25 17:46:15,202] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-25 17:46:15,203] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2022-06-25 17:46:15,203] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-25 17:46:15,211] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): postgreSQL_getTable> on 2022-06-25T17:46:12.748922+00:00
+[2022-06-25 17:46:15,217] {standard_task_runner.py:52} INFO - Started process 194 to run task
+[2022-06-25 17:46:15,222] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'SDG_Enrique_V0', 'postgreSQL_getTable', '2022-06-25T17:46:12.748922+00:00', '--job-id', '25', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/company_forecasting.py', '--cfg-path', '/tmp/tmp4ref4yhk', '--error-file', '/tmp/tmppgmbpze7']
+[2022-06-25 17:46:15,224] {standard_task_runner.py:77} INFO - Job 25: Subtask postgreSQL_getTable
+[2022-06-25 17:46:15,267] {logging_mixin.py:104} INFO - Running <TaskInstance: SDG_Enrique_V0.postgreSQL_getTable 2022-06-25T17:46:12.748922+00:00 [running]> on host 9ed5e21ae5e4
+[2022-06-25 17:46:15,307] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=enrique-liebana@outlook.com
+AIRFLOW_CTX_DAG_OWNER=Enrique
+AIRFLOW_CTX_DAG_ID=SDG_Enrique_V0
+AIRFLOW_CTX_TASK_ID=postgreSQL_getTable
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-25T17:46:12.748922+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-25T17:46:12.748922+00:00
+[2022-06-25 17:46:15,308] {taskinstance.py:1455} ERROR - name 'PostgresHook' is not defined
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/company_forecasting.py", line 44, in postgreSQL_getTable
+    hook = PostgresHook(postgres_conn_id="postgres_conection")
+NameError: name 'PostgresHook' is not defined
+[2022-06-25 17:46:15,311] {taskinstance.py:1503} INFO - Marking task as FAILED. dag_id=SDG_Enrique_V0, task_id=postgreSQL_getTable, execution_date=20220625T174612, start_date=20220625T174615, end_date=20220625T174615
+[2022-06-25 17:46:15,356] {local_task_job.py:146} INFO - Task exited with return code 1

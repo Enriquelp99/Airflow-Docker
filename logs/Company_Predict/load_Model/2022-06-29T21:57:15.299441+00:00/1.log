@@ -1,0 +1,36 @@
+[2022-06-29 22:01:18,812] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: Company_Predict.load_Model 2022-06-29T21:57:15.299441+00:00 [queued]>
+[2022-06-29 22:01:18,828] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: Company_Predict.load_Model 2022-06-29T21:57:15.299441+00:00 [queued]>
+[2022-06-29 22:01:18,829] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-29 22:01:18,830] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2022-06-29 22:01:18,830] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-29 22:01:18,837] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): load_Model> on 2022-06-29T21:57:15.299441+00:00
+[2022-06-29 22:01:18,845] {standard_task_runner.py:52} INFO - Started process 1366 to run task
+[2022-06-29 22:01:18,850] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'Company_Predict', 'load_Model', '2022-06-29T21:57:15.299441+00:00', '--job-id', '1482', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/company_predict.py', '--cfg-path', '/tmp/tmpwybu6hq2', '--error-file', '/tmp/tmpo8ipkt61']
+[2022-06-29 22:01:18,852] {standard_task_runner.py:77} INFO - Job 1482: Subtask load_Model
+[2022-06-29 22:01:18,898] {logging_mixin.py:104} INFO - Running <TaskInstance: Company_Predict.load_Model 2022-06-29T21:57:15.299441+00:00 [running]> on host daae6b127c15
+[2022-06-29 22:01:18,939] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=enrique-liebana@outlook.com
+AIRFLOW_CTX_DAG_OWNER=Enrique Liebana Peña
+AIRFLOW_CTX_DAG_ID=Company_Predict
+AIRFLOW_CTX_TASK_ID=load_Model
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-29T21:57:15.299441+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-29T21:57:15.299441+00:00
+[2022-06-29 22:01:24,619] {taskinstance.py:1455} ERROR - No module named 'xgboost'
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/company_predict.py", line 30, in _load_model
+    pickled_model = pickle.load(open('models/xgboost.sav', 'rb'))
+ModuleNotFoundError: No module named 'xgboost'
+[2022-06-29 22:01:24,623] {taskinstance.py:1503} INFO - Marking task as FAILED. dag_id=Company_Predict, task_id=load_Model, execution_date=20220629T215715, start_date=20220629T220118, end_date=20220629T220124
+[2022-06-29 22:01:24,693] {local_task_job.py:146} INFO - Task exited with return code 1

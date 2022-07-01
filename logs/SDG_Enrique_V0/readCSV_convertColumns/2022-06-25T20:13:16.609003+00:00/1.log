@@ -1,0 +1,69 @@
+[2022-06-25 20:13:18,469] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: SDG_Enrique_V0.readCSV_convertColumns 2022-06-25T20:13:16.609003+00:00 [queued]>
+[2022-06-25 20:13:18,487] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: SDG_Enrique_V0.readCSV_convertColumns 2022-06-25T20:13:16.609003+00:00 [queued]>
+[2022-06-25 20:13:18,488] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-25 20:13:18,488] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2022-06-25 20:13:18,489] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-25 20:13:18,497] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): readCSV_convertColumns> on 2022-06-25T20:13:16.609003+00:00
+[2022-06-25 20:13:18,504] {standard_task_runner.py:52} INFO - Started process 2417 to run task
+[2022-06-25 20:13:18,508] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'SDG_Enrique_V0', 'readCSV_convertColumns', '2022-06-25T20:13:16.609003+00:00', '--job-id', '124', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/company_forecasting.py', '--cfg-path', '/tmp/tmpvt5liobg', '--error-file', '/tmp/tmpcck0ig4x']
+[2022-06-25 20:13:18,511] {standard_task_runner.py:77} INFO - Job 124: Subtask readCSV_convertColumns
+[2022-06-25 20:13:18,560] {logging_mixin.py:104} INFO - Running <TaskInstance: SDG_Enrique_V0.readCSV_convertColumns 2022-06-25T20:13:16.609003+00:00 [running]> on host 5e8dc4b25004
+[2022-06-25 20:13:18,598] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=enrique-liebana@outlook.com
+AIRFLOW_CTX_DAG_OWNER=Enrique
+AIRFLOW_CTX_DAG_ID=SDG_Enrique_V0
+AIRFLOW_CTX_TASK_ID=readCSV_convertColumns
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-25T20:13:16.609003+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-25T20:13:16.609003+00:00
+[2022-06-25 20:13:21,650] {logging_mixin.py:104} WARNING - /home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py:1315 DtypeWarning: Columns (46,56,59) have mixed types.Specify dtype option on import or set low_memory=False.
+[2022-06-25 20:13:21,900] {logging_mixin.py:104} INFO -   rev_mean mou_mean totmrc_mean  ... creditcd eqpdays customer_id
+0  23,9975   219,25        22,5  ...        Y   361.0   1000001.0
+1  57,4925   482,75      37,425  ...        Y   240.0   1000002.0
+2    16,99    10,25       16,99  ...        Y  1504.0   1000003.0
+3       38      7,5          38  ...        Y  1812.0   1000004.0
+4    55,23    570,5       71,98  ...        Y   434.0   1000005.0
+
+[5 rows x 100 columns]
+[2022-06-25 20:13:21,903] {logging_mixin.py:104} INFO - rev_mean        object
+mou_mean        object
+totmrc_mean     object
+da_mean         object
+ovrmou_mean     object
+                ...   
+kid11_15        object
+kid16_17        object
+creditcd        object
+eqpdays        float64
+customer_id    float64
+Length: 100, dtype: object
+[2022-06-25 20:13:21,904] {logging_mixin.py:104} INFO - **************** FLOAT COLUmNS *********************
+[2022-06-25 20:13:24,402] {logging_mixin.py:104} INFO - **************** OBJECT COLUmNS *********************
+[2022-06-25 20:13:24,688] {logging_mixin.py:104} INFO - ************+***********RESULTS*****************************
+[2022-06-25 20:13:24,694] {logging_mixin.py:104} INFO - FLOAT64 (49421, 78)
+[2022-06-25 20:13:24,697] {logging_mixin.py:104} INFO - INT64 (49421, 1)
+[2022-06-25 20:13:24,699] {logging_mixin.py:104} INFO - STRING (49421, 21)
+[2022-06-25 20:13:30,722] {base.py:74} INFO - Using connection to: id: postgres_conection. Host: host.docker.internal, Port: 5432, Schema: data_company, Login: airflow, Password: XXXXXXXX, extra: None
+[2022-06-25 20:13:30,739] {taskinstance.py:1455} ERROR - syntax error at or near ","
+LINE 76:         hnd_price,phones VARCHAR(50),
+                          ^
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/company_forecasting.py", line 207, in read_and_convertColumns
+    );""")
+psycopg2.errors.SyntaxError: syntax error at or near ","
+LINE 76:         hnd_price,phones VARCHAR(50),
+                          ^
+
+[2022-06-25 20:13:30,766] {taskinstance.py:1503} INFO - Marking task as FAILED. dag_id=SDG_Enrique_V0, task_id=readCSV_convertColumns, execution_date=20220625T201316, start_date=20220625T201318, end_date=20220625T201330
+[2022-06-25 20:13:30,860] {local_task_job.py:146} INFO - Task exited with return code 1
