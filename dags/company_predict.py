@@ -35,7 +35,7 @@ def _load_model():
 
 
 with DAG('Company_Predict', 
-    schedule_interval='@daily', 
+    schedule_interval=None, 
     default_args=default_args,
     start_date=datetime(2022,6,29)
 
